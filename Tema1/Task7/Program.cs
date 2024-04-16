@@ -10,7 +10,7 @@
 
             for (int i = 0; i < numbers.Length; i++)
             {
-                numbers[i] = rnd.Next(-50, 50) * rnd.NextDouble();
+                numbers[i] = Math.Round(rnd.Next(-50, 50) * rnd.NextDouble(), 2);
             }
 
             foreach(double number in numbers)
