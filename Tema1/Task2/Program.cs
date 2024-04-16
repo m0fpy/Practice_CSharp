@@ -29,8 +29,7 @@
             {
                 return false;
             }
-
-            if((sideA + sideB > sideC) || (sideA + sideC > sideB) || (sideB + sideC > sideB)) 
+            else if((sideA + sideB <= sideC) || (sideA + sideC <= sideB) || (sideB + sideC <= sideB)) 
             {
                 return false;            
             }
