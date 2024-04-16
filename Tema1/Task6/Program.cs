@@ -12,7 +12,6 @@
 
             for (double x = ARG_A; x <= ARG_B; x += stepH)
             {
-
                 Console.WriteLine($"y = {(Math.Sin(x) - Math.Cos(x)):F2}, при х = {x:F2}");
             }
         }
