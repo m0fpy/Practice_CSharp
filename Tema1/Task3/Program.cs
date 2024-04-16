@@ -17,13 +17,26 @@
 
         static string CalculateRemainingDays(int month, int dayOfMonth )
         {
-            return month switch
+            switch (month)
             {
-                1 or 3 or 5 or 7 or 8 or 10 or 12 => dayOfMonth > 31 ? "Неправильный номер дня" : $"До конца месяца осталось {31 - dayOfMonth} дней",
-                2 => dayOfMonth > 28 ? "Неправильный номер дня" : $"До конца месяца осталось {28 - dayOfMonth} дней",
-                4 or 6 or 9 or 11 => dayOfMonth > 30 ? "Неправильный номер дня" : $"До конца месяца осталось {30 - dayOfMonth} дней",
-                _ => "Неправильный номер месяца"
-            };
+                case 1:
+                case 3:
+                case 5:
+                case 7:
+                case 8:
+                case 10:
+                case 12:
+                    return dayOfMonth > 31 ? "Неправильный номер дня" : $"До конца месяца осталось {31 - dayOfMonth} дней";
+                case 2:
+                    return dayOfMonth > 28 ? "Неправильный номер дня" : $"До конца месяца осталось {28 - dayOfMonth} дней";
+                case 4:
+                case 6:
+                case 9:
+                case 11:
+                    return dayOfMonth > 30 ? "Неправильный номер дня" : $"До конца месяца осталось {30 - dayOfMonth} дней";
+                default:
+                    return "Неправильный номер месяца";
+            }
         }
     }
 }
