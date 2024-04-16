@@ -14,7 +14,6 @@
             double shag = double.Parse(Console.ReadLine());
 
             double functionY;
-
             for (double x = borderLeft; x < borderRight ; x += shag)
             {
                 if (x <= Math.PI)
