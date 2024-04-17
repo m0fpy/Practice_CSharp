@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Projects\\C#\\Практика\\PrilojenieA\\Task5\\Task5.csproj": {}
+    "D:\\Projects\\C#\\Practice_CSharp\\PrilozhenieA\\Task5\\Task5.csproj": {}
   },
   "projects": {
-    "D:\\Projects\\C#\\Практика\\PrilojenieA\\Task5\\Task5.csproj": {
+    "D:\\Projects\\C#\\Practice_CSharp\\PrilozhenieA\\Task5\\Task5.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projects\\C#\\Практика\\PrilojenieA\\Task5\\Task5.csproj",
+        "projectUniqueName": "D:\\Projects\\C#\\Practice_CSharp\\PrilozhenieA\\Task5\\Task5.csproj",
         "projectName": "Task5",
-        "projectPath": "D:\\Projects\\C#\\Практика\\PrilojenieA\\Task5\\Task5.csproj",
+        "projectPath": "D:\\Projects\\C#\\Practice_CSharp\\PrilozhenieA\\Task5\\Task5.csproj",
         "packagesPath": "C:\\Users\\m0fpy\\.nuget\\packages\\",
-        "outputPath": "D:\\Projects\\C#\\Практика\\PrilojenieA\\Task5\\obj\\",
+        "outputPath": "D:\\Projects\\C#\\Practice_CSharp\\PrilozhenieA\\Task5\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\m0fpy\\AppData\\Roaming\\NuGet\\NuGet.Config",

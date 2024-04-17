@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Projects\\C#\\Практика\\PrilojenieA\\Task3\\Task3.csproj",
+      "projectUniqueName": "D:\\Projects\\C#\\Practice_CSharp\\PrilozhenieA\\Task3\\Task3.csproj",
       "projectName": "Task3",
-      "projectPath": "D:\\Projects\\C#\\Практика\\PrilojenieA\\Task3\\Task3.csproj",
+      "projectPath": "D:\\Projects\\C#\\Practice_CSharp\\PrilozhenieA\\Task3\\Task3.csproj",
       "packagesPath": "C:\\Users\\m0fpy\\.nuget\\packages\\",
-      "outputPath": "D:\\Projects\\C#\\Практика\\PrilojenieA\\Task3\\obj\\",
+      "outputPath": "D:\\Projects\\C#\\Practice_CSharp\\PrilozhenieA\\Task3\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\m0fpy\\AppData\\Roaming\\NuGet\\NuGet.Config",
