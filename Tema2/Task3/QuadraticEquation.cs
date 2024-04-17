@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Task3
+﻿namespace Task3
 {
     internal class QuadraticEquation
     {
@@ -50,7 +44,7 @@ namespace Task3
 
         public string Display()
         {
-            return $"{argA}x^2 + {argB}x + {argC} = 0";
+            return $"{argA}x^2 + {argB}x + {argC}";
         }
 
         public override string ToString()
