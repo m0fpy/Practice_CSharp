@@ -1,6 +1,4 @@
-﻿using System.Xml.Schema;
-
-namespace Task2
+﻿namespace Task2
 {
     internal class Program
     {
