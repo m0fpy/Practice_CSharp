@@ -1,30 +1,30 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Projects\\C#\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\PrilojenieA\\",
+  "WorkspaceRootPath": "D:\\Projects\\C#\\Practice_CSharp\\PrilozhenieA\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{12A05D3A-723F-4B9E-9572-4A641863C1F6}|Task6\\Task6.csproj|d:\\projects\\c#\\\u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\prilojeniea\\task6\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{12A05D3A-723F-4B9E-9572-4A641863C1F6}|Task6\\Task6.csproj|solutionrelative:task6\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1F8075E4-9174-4275-A2B2-DF3885BAC9A9}|Task1\\Task1.csproj|d:\\projects\\c#\\practice_csharp\\prilozheniea\\task1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F8075E4-9174-4275-A2B2-DF3885BAC9A9}|Task1\\Task1.csproj|solutionrelative:task1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{72B1B027-DCEC-4638-B8F1-657E236A1E28}|Task5\\Task5.csproj|d:\\projects\\c#\\\u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\prilojeniea\\task5\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{72B1B027-DCEC-4638-B8F1-657E236A1E28}|Task5\\Task5.csproj|solutionrelative:task5\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{96023293-573B-4D98-9448-B35819D9D78F}|Task4\\Task4.csproj|d:\\projects\\c#\\\u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\prilojeniea\\task4\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{96023293-573B-4D98-9448-B35819D9D78F}|Task4\\Task4.csproj|d:\\projects\\c#\\practice_csharp\\prilozheniea\\task4\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{96023293-573B-4D98-9448-B35819D9D78F}|Task4\\Task4.csproj|solutionrelative:task4\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{93C7EC80-11CE-4BDF-8498-55FDB8CD373A}|Task3\\Task3.csproj|d:\\projects\\c#\\\u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\prilojeniea\\task3\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{12A05D3A-723F-4B9E-9572-4A641863C1F6}|Task6\\Task6.csproj|d:\\projects\\c#\\practice_csharp\\prilozheniea\\task6\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{12A05D3A-723F-4B9E-9572-4A641863C1F6}|Task6\\Task6.csproj|solutionrelative:task6\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72B1B027-DCEC-4638-B8F1-657E236A1E28}|Task5\\Task5.csproj|d:\\projects\\c#\\practice_csharp\\prilozheniea\\task5\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72B1B027-DCEC-4638-B8F1-657E236A1E28}|Task5\\Task5.csproj|solutionrelative:task5\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93C7EC80-11CE-4BDF-8498-55FDB8CD373A}|Task3\\Task3.csproj|d:\\projects\\c#\\practice_csharp\\prilozheniea\\task3\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{93C7EC80-11CE-4BDF-8498-55FDB8CD373A}|Task3\\Task3.csproj|solutionrelative:task3\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C1B49214-5DFE-4B17-A087-F97F7225B345}|Task2\\Task2.csproj|d:\\projects\\c#\\\u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\prilojeniea\\task2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C1B49214-5DFE-4B17-A087-F97F7225B345}|Task2\\Task2.csproj|d:\\projects\\c#\\practice_csharp\\prilozheniea\\task2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C1B49214-5DFE-4B17-A087-F97F7225B345}|Task2\\Task2.csproj|solutionrelative:task2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1F8075E4-9174-4275-A2B2-DF3885BAC9A9}|Task1\\Task1.csproj|d:\\projects\\c#\\\u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\prilojeniea\\task1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1F8075E4-9174-4275-A2B2-DF3885BAC9A9}|Task1\\Task1.csproj|solutionrelative:task1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -46,11 +46,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Projects\\C#\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\PrilojenieA\\Task5\\Program.cs",
+              "DocumentMoniker": "D:\\Projects\\C#\\Practice_CSharp\\PrilozhenieA\\Task5\\Program.cs",
               "RelativeDocumentMoniker": "Task5\\Program.cs",
-              "ToolTip": "D:\\Projects\\C#\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\PrilojenieA\\Task5\\Program.cs",
+              "ToolTip": "D:\\Projects\\C#\\Practice_CSharp\\PrilozhenieA\\Task5\\Program.cs",
               "RelativeToolTip": "Task5\\Program.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -59,12 +59,12 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Projects\\C#\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\PrilojenieA\\Task4\\Program.cs",
+              "DocumentMoniker": "D:\\Projects\\C#\\Practice_CSharp\\PrilozhenieA\\Task4\\Program.cs",
               "RelativeDocumentMoniker": "Task4\\Program.cs",
-              "ToolTip": "D:\\Projects\\C#\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\PrilojenieA\\Task4\\Program.cs*",
-              "RelativeToolTip": "Task4\\Program.cs*",
+              "ToolTip": "D:\\Projects\\C#\\Practice_CSharp\\PrilozhenieA\\Task4\\Program.cs",
+              "RelativeToolTip": "Task4\\Program.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-15T11:19:17.725Z",
@@ -72,11 +72,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Projects\\C#\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\PrilojenieA\\Task3\\Program.cs",
+              "DocumentMoniker": "D:\\Projects\\C#\\Practice_CSharp\\PrilozhenieA\\Task3\\Program.cs",
               "RelativeDocumentMoniker": "Task3\\Program.cs",
-              "ToolTip": "D:\\Projects\\C#\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\PrilojenieA\\Task3\\Program.cs",
+              "ToolTip": "D:\\Projects\\C#\\Practice_CSharp\\PrilozhenieA\\Task3\\Program.cs",
               "RelativeToolTip": "Task3\\Program.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -85,39 +85,39 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Projects\\C#\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\PrilojenieA\\Task2\\Program.cs",
+              "DocumentMoniker": "D:\\Projects\\C#\\Practice_CSharp\\PrilozhenieA\\Task2\\Program.cs",
               "RelativeDocumentMoniker": "Task2\\Program.cs",
-              "ToolTip": "D:\\Projects\\C#\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\PrilojenieA\\Task2\\Program.cs",
+              "ToolTip": "D:\\Projects\\C#\\Practice_CSharp\\PrilozhenieA\\Task2\\Program.cs",
               "RelativeToolTip": "Task2\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACUAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-15T11:18:43.43Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Projects\\C#\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\PrilojenieA\\Task1\\Program.cs",
+              "DocumentMoniker": "D:\\Projects\\C#\\Practice_CSharp\\PrilozhenieA\\Task1\\Program.cs",
               "RelativeDocumentMoniker": "Task1\\Program.cs",
-              "ToolTip": "D:\\Projects\\C#\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\PrilojenieA\\Task1\\Program.cs",
+              "ToolTip": "D:\\Projects\\C#\\Practice_CSharp\\PrilozhenieA\\Task1\\Program.cs",
               "RelativeToolTip": "Task1\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-15T11:18:16.691Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Projects\\C#\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\PrilojenieA\\Task6\\Program.cs",
+              "DocumentMoniker": "D:\\Projects\\C#\\Practice_CSharp\\PrilozhenieA\\Task6\\Program.cs",
               "RelativeDocumentMoniker": "Task6\\Program.cs",
-              "ToolTip": "D:\\Projects\\C#\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\PrilojenieA\\Task6\\Program.cs",
+              "ToolTip": "D:\\Projects\\C#\\Practice_CSharp\\PrilozhenieA\\Task6\\Program.cs",
               "RelativeToolTip": "Task6\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-15T11:05:03.909Z",
               "EditorCaption": ""
