@@ -2,7 +2,7 @@
 {
     internal class Program
     {
-        const int ARRAY_SIZE = 2;
+        const int ARRAY_SIZE = 5;
 
         static void Main(string[] args)
         {
