@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Copyright, Microsoft Corporation, All rights reserved.-->
+<Rule Name="ConfigurationCustomBuildTool" DisplayName="Настраиваемый инструмент сборки" Order="110" PageTemplate="tool" xmlns="http://schemas.microsoft.com/build/2009/properties">
+  <Rule.DataSource>
+    <DataSource Persistence="ProjectFile" ItemType="CustomBuild" HasConfigurationCondition="true"/>
+  </Rule.DataSource>
+  <Rule.Categories>
+    <Category Name="General" DisplayName="Общие" Description="Общие"/>
+  </Rule.Categories>
+  <StringProperty Name="Command" Category="General" DisplayName="Командная строка" Description="Определяет командную строку для настраиваемого инструмента сборки." F1Keyword="VC.Project.VCCustomBuildTool.Command">
+    <StringProperty.ValueEditors>
+      <ValueEditor EditorType="DefaultCommandPropertyEditor" DisplayName="&lt;Изменить...&gt;"/>
+    </StringProperty.ValueEditors>
+  </StringProperty>
+  <StringProperty Name="Message" Category="General" DisplayName="Описание" Description="Определяет описание настраиваемого инструмента сборки." F1Keyword="VC.Project.VCCustomBuildTool.Message"/>
+  <StringListProperty Name="Outputs" Category="General" DisplayName="Выводы" Description="Определяет выходные файлы, создаваемые настраиваемым инструментом сборки." F1Keyword="VC.Project.VCCustomBuildTool.Outputs"/>
+  <StringListProperty Name="AdditionalInputs" Category="General" DisplayName="Дополнительные зависимости" Description="Определяет дополнительные входные файлы, используемые для настраиваемого инструмента сборки." F1Keyword="VC.Project.VCCustomBuildTool.AdditionalInputs"/>
+  <BoolProperty Name="VerifyInputsAndOutputsExist" Category="General" DisplayName="Проверка существования зависимостей и выходных данных" F1Keyword="VC.Project.VCCustomBuildTool.VerifyInputsAndOutputsExist" Description="Указывает, должна ли сборка проверять, что все заданные зависимости и выходные данные существуют, и предупреждать об их отсутствии.">
+  </BoolProperty>
+  <BoolProperty Name="LinkObjects" Category="General" DisplayName="Компонуемые объекты" F1Keyword="VC.Project.VCCustomBuildTool.LinkObjects" Description="Укажите, передавать ли входные и выходные файлы с определенными расширениями (OBJ, LIB, RES, RSC) в компоновщик.">
+  </BoolProperty>
+  <DynamicEnumProperty Name="OutputItemType" DisplayName="Добавить выходы в тип элемента" Category="General" Description="Указывает тип элемента, который необходимо добавить в выходные файлы, чтобы они стали исходными файлами для других средств сборки." EnumProvider="ItemTypes" F1Keyword="VC.Project.VCCustomBuildTool.OutputsItemType">
+  </DynamicEnumProperty>
+  <BoolProperty Name="TreatOutputAsContent" Category="General" DisplayName="Обрабатывать выходные данные как содержимое" F1Keyword="VC.Project.VCCustomBuildTool.TreatOutputAsContent" Description="Укажите, является ли выходной файл развертываемым содержимым.">
+  </BoolProperty>
+  <StringProperty Name="RootFolder" DisplayName="Корневая папка содержимого" Description="Корневая папка содержимого для упаковки." Category="General" Subtype="folder">
+  </StringProperty>
+  <BoolProperty Name="BuildInParallel" Category="General" DisplayName="Параллельная сборка" F1Keyword="VC.Project.VCCustomBuildTool.BuildInParallel" Description="Указывает, что сборка этого элемента может идти параллельно со сборкой других элементов пользовательского инструмента сборки.">
+  </BoolProperty>
+  <IntProperty Name="MaxProcesses" Category="General" DisplayName="Максимальное число процессов" F1Keyword="VC.Project.VCCustomBuildTool.MaxProcesses" Description="Максимальное число ядер процессора, используемых для параллельной сборки. Значение 0 указывает, что используются все доступные процессоры.">
+  </IntProperty>
+  <IntProperty Name="MaxItemsInBatch" Category="General" DisplayName="Максимальный размер пакета" F1Keyword="VC.Project.VCCustomBuildTool.MaxProcesses" Description="Максимальное число элементов, обрабатываемых одновременно при параллельной сборке. Значение 0 указывает, что элементы равномерно распределяются по параллельным пакетам. При указании значения 1 пакетная обработка отключается. Увеличение размера пакета позволит повысить производительность, если пользовательский инструмент сборки быстро обрабатывает элементы.">
+  </IntProperty>
+  <DynamicEnumProperty Name="CustomBuildAfterTargets" Category="General" DisplayName="Выполнить после" Description="Задает целевые объекты для этапа настраиваемой сборки и средство, которое будет запущено после него." F1Keyword="VC.Project.VCCustomBuildStep.CustomBuildAfterTargets" EnumProvider="Targets">
+    <DynamicEnumProperty.DataSource>
+      <DataSource Persistence="ProjectFile" HasConfigurationCondition="true" ItemType=""/>
+    </DynamicEnumProperty.DataSource>
+    <DynamicEnumProperty.ProviderSettings>
+      <NameValuePair Name="Exclude" Value="^CustomBuild|^Compute"/>
+    </DynamicEnumProperty.ProviderSettings>
+  </DynamicEnumProperty>
+  <DynamicEnumProperty Name="CustomBuildBeforeTargets" Category="General" DisplayName="Выполнить до" Description="Задает целевые объекты для этапа настраиваемой сборки и средство, которое будет запущено перед ним." F1Keyword="VC.Project.VCCustomBuildStep.CustomBuildBeforeTargets" EnumProvider="Targets">
+    <DynamicEnumProperty.DataSource>
+      <DataSource Persistence="ProjectFile" HasConfigurationCondition="true" ItemType=""/>
+    </DynamicEnumProperty.DataSource>
+    <DynamicEnumProperty.ProviderSettings>
+      <NameValuePair Name="Exclude" Value="^CustomBuild|^Compute"/>
+    </DynamicEnumProperty.ProviderSettings>
+  </DynamicEnumProperty>
+</Rule>

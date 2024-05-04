@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>Создать DataRelation</Title>
+      <Author>Microsoft Corporation</Author>
+      <Description>Создание отношения данных между двумя таблицами в наборе данных.</Description>
+      <Shortcut>adoAddRelation</Shortcut>
+    </Header>
+    <Snippet>
+      <References>
+        <Reference>
+          <Assembly>System.Xml.dll</Assembly>
+        </Reference>
+        <Reference>
+          <Assembly>System.Data.dll</Assembly>
+        </Reference>
+      </References>
+      <Imports>
+        <Import>
+          <Namespace>System.Data</Namespace>
+        </Import>
+      </Imports>
+      <Declarations>
+        <Literal>
+          <ID>RelationName</ID>
+          <Type>String</Type>
+          <ToolTip>Замените на имя отношения.</ToolTip>
+          <Default>"CustomersOrders"</Default>
+        </Literal>
+        <Literal>
+          <ID>ColumnName</ID>
+          <Type>String</Type>
+          <ToolTip>Замените на имя столбца.</ToolTip>
+          <Default>"CustomerID"</Default>
+        </Literal>
+        <Object>
+          <ID>DataSet</ID>
+          <Type>System.Data.DataSet</Type>
+          <ToolTip>Замените на объект DataSet.</ToolTip>
+          <Default>ds</Default>
+        </Object>
+        <Object>
+          <ID>relationObjectName</ID>
+          <Type>System.Data.DataRelation</Type>
+          <ToolTip>Имя объекта для отношения</ToolTip>
+          <Default>customersOrdersRelation</Default>
+        </Object>
+      </Declarations>
+      <Code Language="VB" Kind="method body"><![CDATA[Dim $relationObjectName$ As New DataRelation($RelationName$, _
+		$DataSet$.Customers.Columns($ColumnName$), _
+		$DataSet$.Orders.Columns($ColumnName$))
+
+$DataSet$.Relations.Add($relationObjectName$)
+]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

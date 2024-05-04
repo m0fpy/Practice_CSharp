@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>Выбрать диапазон дат в элементе управления Windows Forms MonthCalendar</Title>
+      <Author>Microsoft Corporation</Author>
+      <Description>Выбор диапазона дат в элементе управления MonthCalendar.</Description>
+      <Shortcut>calRange</Shortcut>
+    </Header>
+    <Snippet>
+		<References>
+			<Reference>
+				<Assembly>System.Windows.Forms.dll</Assembly>
+			</Reference>
+		</References>
+		<Imports>
+			<Import>
+				<Namespace>System</Namespace>
+			</Import>
+			<Import>
+				<Namespace>Microsoft.VisualBasic</Namespace>
+			</Import>
+		</Imports>
+      <Declarations>
+        <Object>
+          <ID>calendar</ID>
+          <Type>MonthCalendar</Type>
+          <ToolTip>Замените на элемент управления MonthCalendar из формы.</ToolTip>
+          <Default>MonthCalendar1</Default>
+        </Object>
+        <Object>
+          <ID>startDate</ID>
+          <Type>Date</Type>
+          <ToolTip>Замените на начальную дату выбранного диапазона.</ToolTip>
+          <Default>#3/1/2005#</Default>
+        </Object>
+        <Object>
+          <ID>endDate</ID>
+          <Type>Date</Type>
+          <ToolTip>Замените на конечную дату выбранного диапазона.</ToolTip>
+          <Default>#3/21/2005#</Default>
+        </Object>
+      </Declarations>
+      <Code Language="VB" Kind="method body"><![CDATA[$calendar$.SetSelectionRange($startDate$, $endDate$)]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

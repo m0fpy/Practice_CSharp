@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>Создать серверное подключение SQLConnection к SQL Server</Title>
+      <Author>Microsoft Corporation</Author>
+      <Description>Создание подключения SQL, предоставляющего замену обычным для подключения парам имя/значение</Description>
+      <Shortcut>adoCreateSqlConn</Shortcut>
+    </Header>
+    <Snippet>
+      <References>
+        <Reference>
+          <Assembly>System.Data.dll</Assembly>
+        </Reference>
+        <Reference>
+          <Assembly>System.Xml.dll</Assembly>
+        </Reference>
+      </References>
+      <Imports>
+        <Import>
+          <Namespace>System.Data.SqlClient</Namespace>
+        </Import>
+        <Import>
+          <Namespace>System.Data</Namespace>
+        </Import>
+      </Imports>
+      <Declarations>
+        <Literal>
+          <ID>conn</ID>
+          <Type>SqlConnection</Type>
+          <ToolTip>Введите здесь имя объекта подключения.</ToolTip>
+          <Default>conn</Default>
+        </Literal>
+        <Literal>
+          <ID>serverName</ID>
+          <Type>String</Type>
+          <ToolTip>Введите здесь имя сервера.</ToolTip>
+          <Default>ServerName</Default>
+        </Literal>
+        <Literal>
+          <ID>dataBaseName</ID>
+          <Type>String</Type>
+          <ToolTip>Введите здесь имя базы данных.</ToolTip>
+          <Default>Northwind</Default>
+        </Literal>
+        <Literal>
+          <ID>userId</ID>
+          <Type>String</Type>
+          <ToolTip>Введите здесь имя пользователя для связи с базой данных.</ToolTip>
+          <Default>&lt;user name&gt;</Default>
+        </Literal>
+        <Literal>
+          <ID>password</ID>
+          <Type>String</Type>
+          <ToolTip>Замените на пароль, соответствующий имени пользователя</ToolTip>
+          <Default>&lt;your password&gt;</Default>
+        </Literal>
+      </Declarations>
+      <Code Language="VB"><![CDATA[Dim $conn$ As New SqlConnection()
+$conn$.ConnectionString = "Data Source=$serverName$;Initial Catalog=$dataBaseName$;Persist Security Info=True;User ID=$userId$;Password=$password$"]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

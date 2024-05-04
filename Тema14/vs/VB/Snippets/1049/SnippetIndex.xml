@@ -1,0 +1,516 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SnippetCollection>
+	<Language Lang="VB" Guid="{3A12D0B8-C26C-11D0-B442-00A0244A1DD2}">
+		<SnippetDir>
+			<OnOff>on</OnOff>
+			<Installed>true</Installed>
+			<Locale>1049</Locale>
+			<DirPath>%MyDocs%\Code Snippets\Visual Basic\My Code Snippets\</DirPath>
+			<LocalizedName>Мои фрагменты кода</LocalizedName>
+		</SnippetDir>
+		<SnippetDir>
+			<OnOff>on</OnOff>
+			<Installed>true</Installed>
+			<Locale>1049</Locale>
+			<DirPath>%InstallRoot%\Vb\Snippets\%LCID%\officedevelopment\</DirPath>
+			<LocalizedName>Разработка для Office</LocalizedName>
+			<SnippetSubDir>
+				<OnOff>on</OnOff>
+				<Installed>true</Installed>
+				<Locale>1049</Locale>
+				<DirPath>%InstallRoot%\Vb\Snippets\%LCID%\officedevelopment\excel\</DirPath>
+				<LocalizedName>Excel</LocalizedName>
+				<SnippetSubDir>
+					<OnOff>on</OnOff>
+					<Installed>true</Installed>
+					<Locale>1049</Locale>
+					<DirPath>%InstallRoot%\Vb\Snippets\%LCID%\officedevelopment\excel\controls\</DirPath>
+					<LocalizedName>Элементы управления</LocalizedName>
+				</SnippetSubDir>
+				<SnippetSubDir>
+					<OnOff>on</OnOff>
+					<Installed>true</Installed>
+					<Locale>1049</Locale>
+					<DirPath>%InstallRoot%\Vb\Snippets\%LCID%\officedevelopment\excel\importing\</DirPath>
+					<LocalizedName>Импорт</LocalizedName>
+				</SnippetSubDir>
+				<SnippetSubDir>
+					<OnOff>on</OnOff>
+					<Installed>true</Installed>
+					<Locale>1049</Locale>
+					<DirPath>%InstallRoot%\Vb\Snippets\%LCID%\officedevelopment\excel\Formatting\</DirPath>
+					<LocalizedName>Форматирование</LocalizedName>
+				</SnippetSubDir>
+				<SnippetSubDir>
+					<OnOff>on</OnOff>
+					<Installed>true</Installed>
+					<Locale>1049</Locale>
+					<DirPath>%InstallRoot%\Vb\Snippets\%LCID%\officedevelopment\excel\Environment\</DirPath>
+					<LocalizedName>Окружение</LocalizedName>
+				</SnippetSubDir>
+			</SnippetSubDir>
+			<SnippetSubDir>
+				<OnOff>on</OnOff>
+				<Installed>true</Installed>
+				<Locale>1049</Locale>
+				<DirPath>%InstallRoot%\Vb\Snippets\%LCID%\officedevelopment\Word\</DirPath>
+				<LocalizedName>Word</LocalizedName>
+				<SnippetSubDir>
+					<OnOff>on</OnOff>
+					<Installed>true</Installed>
+					<Locale>1049</Locale>
+					<DirPath>%InstallRoot%\Vb\Snippets\%LCID%\officedevelopment\word\controls\</DirPath>
+					<LocalizedName>Элементы управления</LocalizedName>
+				</SnippetSubDir>
+				<SnippetSubDir>
+					<OnOff>on</OnOff>
+					<Installed>true</Installed>
+					<Locale>1049</Locale>
+					<DirPath>%InstallRoot%\Vb\Snippets\%LCID%\officedevelopment\word\environment\</DirPath>
+					<LocalizedName>Окружение — переменные документа</LocalizedName>
+				</SnippetSubDir>
+				<SnippetSubDir>
+					<OnOff>on</OnOff>
+					<Installed>true</Installed>
+					<Locale>1049</Locale>
+					<DirPath>%InstallRoot%\Vb\Snippets\%LCID%\officedevelopment\word\formatting\</DirPath>
+					<LocalizedName>Форматирование</LocalizedName>
+				</SnippetSubDir>
+			</SnippetSubDir>
+			<SnippetSubDir>
+				<OnOff>on</OnOff>
+				<Installed>true</Installed>
+				<Locale>1049</Locale>
+				<DirPath>%InstallRoot%\Vb\Snippets\%LCID%\officedevelopment\office\</DirPath>
+				<LocalizedName>Office</LocalizedName>
+				<SnippetSubDir>
+					<OnOff>on</OnOff>
+					<Installed>true</Installed>
+					<Locale>1049</Locale>
+					<DirPath>%InstallRoot%\Vb\Snippets\%LCID%\officedevelopment\office\environment\</DirPath>
+					<LocalizedName>Окружение — меню, панель действий</LocalizedName>
+				</SnippetSubDir>
+				<SnippetSubDir>
+					<OnOff>on</OnOff>
+					<Installed>true</Installed>
+					<Locale>1049</Locale>
+					<DirPath>%InstallRoot%\Vb\Snippets\%LCID%\officedevelopment\office\server\</DirPath>
+					<LocalizedName>Сервер — кэшированные данные, документ на сервере</LocalizedName>
+				</SnippetSubDir>
+			</SnippetSubDir>
+		</SnippetDir>
+		<SnippetDir>
+			<OnOff>on</OnOff>
+			<Installed>true</Installed>
+			<Locale>1049</Locale>
+			<DirPath>%InstallRoot%\Vb\Snippets\%LCID%\application\</DirPath>
+			<LocalizedName>Приложение: компиляция, ресурсы и параметры</LocalizedName>
+		</SnippetDir>
+		<SnippetDir>
+			<OnOff>on</OnOff>
+			<Installed>true</Installed>
+			<Locale>1049</Locale>
+			<DirPath>%InstallRoot%\Vb\Snippets\%LCID%\fundamentals\</DirPath>
+			<LocalizedName>Базовые понятия: коллекции, типы данных, файловая система, математика</LocalizedName>
+			<SnippetSubDir>
+				<OnOff>on</OnOff>
+				<Installed>true</Installed>
+				<Locale>1049</Locale>
+				<DirPath>%InstallRoot%\Vb\Snippets\%LCID%\fundamentals\collections and arrays\</DirPath>
+				<LocalizedName>Коллекции и массивы</LocalizedName>
+			</SnippetSubDir>
+			<SnippetSubDir>
+				<OnOff>on</OnOff>
+				<Installed>true</Installed>
+				<Locale>1049</Locale>
+				<DirPath>%InstallRoot%\Vb\Snippets\%LCID%\fundamentals\datatypes\</DirPath>
+				<LocalizedName>Типы данных</LocalizedName>
+			</SnippetSubDir>
+			<SnippetSubDir>
+				<OnOff>on</OnOff>
+				<Installed>true</Installed>
+				<Locale>1049</Locale>
+				<DirPath>%InstallRoot%\Vb\Snippets\%LCID%\fundamentals\filesystem\</DirPath>
+				<LocalizedName>Файловая система: обработка дисков, папок и файлов</LocalizedName>
+			</SnippetSubDir>
+			<SnippetSubDir>
+				<OnOff>on</OnOff>
+				<Installed>true</Installed>
+				<Locale>1049</Locale>
+				<DirPath>%InstallRoot%\Vb\Snippets\%LCID%\fundamentals\math\</DirPath>
+				<LocalizedName>Математика</LocalizedName>
+			</SnippetSubDir>
+		</SnippetDir>
+		<SnippetDir>
+			<OnOff>on</OnOff>
+			<Installed>true</Installed>
+			<Locale>1049</Locale>
+			<DirPath>%InstallRoot%\Vb\Snippets\%LCID%\data\</DirPath>
+			<LocalizedName>Данные: LINQ, XML, конструктор, ADO.NET</LocalizedName>
+			<SnippetSubDir>
+				<OnOff>on</OnOff>
+				<Installed>true</Installed>
+				<Locale>1049</Locale>
+				<DirPath>%InstallRoot%\Vb\Snippets\%LCID%\data\database\</DirPath>
+				<LocalizedName>Возможности конструктора и ADO.NET</LocalizedName>
+			</SnippetSubDir>
+			<SnippetSubDir>
+				<OnOff>on</OnOff>
+				<Installed>true</Installed>
+				<Locale>1049</Locale>
+				<DirPath>%InstallRoot%\Vb\Snippets\%LCID%\data\LINQ Queries\</DirPath>
+				<LocalizedName>Запросы LINQ</LocalizedName>
+				<SnippetSubDir>
+					<OnOff>on</OnOff>
+					<Installed>true</Installed>
+					<Locale>1049</Locale>
+					<DirPath>%InstallRoot%\Vb\Snippets\%LCID%\data\LINQ Queries\Query - Filter with 'Where'\</DirPath>
+					<LocalizedName>Запрос: фильтрация с помощью оператора Where</LocalizedName>
+				</SnippetSubDir>
+				<SnippetSubDir>
+					<OnOff>on</OnOff>
+					<Installed>true</Installed>
+					<Locale>1049</Locale>
+					<DirPath>%InstallRoot%\Vb\Snippets\%LCID%\data\LINQ Queries\Query - Grouping\</DirPath>
+					<LocalizedName>Запрос: группирование</LocalizedName>
+				</SnippetSubDir>
+				<SnippetSubDir>
+					<OnOff>on</OnOff>
+					<Installed>true</Installed>
+					<Locale>1049</Locale>
+					<DirPath>%InstallRoot%\Vb\Snippets\%LCID%\data\LINQ Queries\Query - Joining\</DirPath>
+					<LocalizedName>Запрос: объединение</LocalizedName>
+				</SnippetSubDir>
+				<SnippetSubDir>
+					<OnOff>on</OnOff>
+					<Installed>true</Installed>
+					<Locale>1049</Locale>
+					<DirPath>%InstallRoot%\Vb\Snippets\%LCID%\data\LINQ Queries\Query - Sort with 'Order By'\</DirPath>
+					<LocalizedName>Запрос: сортировка с помощью оператора Order By</LocalizedName>
+				</SnippetSubDir>
+				<SnippetSubDir>
+					<OnOff>on</OnOff>
+					<Installed>true</Installed>
+					<Locale>1049</Locale>
+					<DirPath>%InstallRoot%\Vb\Snippets\%LCID%\data\LINQ Queries\Query - Take and Skip\</DirPath>
+					<LocalizedName>Запрос: получение и пропуск</LocalizedName>
+				</SnippetSubDir>
+				<SnippetSubDir>
+					<OnOff>on</OnOff>
+					<Installed>true</Installed>
+					<Locale>1049</Locale>
+					<DirPath>%InstallRoot%\Vb\Snippets\%LCID%\data\LINQ Queries\Using Different Sources\</DirPath>
+					<LocalizedName>Запрос: использование других источников</LocalizedName>
+				</SnippetSubDir>
+				<SnippetSubDir>
+					<OnOff>on</OnOff>
+					<Installed>true</Installed>
+					<Locale>1049</Locale>
+					<DirPath>%InstallRoot%\Vb\Snippets\%LCID%\data\LINQ Queries\Using Query Results\</DirPath>
+					<LocalizedName>Запрос: использование результатов запроса</LocalizedName>
+				</SnippetSubDir>
+			</SnippetSubDir>
+			<SnippetSubDir>
+				<OnOff>on</OnOff>
+				<Installed>true</Installed>
+				<Locale>1049</Locale>
+				<DirPath>%InstallRoot%\Vb\Snippets\%LCID%\data\xml\</DirPath>
+				<LocalizedName>Xml</LocalizedName>
+				<SnippetSubDir>
+					<OnOff>on</OnOff>
+					<Installed>true</Installed>
+					<Locale>1049</Locale>
+					<DirPath>%InstallRoot%\Vb\Snippets\%LCID%\data\xml\XML - Write</DirPath>
+					<LocalizedName>Запись Xml</LocalizedName>
+				</SnippetSubDir>
+				<SnippetSubDir>
+					<OnOff>on</OnOff>
+					<Installed>true</Installed>
+					<Locale>1049</Locale>
+					<DirPath>%InstallRoot%\Vb\Snippets\%LCID%\data\xml\XML - Update</DirPath>
+					<LocalizedName>Обновление Xml</LocalizedName>
+				</SnippetSubDir>
+				<SnippetSubDir>
+					<OnOff>on</OnOff>
+					<Installed>true</Installed>
+					<Locale>1049</Locale>
+					<DirPath>%InstallRoot%\Vb\Snippets\%LCID%\data\xml\XML - Read</DirPath>
+					<LocalizedName>Чтение Xml</LocalizedName>
+				</SnippetSubDir>
+				<SnippetSubDir>
+					<OnOff>on</OnOff>
+					<Installed>true</Installed>
+					<Locale>1049</Locale>
+					<DirPath>%InstallRoot%\Vb\Snippets\%LCID%\data\xml\XML - Query</DirPath>
+					<LocalizedName>Запрос Xml</LocalizedName>
+				</SnippetSubDir>
+				<SnippetSubDir>
+					<OnOff>on</OnOff>
+					<Installed>true</Installed>
+					<Locale>1049</Locale>
+					<DirPath>%InstallRoot%\Vb\Snippets\%LCID%\data\xml\XML - Create</DirPath>
+					<LocalizedName>Создание Xml</LocalizedName>
+				</SnippetSubDir>
+			</SnippetSubDir>
+		</SnippetDir>
+		<SnippetDir>
+			<OnOff>on</OnOff>
+			<Installed>true</Installed>
+			<Locale>1049</Locale>
+			<DirPath>%InstallRoot%\Vb\Snippets\%LCID%\other\</DirPath>
+			<LocalizedName>Прочее: связь, безопасность, рабочий процесс</LocalizedName>
+			<SnippetSubDir>
+				<OnOff>on</OnOff>
+				<Installed>true</Installed>
+				<Locale>1049</Locale>
+				<DirPath>%InstallRoot%\Vb\Snippets\%LCID%\other\connectivity\</DirPath>
+				<LocalizedName>Связь и сеть</LocalizedName>
+			</SnippetSubDir>
+			<SnippetSubDir>
+				<OnOff>on</OnOff>
+				<Installed>true</Installed>
+				<Locale>1049</Locale>
+				<DirPath>%InstallRoot%\Vb\Snippets\%LCID%\other\security\</DirPath>
+				<LocalizedName>Безопасность</LocalizedName>
+			</SnippetSubDir>
+			<SnippetSubDir>
+				<OnOff>on</OnOff>
+				<Installed>true</Installed>
+				<Locale>1049</Locale>
+				<DirPath>%InstallRoot%\Vb\Snippets\%LCID%\other\Workflow\</DirPath>
+				<LocalizedName>Рабочий процесс</LocalizedName>
+			</SnippetSubDir>
+		</SnippetDir>
+		<SnippetDir>
+			<OnOff>on</OnOff>
+			<Installed>true</Installed>
+			<Locale>1049</Locale>
+			<DirPath>%InstallRoot%\Vb\Snippets\%LCID%\windowsforms\</DirPath>
+			<LocalizedName>Приложения Windows Forms</LocalizedName>
+			<SnippetSubDir>
+				<OnOff>on</OnOff>
+				<Installed>true</Installed>
+				<Locale>1049</Locale>
+				<DirPath>%InstallRoot%\Vb\Snippets\%LCID%\windowsforms\forms\</DirPath>
+				<LocalizedName>Формы</LocalizedName>
+			</SnippetSubDir>
+			<SnippetSubDir>
+				<OnOff>on</OnOff>
+				<Installed>true</Installed>
+				<Locale>1049</Locale>
+				<DirPath>%InstallRoot%\Vb\Snippets\%LCID%\windowsforms\clipboard\</DirPath>
+				<LocalizedName>Буфер обмена</LocalizedName>
+			</SnippetSubDir>
+			<SnippetSubDir>
+				<OnOff>on</OnOff>
+				<Installed>true</Installed>
+				<Locale>1049</Locale>
+				<DirPath>%InstallRoot%\Vb\Snippets\%LCID%\windowsforms\controls\</DirPath>
+				<LocalizedName>Элементы управления и компоненты</LocalizedName>
+				<SnippetSubDir>
+					<OnOff>on</OnOff>
+					<Installed>true</Installed>
+					<Locale>1049</Locale>
+					<DirPath>%InstallRoot%\Vb\Snippets\%LCID%\windowsforms\controls\button\</DirPath>
+					<LocalizedName>Кнопка</LocalizedName>
+				</SnippetSubDir>
+				<SnippetSubDir>
+					<OnOff>on</OnOff>
+					<Installed>true</Installed>
+					<Locale>1049</Locale>
+					<DirPath>%InstallRoot%\Vb\Snippets\%LCID%\windowsforms\controls\textbox\</DirPath>
+					<LocalizedName>TextBox</LocalizedName>
+				</SnippetSubDir>
+				<SnippetSubDir>
+					<OnOff>on</OnOff>
+					<Installed>true</Installed>
+					<Locale>1049</Locale>
+					<DirPath>%InstallRoot%\Vb\Snippets\%LCID%\windowsforms\controls\richtextbox\</DirPath>
+					<LocalizedName>RichTextBox</LocalizedName>
+				</SnippetSubDir>
+				<SnippetSubDir>
+					<OnOff>on</OnOff>
+					<Installed>true</Installed>
+					<Locale>1049</Locale>
+					<DirPath>%InstallRoot%\Vb\Snippets\%LCID%\windowsforms\controls\menu\</DirPath>
+					<LocalizedName>Меню</LocalizedName>
+				</SnippetSubDir>
+				<SnippetSubDir>
+					<OnOff>on</OnOff>
+					<Installed>true</Installed>
+					<Locale>1049</Locale>
+					<DirPath>%InstallRoot%\Vb\Snippets\%LCID%\windowsforms\controls\listview\</DirPath>
+					<LocalizedName>ListView</LocalizedName>
+				</SnippetSubDir>
+				<SnippetSubDir>
+					<OnOff>on</OnOff>
+					<Installed>true</Installed>
+					<Locale>1049</Locale>
+					<DirPath>%InstallRoot%\Vb\Snippets\%LCID%\windowsforms\controls\treeview\</DirPath>
+					<LocalizedName>TreeView</LocalizedName>
+				</SnippetSubDir>
+				<SnippetSubDir>
+					<OnOff>on</OnOff>
+					<Installed>true</Installed>
+					<Locale>1049</Locale>
+					<DirPath>%InstallRoot%\Vb\Snippets\%LCID%\windowsforms\controls\datagridview\</DirPath>
+					<LocalizedName>DataGridView</LocalizedName>
+				</SnippetSubDir>
+				<SnippetSubDir>
+					<OnOff>on</OnOff>
+					<Installed>true</Installed>
+					<Locale>1049</Locale>
+					<DirPath>%InstallRoot%\Vb\Snippets\%LCID%\windowsforms\controls\listbox\</DirPath>
+					<LocalizedName>ListBox</LocalizedName>
+				</SnippetSubDir>
+				<SnippetSubDir>
+					<OnOff>on</OnOff>
+					<Installed>true</Installed>
+					<Locale>1049</Locale>
+					<DirPath>%InstallRoot%\Vb\Snippets\%LCID%\windowsforms\controls\calendar\</DirPath>
+					<LocalizedName>Календарь</LocalizedName>
+				</SnippetSubDir>
+				<SnippetSubDir>
+					<OnOff>on</OnOff>
+					<Installed>true</Installed>
+					<Locale>1049</Locale>
+					<DirPath>%InstallRoot%\Vb\Snippets\%LCID%\windowsforms\controls\combobox\</DirPath>
+					<LocalizedName>ComboBox</LocalizedName>
+				</SnippetSubDir>
+				<SnippetSubDir>
+					<OnOff>on</OnOff>
+					<Installed>true</Installed>
+					<Locale>1049</Locale>
+					<DirPath>%InstallRoot%\Vb\Snippets\%LCID%\windowsforms\controls\progressbar\</DirPath>
+					<LocalizedName>ProgressBar</LocalizedName>
+				</SnippetSubDir>
+				<SnippetSubDir>
+					<OnOff>on</OnOff>
+					<Installed>true</Installed>
+					<Locale>1049</Locale>
+					<DirPath>%InstallRoot%\Vb\Snippets\%LCID%\windowsforms\controls\radiobutton\</DirPath>
+					<LocalizedName>RadioButton</LocalizedName>
+				</SnippetSubDir>
+			</SnippetSubDir>
+			<SnippetSubDir>
+				<OnOff>on</OnOff>
+				<Installed>true</Installed>
+				<Locale>1049</Locale>
+				<DirPath>%InstallRoot%\Vb\Snippets\%LCID%\windowsforms\drawing\</DirPath>
+				<LocalizedName>Рисунок</LocalizedName>
+			</SnippetSubDir>
+			<SnippetSubDir>
+				<OnOff>on</OnOff>
+				<Installed>true</Installed>
+				<Locale>1049</Locale>
+				<DirPath>%InstallRoot%\Vb\Snippets\%LCID%\windowsforms\fonts\</DirPath>
+				<LocalizedName>Шрифты</LocalizedName>
+			</SnippetSubDir>
+			<SnippetSubDir>
+				<OnOff>on</OnOff>
+				<Installed>true</Installed>
+				<Locale>1049</Locale>
+				<DirPath>%InstallRoot%\Vb\Snippets\%LCID%\windowsforms\sound\</DirPath>
+				<LocalizedName>Звук</LocalizedName>
+			</SnippetSubDir>
+		</SnippetDir>
+		<SnippetDir>
+			<OnOff>on</OnOff>
+			<Installed>true</Installed>
+			<Locale>1049</Locale>
+			<DirPath>%InstallRoot%\Vb\Snippets\%LCID%\common code patterns\</DirPath>
+			<LocalizedName>Шаблоны кода: If, For Each, Try Catch, Property и т. д.</LocalizedName>
+			<SnippetSubDir>
+				<OnOff>on</OnOff>
+				<Installed>true</Installed>
+				<Locale>1049</Locale>
+				<DirPath>%InstallRoot%\Vb\Snippets\%LCID%\common code patterns\conditionals and loops\</DirPath>
+				<LocalizedName>Условные выражения и циклы</LocalizedName>
+			</SnippetSubDir>
+			<SnippetSubDir>
+				<OnOff>on</OnOff>
+				<Installed>true</Installed>
+				<Locale>1049</Locale>
+				<DirPath>%InstallRoot%\Vb\Snippets\%LCID%\common code patterns\exception handling\</DirPath>
+				<LocalizedName>Обработка ошибок (исключения)</LocalizedName>
+			</SnippetSubDir>
+			<SnippetSubDir>
+				<OnOff>on</OnOff>
+				<Installed>true</Installed>
+				<Locale>1049</Locale>
+				<DirPath>%InstallRoot%\Vb\Snippets\%LCID%\common code patterns\properties and procedures\</DirPath>
+				<LocalizedName>Свойства, процедуры, события</LocalizedName>
+			</SnippetSubDir>
+			<SnippetSubDir>
+				<OnOff>on</OnOff>
+				<Installed>true</Installed>
+				<Locale>1049</Locale>
+				<DirPath>%InstallRoot%\Vb\Snippets\%LCID%\common code patterns\types\</DirPath>
+				<LocalizedName>Перечисления, общие типы, интерфейсы, структуры</LocalizedName>
+			</SnippetSubDir>
+		</SnippetDir>
+		<SnippetDir>
+			<OnOff>on</OnOff>
+			<Installed>true</Installed>
+			<Locale>1049</Locale>
+			<DirPath>%InstallRoot%\Vb\Snippets\%LCID%\os\</DirPath>
+			<LocalizedName>Система Windows: журналы, процессы, реестр, службы</LocalizedName>
+			<SnippetSubDir>
+				<OnOff>on</OnOff>
+				<Installed>true</Installed>
+				<Locale>1049</Locale>
+				<DirPath>%InstallRoot%\Vb\Snippets\%LCID%\os\eventlog\</DirPath>
+				<LocalizedName>Журналы событий Windows</LocalizedName>
+			</SnippetSubDir>
+			<SnippetSubDir>
+				<OnOff>on</OnOff>
+				<Installed>true</Installed>
+				<Locale>1049</Locale>
+				<DirPath>%InstallRoot%\Vb\Snippets\%LCID%\os\messaging\</DirPath>
+				<LocalizedName>Очереди сообщений Windows</LocalizedName>
+			</SnippetSubDir>
+			<SnippetSubDir>
+				<OnOff>on</OnOff>
+				<Installed>true</Installed>
+				<Locale>1049</Locale>
+				<DirPath>%InstallRoot%\Vb\Snippets\%LCID%\os\process\</DirPath>
+				<LocalizedName>Процессы Windows</LocalizedName>
+			</SnippetSubDir>
+			<SnippetSubDir>
+				<OnOff>on</OnOff>
+				<Installed>true</Installed>
+				<Locale>1049</Locale>
+				<DirPath>%InstallRoot%\Vb\Snippets\%LCID%\os\registry\</DirPath>
+				<LocalizedName>Реестр Windows</LocalizedName>
+			</SnippetSubDir>
+			<SnippetSubDir>
+				<OnOff>on</OnOff>
+				<Installed>true</Installed>
+				<Locale>1049</Locale>
+				<DirPath>%InstallRoot%\Vb\Snippets\%LCID%\os\systeminfo\</DirPath>
+				<LocalizedName>Сведения о системе Windows</LocalizedName>
+			</SnippetSubDir>
+			<SnippetSubDir>
+				<OnOff>on</OnOff>
+				<Installed>true</Installed>
+				<Locale>1049</Locale>
+				<DirPath>%InstallRoot%\Vb\Snippets\%LCID%\os\services\</DirPath>
+				<LocalizedName>Службы Windows</LocalizedName>
+			</SnippetSubDir>
+		</SnippetDir>
+		<SnippetDir>
+			<OnOff>on</OnOff>
+			<Installed>true</Installed>
+			<Locale>1049</Locale>
+			<DirPath>%InstallRoot%\Vb\Snippets\%LCID%\WPF\</DirPath>
+			<LocalizedName>WPF</LocalizedName>
+		</SnippetDir>
+		<SnippetDir>
+			<OnOff>on</OnOff>
+			<Installed>true</Installed>
+			<Locale>1049</Locale>
+			<DirPath>%InstallRoot%\Vb\Snippets\%LCID%\Test\</DirPath>
+			<LocalizedName>Тест</LocalizedName>
+		</SnippetDir>
+	</Language>
+</SnippetCollection>

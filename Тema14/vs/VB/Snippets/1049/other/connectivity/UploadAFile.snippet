@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>Передать файл с помощью My.Computer.Network</Title>
+      <Author>Microsoft Corporation</Author>
+      <Description>Передача локального файла в Интернет.</Description>
+      <Shortcut>conUpload</Shortcut>
+    </Header>
+    <Snippet>
+      <Imports>
+        <Import>
+          <Namespace>System</Namespace>
+        </Import>
+        <Import>
+          <Namespace>Microsoft.VisualBasic</Namespace>
+        </Import>
+      </Imports>
+      <Declarations>
+        <Literal>
+          <ID>address</ID>
+          <Type>String</Type>
+          <ToolTip>Адрес скрипта передачи или имя файла назначения</ToolTip>
+          <Default>"http://www.someserver.com/upload.aspx"</Default>
+        </Literal>
+        <Literal>
+          <ID>localFile</ID>
+          <Type>String</Type>
+          <ToolTip>Путь к передаваемому файлу.</ToolTip>
+          <Default>"c:\File.txt"</Default>
+        </Literal>
+      </Declarations>
+      <Code Language="VB" Kind="method body"><![CDATA[My.Computer.Network.UploadFile($localFile$, $address$)]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

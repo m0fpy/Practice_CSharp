@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Copyright, Microsoft Corporation, All rights reserved.-->
+<Rule Name="BSCMake" PageTemplate="tool" DisplayName="Информация об исходном коде" SwitchPrefix="/" Order="80" xmlns="http://schemas.microsoft.com/build/2009/properties" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:sys="clr-namespace:System;assembly=mscorlib">
+  <Rule.Categories>
+    <Category Name="General" DisplayName="Общие"/>
+    <Category Name="All Options" DisplayName="Все параметры" Subtype="Search"/>
+    <Category Name="Command Line" DisplayName="Командная строка" Subtype="CommandLine"/>
+  </Rule.Categories>
+  <Rule.DataSource>
+    <DataSource Persistence="ProjectFile" ItemType="Bscmake" Label="" HasConfigurationCondition="true"/>
+  </Rule.DataSource>
+  <BoolProperty Name="SuppressStartupBanner" DisplayName="Отключить загрузочный баннер" Description="Выполнение без отображения стандартных сведений об авторских правах Майкрософт. (/nologo)" Category="General" Switch="nologo" F1Keyword="VC.Project.VCBscMakeTool.SuppressStartupBanner">
+  </BoolProperty>
+  <StringProperty Subtype="file" Name="OutputFile" DisplayName="Выходной файл" Description="Переопределяет имя выходного файла по умолчанию (/o[файл])" Category="General" Switch="o" F1Keyword="VC.Project.VCBscMakeTool.OutputFile">
+  </StringProperty>
+  <BoolProperty Name="PreserveSbr" DisplayName="Сохранить SBR-файлы" Description="Предписывает bscmake.exe выполнение полных сборок, сохраняющих SBR-файлы.  Это обеспечивает возможность использования методов добавочной сборки. (/n)" Category="General" Switch="n" F1Keyword="VC.Project.VCBscMakeTool.PreserveSBR">
+  </BoolProperty>
+  <StringProperty Subtype="folder" Name="TrackerLogDirectory" DisplayName="Каталог журнала отслеживания" Description="Каталог журнала отслеживания." Category="General" IncludeInCommandLine="false" Visible="false">
+  </StringProperty>
+  <StringProperty Name="AdditionalOptions" DisplayName="Дополнительные параметры" Description="Дополнительные параметры" Category="Command Line" F1Keyword="vc.project.AdditionalOptionsPage">
+  </StringProperty>
+</Rule>

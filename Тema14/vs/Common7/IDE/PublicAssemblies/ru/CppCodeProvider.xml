@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>CppCodeProvider</name>
+  </assembly>
+  <members>
+    <member name="T:Microsoft.VisualC.CodeDomTypeInfo">
+      <summary>Инкапсулирует описания типа.</summary>
+    </member>
+    <member name="M:Microsoft.VisualC.CodeDomTypeInfo.#ctor(Microsoft.VisualC.CodeDomTypeInfo)">
+      <summary>Создает контейнер для информации типа на основании указанного <see cref="T:Microsoft.VisualC.CodeDomTypeInfo" />.</summary>
+      <param name="type">Экземпляр объекта <see cref="T:Microsoft.VisualC.CodeDomTypeInfo" /> использованный для моделирования информации типа.</param>
+    </member>
+    <member name="M:Microsoft.VisualC.CodeDomTypeInfo.#ctor(Microsoft.VisualC.CodeDomTypeInfo,System.Int32)">
+      <summary>Создает контейнер сведений о заданном Массиве, основанный на указанном <see cref="T:Microsoft.VisualC.CodeDomTypeInfo" /> и <see cref="T:System.Int32" />.</summary>
+      <param name="type">Экземпляр объекта <see cref="T:Microsoft.VisualC.CodeDomTypeInfo" /> использованный для моделирования информации типа.</param>
+      <param name="rank"><see cref="T:System.Int32" />, представляющее число измерений Массива.</param>
+    </member>
+    <member name="M:Microsoft.VisualC.CodeDomTypeInfo.#ctor(System.CodeDom.CodeTypeDeclaration)">
+      <summary>Создает контейнер для информации типа на основании указанного <see cref="T:System.CodeDom.CodeTypeDeclaration" />.</summary>
+      <param name="declaredType"><see cref="T:System.CodeDom.CodeTypeDeclaration" />, используемое для моделирования информации типа.</param>
+    </member>
+    <member name="M:Microsoft.VisualC.CodeDomTypeInfo.#ctor(System.Type)">
+      <summary>Создает контейнер для информации типа на основании указанного <see cref="T:System.Type" />.</summary>
+      <param name="runtimeType"><see cref="T:System.Type" />, используемое для моделирования информации типа.</param>
+    </member>
+    <member name="P:Microsoft.VisualC.CodeDomTypeInfo.DeclaredType">
+      <summary>Получает декларацию тип.</summary>
+      <returns><see cref="T:System.CodeDom.CodeTypeDeclaration" />, который представляет объявление типа для класса, структуры, интерфейса или перечисления.</returns>
+    </member>
+    <member name="P:Microsoft.VisualC.CodeDomTypeInfo.FullName">
+      <summary>Возвращает полное имя типа.</summary>
+      <returns>Объект типа <see cref="T:System.String" />, указывающий полное имя типа.</returns>
+    </member>
+    <member name="M:Microsoft.VisualC.CodeDomTypeInfo.GetTypeRelationship(Microsoft.VisualC.CodeDomTypeInfo)">
+      <summary>Обнаруживает отношение между двумя типами.</summary>
+      <returns><see cref="T:Microsoft.VisualC.TypeRelationship" />, указывающее, что и текущий тип относится к заданному типу.</returns>
+      <param name="type">
+        <see cref="T:Microsoft.VisualC.CodeDomTypeInfo" />
+      </param>
+    </member>
+    <member name="P:Microsoft.VisualC.CodeDomTypeInfo.IsArray">
+      <summary>Получает значение, показывающее, определяет ли описание типа Массив.</summary>
+      <returns>Значение true, если описание типа определяет Массив. В противном случае — значение false.</returns>
+    </member>
+    <member name="P:Microsoft.VisualC.CodeDomTypeInfo.IsBaseTypeValueType"></member>
+    <member name="P:Microsoft.VisualC.CodeDomTypeInfo.IsInterface">
+      <summary>Получает значение, показывающее, определяет ли описание типа интерфейс.</summary>
+      <returns>Значение true, если описание типа определяет интерфейс. В противном случае — значение false.</returns>
+    </member>
+    <member name="P:Microsoft.VisualC.CodeDomTypeInfo.IsValueType">
+      <summary>Получает значение, показывающее, определяет ли описание типа тип значения.</summary>
+      <returns>Значение true, если описание типа определяет тип значения. В противном случае — значение false.</returns>
+    </member>
+    <member name="P:Microsoft.VisualC.CodeDomTypeInfo.Name">
+      <summary>Получение имени типа.</summary>
+      <returns>Объект <see cref="T:System.String" />, указывающий имя типа.</returns>
+    </member>
+    <member name="P:Microsoft.VisualC.CodeDomTypeInfo.Rank">
+      <summary>Возвращает и задает значение, которое указывает ранг (число измерений) типа Массива.</summary>
+      <returns><see cref="T:System.Int32" />, которое указывает ранг (число измерений) типа Массива.</returns>
+    </member>
+    <member name="P:Microsoft.VisualC.CodeDomTypeInfo.RuntimeType">
+      <summary>Получает фактический тип объекта во время выполнения.</summary>
+      <returns><see cref="T:System.Type" /> объекта во время выполнения.</returns>
+    </member>
+    <member name="M:Microsoft.VisualC.CodeDomTypeInfo.ToString">
+      <summary>Создает строковое представление информации типов.</summary>
+      <returns>Строка <see cref="T:System.String" />, описывающая тип.</returns>
+    </member>
+    <member name="T:Microsoft.VisualC.CppCodeGenerator">
+      <summary>Предоставляет пример реализации интерфейсов <see cref="T:System.CodeDom.Compiler.ICodeGenerator" /> и <see cref="T:System.CodeDom.Compiler.ICodeCompiler" />.</summary>
+    </member>
+    <member name="M:Microsoft.VisualC.CppCodeGenerator.#ctor">
+      <summary>Инициализирует новый экземпляр класса <see cref="T:Microsoft.VisualC.CppCodeGenerator" />.</summary>
+    </member>
+    <member name="T:Microsoft.VisualC.CppCodeGenerator7">
+      <summary>Предоставляет пример реализации интерфейса <see cref="T:System.CodeDom.Compiler.ICodeGenerator" />.</summary>
+    </member>
+    <member name="M:Microsoft.VisualC.CppCodeGenerator7.#ctor">
+      <summary>Инициализирует новый экземпляр класса <see cref="T:Microsoft.VisualC.CppCodeGenerator7" />.</summary>
+    </member>
+    <member name="T:Microsoft.VisualC.CppCodeGeneratorBase"></member>
+    <member name="M:Microsoft.VisualC.CppCodeGeneratorBase.#ctor"></member>
+    <member name="M:Microsoft.VisualC.CppCodeGeneratorBase.CreateEscapedIdentifier(System.String)">
+      <param name="name"></param>
+    </member>
+    <member name="M:Microsoft.VisualC.CppCodeGeneratorBase.CreateEscapedIdentifierInternal(System.String)">
+      <param name="name"></param>
+    </member>
+    <member name="M:Microsoft.VisualC.CppCodeGeneratorBase.CreateValidIdentifier(System.String)">
+      <param name="name"></param>
+    </member>
+    <member name="P:Microsoft.VisualC.CppCodeGeneratorBase.CurrentTypeString"></member>
+    <member name="M:Microsoft.VisualC.CppCodeGeneratorBase.Dispose"></member>
+    <member name="M:Microsoft.VisualC.CppCodeGeneratorBase.Dispose(System.Boolean)">
+      <param name="disposing">Удаление.</param>
+    </member>
+    <member name="M:Microsoft.VisualC.CppCodeGeneratorBase.GenerateArrayCreateExpression(System.CodeDom.CodeArrayCreateExpression)">
+      <param name="e">Выражение создания Массива.</param>
+    </member>
+    <member name="M:Microsoft.VisualC.CppCodeGeneratorBase.GenerateAttributes(System.CodeDom.CodeAttributeDeclarationCollection)">
+      <param name="attributes">Атрибуты.</param>
+    </member>
+    <member name="M:Microsoft.VisualC.CppCodeGeneratorBase.GenerateAttributes(System.CodeDom.CodeAttributeDeclarationCollection,System.String)">
+      <param name="attributes">Атрибуты.</param>
+      <param name="prefix">Префикс.</param>
+    </member>
+    <member name="M:Microsoft.VisualC.CppCodeGeneratorBase.GenerateCastExpression(System.CodeDom.CodeCastExpression)">
+      <param name="e">Приведенное выражение.</param>
+    </member>
+    <member name="M:Microsoft.VisualC.CppCodeGeneratorBase.GenerateCodeFromCompileUnit(System.CodeDom.CodeCompileUnit,System.IO.TextWriter,System.CodeDom.Compiler.CodeGeneratorOptions)">
+      <param name="e">Блок компиляции.</param>
+      <param name="w">Модуль записи текста.</param>
+      <param name="o">Параметры генератора кода.</param>
+    </member>
+    <member name="M:Microsoft.VisualC.CppCodeGeneratorBase.GenerateCodeFromExpression(System.CodeDom.CodeExpression,System.IO.TextWriter,System.CodeDom.Compiler.CodeGeneratorOptions)">
+      <param name="e">Выражение.</param>
+      <param name="w">Модуль записи текста.</param>
+      <param name="o">Параметры генератора кода.</param>
+    </member>
+    <member name="M:Microsoft.VisualC.CppCodeGeneratorBase.GenerateCodeFromField(System.CodeDom.CodeMemberField,System.IO.TextWriter,System.CodeDom.Compiler.CodeGeneratorOptions,System.CodeDom.MemberAttributes)">
+      <param name="e">Поле члена.</param>
+      <param name="w">Модуль записи текста.</param>
+      <param name="o">Параметры генератора кода.</param>
+      <param name="maAmbient">Атрибуты членов.</param>
+    </member>
+    <member name="M:Microsoft.VisualC.CppCodeGeneratorBase.GenerateCodeFromMember(System.CodeDom.CodeTypeMember,System.IO.TextWriter,System.CodeDom.Compiler.CodeGeneratorOptions)">
+      <param name="e">Член типа.</param>
+      <param name="w">Модуль записи текста.</param>
+      <param name="o">Параметры генератора кода.</param>
+    </member>
+    <member name="M:Microsoft.VisualC.CppCodeGeneratorBase.GenerateCodeFromMethod(System.CodeDom.CodeMemberMethod,System.CodeDom.CodeTypeDeclaration,System.IO.TextWriter,System.CodeDom.Compiler.CodeGeneratorOptions)">
+      <param name="e">Метод члена.</param>
+      <param name="c">Объявление типа.</param>
+      <param name="w">Модуль записи текста.</param>
+      <param name="o">Параметры генератора кода.</param>
+    </member>
+    <member name="M:Microsoft.VisualC.CppCodeGeneratorBase.GenerateCodeFromNamespace(System.CodeDom.CodeNamespace,System.IO.TextWriter,System.CodeDom.Compiler.CodeGeneratorOptions)">
+      <param name="e">Пространство имен.</param>
+      <param name="w">Модуль записи текста.</param>
+      <param name="o">Параметры генератора кода.</param>
+    </member>
+    <member name="M:Microsoft.VisualC.CppCodeGeneratorBase.GenerateCodeFromStatement(System.CodeDom.CodeStatement,System.IO.TextWriter,System.CodeDom.Compiler.CodeGeneratorOptions)">
+      <param name="e">Оператор.</param>
+      <param name="w">Модуль записи текста.</param>
+      <param name="o">Параметры генератора кода.</param>
+    </member>
+    <member name="M:Microsoft.VisualC.CppCodeGeneratorBase.GenerateCodeFromType(System.CodeDom.CodeTypeDeclaration,System.IO.TextWriter,System.CodeDom.Compiler.CodeGeneratorOptions)">
+      <param name="e">Объявление типа.</param>
+      <param name="w">Модуль записи текста.</param>
+      <param name="o">Параметры генератора кода.</param>
+    </member>
+    <member name="M:Microsoft.VisualC.CppCodeGeneratorBase.GenerateCommentStatements(System.CodeDom.CodeCommentStatementCollection)">
+      <param name="e">Примечания</param>
+    </member>
+    <member name="M:Microsoft.VisualC.CppCodeGeneratorBase.GenerateEntryPointMethod(System.CodeDom.CodeEntryPointMethod)">
+      <param name="e">Метод точки входа.</param>
+    </member>
+    <member name="M:Microsoft.VisualC.CppCodeGeneratorBase.GenerateExpression(System.CodeDom.CodeExpression)">
+      <param name="e">Выражение.</param>
+    </member>
+    <member name="M:Microsoft.VisualC.CppCodeGeneratorBase.GenerateLinePragmaEnd(System.CodeDom.CodeLinePragma)">
+      <param name="e">Директива линии.</param>
+    </member>
+    <member name="M:Microsoft.VisualC.CppCodeGeneratorBase.GenerateLinePragmaStart(System.CodeDom.CodeLinePragma)">
+      <param name="e">Директива линии.</param>
+    </member>
+    <member name="M:Microsoft.VisualC.CppCodeGeneratorBase.GenerateMethodInvokeExpression(System.CodeDom.CodeMethodInvokeExpression)">
+      <param name="e">Выражение вызова метода.</param>
+    </member>
+    <member name="M:Microsoft.VisualC.CppCodeGeneratorBase.GenerateMethodReferenceExpression(System.CodeDom.CodeMethodReferenceExpression)">
+      <param name="e">Выражение ссылки метода.</param>
+    </member>
+    <member name="M:Microsoft.VisualC.CppCodeGeneratorBase.GeneratePossibleBoxExpression(Microsoft.VisualC.CodeDomTypeInfo,System.CodeDom.CodeExpression)">
+      <param name="typeLeft">Тип.</param>
+      <param name="right">Выражение.</param>
+    </member>
+    <member name="M:Microsoft.VisualC.CppCodeGeneratorBase.GeneratePossibleBoxExpression(System.CodeDom.CodeExpression,System.CodeDom.CodeExpression)">
+      <param name="left">Левое выражение.</param>
+      <param name="right">Правое выражение.</param>
+    </member>
+    <member name="M:Microsoft.VisualC.CppCodeGeneratorBase.GenerateProperty(System.CodeDom.CodeMemberProperty)">
+      <param name="e">Свойство члена.</param>
+    </member>
+    <member name="M:Microsoft.VisualC.CppCodeGeneratorBase.GenerateStatements(System.CodeDom.CodeStatementCollection)">
+      <param name="s">Операторы.</param>
+    </member>
+    <member name="M:Microsoft.VisualC.CppCodeGeneratorBase.GenerateTypeOfExpression(System.CodeDom.CodeTypeOfExpression)">
+      <param name="e">Выражение TypeOf.</param>
+    </member>
+    <member name="M:Microsoft.VisualC.CppCodeGeneratorBase.GetBaseTypeOutput(System.CodeDom.CodeTypeReference)">
+      <param name="typeRef">Ссылка типа.</param>
+    </member>
+    <member name="M:Microsoft.VisualC.CppCodeGeneratorBase.GetBaseTypeReference(System.CodeDom.CodeTypeReference)">
+      <param name="typeRef">Ссылка типа.</param>
+    </member>
+    <member name="M:Microsoft.VisualC.CppCodeGeneratorBase.GetClassNameOutput(System.String)">
+      <param name="s">Строка.</param>
+    </member>
+    <member name="M:Microsoft.VisualC.CppCodeGeneratorBase.GetNewTempName"></member>
+    <member name="M:Microsoft.VisualC.CppCodeGeneratorBase.GetTypeOutput(System.CodeDom.CodeTypeReference)">
+      <param name="typeRef">Ссылка типа.</param>
+    </member>
+    <member name="M:Microsoft.VisualC.CppCodeGeneratorBase.GetTypeOutputInternal(System.CodeDom.CodeTypeReference)">
+      <param name="typeRef">Ссылка типа.</param>
+    </member>
+    <member name="P:Microsoft.VisualC.CppCodeGeneratorBase.Indent"></member>
+    <member name="P:Microsoft.VisualC.CppCodeGeneratorBase.IsCurrentInterface"></member>
+    <member name="P:Microsoft.VisualC.CppCodeGeneratorBase.IsInline"></member>
+    <member name="M:Microsoft.VisualC.CppCodeGeneratorBase.IsValidIdentifier(System.String)">
+      <param name="value">Строка.</param>
+    </member>
+    <member name="F:Microsoft.VisualC.CppCodeGeneratorBase.m_entrypoint"></member>
+    <member name="F:Microsoft.VisualC.CppCodeGeneratorBase.m_keywords"></member>
+    <member name="P:Microsoft.VisualC.CppCodeGeneratorBase.NullToken"></member>
+    <member name="M:Microsoft.VisualC.CppCodeGeneratorBase.OutputArrayPostfix(System.Int32)">
+      <param name="arrayRank">Ранг Массива.</param>
+    </member>
+    <member name="M:Microsoft.VisualC.CppCodeGeneratorBase.OutputAttributeDeclarations(System.CodeDom.CodeAttributeDeclarationCollection)">
+      <param name="attributes">Объявления атрибутов.</param>
+    </member>
+    <member name="M:Microsoft.VisualC.CppCodeGeneratorBase.OutputAttributeDeclarations(System.CodeDom.CodeAttributeDeclarationCollection,System.Boolean)">
+      <param name="attributes">Объявления атрибутов.</param>
+      <param name="isProperty">Является свойством.</param>
+    </member>
+    <member name="M:Microsoft.VisualC.CppCodeGeneratorBase.OutputClassHead(System.CodeDom.CodeTypeDeclaration)">
+      <param name="e">Объявление типа.</param>
+    </member>
+    <member name="M:Microsoft.VisualC.CppCodeGeneratorBase.OutputClassHeadForwardDeclaration(System.CodeDom.CodeTypeDeclaration)">
+      <param name="e">Объявление типа.</param>
+    </member>
+    <member name="M:Microsoft.VisualC.CppCodeGeneratorBase.OutputEventScopeModifier(System.CodeDom.MemberAttributes)">
+      <param name="attributes">Атрибуты.</param>
+    </member>
+    <member name="M:Microsoft.VisualC.CppCodeGeneratorBase.OutputFunctionModifiers(System.CodeDom.MemberAttributes)">
+      <param name="attributes">Атрибуты.</param>
+    </member>
+    <member name="M:Microsoft.VisualC.CppCodeGeneratorBase.OutputIdentifier(System.String)">
+      <param name="s">Идентификатор.</param>
+    </member>
+    <member name="M:Microsoft.VisualC.CppCodeGeneratorBase.OutputIndexerParameterList(System.CodeDom.CodeParameterDeclarationExpressionCollection)">
+      <param name="parameters">Параметры.</param>
+    </member>
+    <member name="M:Microsoft.VisualC.CppCodeGeneratorBase.OutputKeyword(Microsoft.VisualC.CppCodeGeneratorBase.EKeyword)">
+      <param name="e">ключевое слово.</param>
+    </member>
+    <member name="M:Microsoft.VisualC.CppCodeGeneratorBase.OutputMemberAccessModifier(System.CodeDom.MemberAttributes)">
+      <param name="attributes">Атрибуты.</param>
+    </member>
+    <member name="M:Microsoft.VisualC.CppCodeGeneratorBase.OutputMemberScopeModifier(System.CodeDom.MemberAttributes)">
+      <param name="attributes">Атрибуты.</param>
+    </member>
+    <member name="M:Microsoft.VisualC.CppCodeGeneratorBase.OutputParameters(System.CodeDom.CodeParameterDeclarationExpressionCollection)">
+      <param name="parameters">Параметры.</param>
+    </member>
+    <member name="M:Microsoft.VisualC.CppCodeGeneratorBase.OutputStartingBrace"></member>
+    <member name="M:Microsoft.VisualC.CppCodeGeneratorBase.OutputStatementsBlock(System.CodeDom.CodeStatementCollection)">
+      <param name="statements">Операторы.</param>
+    </member>
+    <member name="M:Microsoft.VisualC.CppCodeGeneratorBase.OutputType(System.CodeDom.CodeTypeReference)">
+      <param name="typeRef">Ссылка типа.</param>
+    </member>
+    <member name="M:Microsoft.VisualC.CppCodeGeneratorBase.OutputType(System.CodeDom.CodeTypeReference,Microsoft.VisualC.CodeDomTypeInfo)">
+      <param name="typeRef">Ссылка типа.</param>
+      <param name="typeInfo">Сведения о типе.</param>
+    </member>
+    <member name="M:Microsoft.VisualC.CppCodeGeneratorBase.OutputTypeArguments(System.CodeDom.CodeTypeReferenceCollection)">
+      <param name="types">Типы.</param>
+    </member>
+    <member name="P:Microsoft.VisualC.CppCodeGeneratorBase.PassNumber"></member>
+    <member name="M:Microsoft.VisualC.CppCodeGeneratorBase.PopOutputStreams"></member>
+    <member name="M:Microsoft.VisualC.CppCodeGeneratorBase.PopulateKeywords"></member>
+    <member name="M:Microsoft.VisualC.CppCodeGeneratorBase.ProcessPossibleGlobalTypeName(System.String)">
+      <param name="t">Имя типа.</param>
+    </member>
+    <member name="M:Microsoft.VisualC.CppCodeGeneratorBase.PushOutputStreams"></member>
+    <member name="M:Microsoft.VisualC.CppCodeGeneratorBase.QuoteSnippetString(System.String)">
+      <param name="value">Строка фрагмента.</param>
+    </member>
+    <member name="M:Microsoft.VisualC.CppCodeGeneratorBase.QuoteSnippetStringCStyle(System.String)">
+      <param name="value">Строка фрагмента.</param>
+    </member>
+    <member name="M:Microsoft.VisualC.CppCodeGeneratorBase.ResetSymTabStack"></member>
+    <member name="M:Microsoft.VisualC.CppCodeGeneratorBase.SmartLineBreak"></member>
+    <member name="M:Microsoft.VisualC.CppCodeGeneratorBase.Supports(System.CodeDom.Compiler.GeneratorSupport)">
+      <param name="support">Поддержка.</param>
+    </member>
+    <member name="P:Microsoft.VisualC.CppCodeGeneratorBase.SymTabStack"></member>
+    <member name="P:Microsoft.VisualC.CppCodeGeneratorBase.TempSuffix"></member>
+    <member name="P:Microsoft.VisualC.CppCodeGeneratorBase.TypeResolutionService"></member>
+    <member name="M:Microsoft.VisualC.CppCodeGeneratorBase.ValidateIdentifier(System.String)">
+      <param name="value">Идентификатор.</param>
+    </member>
+    <member name="T:Microsoft.VisualC.CppCodeGeneratorBase.EKeyword"></member>
+    <member name="F:Microsoft.VisualC.CppCodeGeneratorBase.EKeyword.GC">
+      <summary />
+    </member>
+    <member name="F:Microsoft.VisualC.CppCodeGeneratorBase.EKeyword.NEW">
+      <summary />
+    </member>
+    <member name="F:Microsoft.VisualC.CppCodeGeneratorBase.EKeyword.POINTER">
+      <summary />
+    </member>
+    <member name="F:Microsoft.VisualC.CppCodeGeneratorBase.EKeyword.VALUE">
+      <summary />
+    </member>
+    <member name="F:Microsoft.VisualC.CppCodeGeneratorBase.EKeyword.SEALED">
+      <summary />
+    </member>
+    <member name="F:Microsoft.VisualC.CppCodeGeneratorBase.EKeyword.ABSTRACT">
+      <summary />
+    </member>
+    <member name="F:Microsoft.VisualC.CppCodeGeneratorBase.EKeyword.DELEGATE">
+      <summary />
+    </member>
+    <member name="F:Microsoft.VisualC.CppCodeGeneratorBase.EKeyword.EVENT">
+      <summary />
+    </member>
+    <member name="F:Microsoft.VisualC.CppCodeGeneratorBase.EKeyword.TYPEOF">
+      <summary />
+    </member>
+    <member name="F:Microsoft.VisualC.CppCodeGeneratorBase.EKeyword.INTERFACE">
+      <summary />
+    </member>
+    <member name="F:Microsoft.VisualC.CppCodeGeneratorBase.EKeyword.FINALLY">
+      <summary />
+    </member>
+    <member name="T:Microsoft.VisualC.CppCodeProvider">
+      <summary>Предоставляет базовый класс для реализации <see cref="T:System.CodeDom.Compiler.CodeDomProvider" /> на языке C/C++.</summary>
+    </member>
+    <member name="M:Microsoft.VisualC.CppCodeProvider.#ctor">
+      <summary>Инициализирует новый экземпляр класса <see cref="T:Microsoft.VisualC.CppCodeProvider" />.</summary>
+    </member>
+    <member name="P:Microsoft.VisualC.CppCodeProvider.CompileUnit">
+      <summary>Получает и задает граф программы на языке C++.</summary>
+      <returns>Объект <see cref="T:System.CodeDom.CodeCompileUnit" />, представляющий граф программы на языке C++.</returns>
+    </member>
+    <member name="M:Microsoft.VisualC.CppCodeProvider.CreateCompiler">
+      <summary>Создает экземпляр компилятора кода на языке C++.</summary>
+      <returns>Объект <see cref="T:System.CodeDom.Compiler.ICodeCompiler" />, который может использоваться для компиляции представлений исходного кода на языке C++ на основе <see cref="N:System.CodeDom" />.</returns>
+    </member>
+    <member name="M:Microsoft.VisualC.CppCodeProvider.CreateGenerator">
+      <summary>Создает экземпляр генератора кода C++.</summary>
+      <returns>Объект <see cref="T:System.CodeDom.Compiler.ICodeGenerator" />, который может использоваться для генерации представлений исходного кода на языке C++ на основе <see cref="N:System.CodeDom" />.</returns>
+    </member>
+    <member name="M:Microsoft.VisualC.CppCodeProvider.CreateParser">
+      <summary>Не реализовано.</summary>
+      <exception cref="T:System.NotImplementedException"></exception>
+    </member>
+    <member name="P:Microsoft.VisualC.CppCodeProvider.FileExtension">
+      <summary>Получает расширение имени файла для файлов исходного кода на языке C++.</summary>
+      <returns>Объект <see cref="T:System.String" />, представляющий расширение имени файла для файлов исходного кода на языке C++.</returns>
+    </member>
+    <member name="M:Microsoft.VisualC.CppCodeProvider.GenerateCodeFromMember(System.CodeDom.CodeTypeMember,System.IO.TextWriter,System.CodeDom.Compiler.CodeGeneratorOptions)"></member>
+    <member name="T:Microsoft.VisualC.CppCodeProvider7"></member>
+    <member name="M:Microsoft.VisualC.CppCodeProvider7.#ctor"></member>
+    <member name="M:Microsoft.VisualC.CppCodeProvider7.CreateGenerator"></member>
+    <member name="T:Microsoft.VisualC.SymbolTableStack">
+      <summary>Представляет простую нестандартную коллекцию &quot;получен последним - обслужен первым&quot; (LIFO) объектов C++ CodeDOM (Code Document Object Model).</summary>
+    </member>
+    <member name="M:Microsoft.VisualC.SymbolTableStack.#ctor(System.CodeDom.CodeObject)">
+      <param name="tree">
+        <see cref="T:System.CodeDom.CodeObject" />
+      </param>
+    </member>
+    <member name="M:Microsoft.VisualC.SymbolTableStack.Add(System.CodeDom.CodeParameterDeclarationExpressionCollection)">
+      <param name="arguments">
+        <see cref="T:System.CodeDom.CodeParameterDeclarationExpressionCollection" />
+      </param>
+    </member>
+    <member name="M:Microsoft.VisualC.SymbolTableStack.Add(System.CodeDom.CodeStatementCollection)">
+      <param name="statements">
+        <see cref="T:System.CodeDom.CodeStatementCollection" />
+      </param>
+    </member>
+    <member name="M:Microsoft.VisualC.SymbolTableStack.Add(System.String,Microsoft.VisualC.CodeDomTypeInfo)">
+      <param name="id"></param>
+      <param name="type">CodeDomTypeInfo</param>
+    </member>
+    <member name="P:Microsoft.VisualC.SymbolTableStack.CurrentType"></member>
+    <member name="P:Microsoft.VisualC.SymbolTableStack.CurrentTypeInfo"></member>
+    <member name="P:Microsoft.VisualC.SymbolTableStack.Errors"></member>
+    <member name="M:Microsoft.VisualC.SymbolTableStack.EvaluateIndexer(System.CodeDom.CodeIndexerExpression)">
+      <param name="e">
+        <see cref="T:System.CodeDom.CodeIndexerExpression" />
+      </param>
+    </member>
+    <member name="M:Microsoft.VisualC.SymbolTableStack.EvaluateMethod(Microsoft.VisualC.CodeDomTypeInfo,System.String)">
+      <param name="targetInfo">CodeDomTypeInfo</param>
+      <param name="methodName">
+        <see cref="T:System.String" />
+      </param>
+    </member>
+    <member name="M:Microsoft.VisualC.SymbolTableStack.EvaluateMethod(Microsoft.VisualC.CodeDomTypeInfo,System.String,System.Int32)">
+      <param name="targetInfo">CodeDomTypeInfo</param>
+      <param name="methodName">
+        <see cref="T:System.String" />
+      </param>
+      <param name="paramCount"></param>
+    </member>
+    <member name="M:Microsoft.VisualC.SymbolTableStack.EvaluateMethod(System.CodeDom.CodeMethodInvokeExpression)">
+      <param name="e">
+        <see cref="T:System.CodeDom.CodeMethodInvokeExpression" />
+      </param>
+    </member>
+    <member name="M:Microsoft.VisualC.SymbolTableStack.EvaluateProperty(System.CodeDom.CodePropertyReferenceExpression)">
+      <param name="e">
+        <see cref="T:System.CodeDom.CodePropertyReferenceExpression" />
+      </param>
+    </member>
+    <member name="M:Microsoft.VisualC.SymbolTableStack.EvaluateType(System.CodeDom.CodeExpression)">
+      <param name="e">
+        <see cref="T:System.CodeDom.CodeExpression" />
+      </param>
+    </member>
+    <member name="M:Microsoft.VisualC.SymbolTableStack.EvaluateType(System.CodeDom.CodeTypeReference)">
+      <param name="e">
+        <see cref="T:System.CodeDom.CodeTypeReference" />
+      </param>
+    </member>
+    <member name="M:Microsoft.VisualC.SymbolTableStack.ExitScope"></member>
+    <member name="M:Microsoft.VisualC.SymbolTableStack.GetTypeFromName(System.String)"></member>
+    <member name="M:Microsoft.VisualC.SymbolTableStack.SetCurrentType(System.CodeDom.CodeNamespace)">
+      <param name="ns">
+        <see cref="T:System.CodeDom.CodeNamespace" />
+      </param>
+    </member>
+    <member name="M:Microsoft.VisualC.SymbolTableStack.SetCurrentType(System.CodeDom.CodeTypeDeclaration)">
+      <param name="type">
+        <see cref="T:System.CodeDom.CodeTypeDeclaration" />
+      </param>
+    </member>
+    <member name="M:Microsoft.VisualC.SymbolTableStack.SetScope"></member>
+    <member name="P:Microsoft.VisualC.SymbolTableStack.TypeResolutionService"></member>
+    <member name="P:Microsoft.VisualC.SymbolTableStack.Warnings"></member>
+    <member name="T:Microsoft.VisualC.TypeRelationship"></member>
+    <member name="F:Microsoft.VisualC.TypeRelationship.Unknown">
+      <summary />
+    </member>
+    <member name="F:Microsoft.VisualC.TypeRelationship.DerivedFrom">
+      <summary />
+    </member>
+    <member name="F:Microsoft.VisualC.TypeRelationship.SameType">
+      <summary />
+    </member>
+    <member name="F:Microsoft.VisualC.TypeRelationship.MaybeBoxNeeded">
+      <summary />
+    </member>
+    <member name="F:Microsoft.VisualC.TypeRelationship.BoxNeeded">
+      <summary />
+    </member>
+  </members>
+</doc>

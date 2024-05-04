@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>Копировать каталог</Title>
+      <Author>Microsoft Corporation</Author>
+      <Description>Копирование каталога и всех его файлов и подкаталогов.</Description>
+      <Shortcut>filCopyDir</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>sourceDir</ID>
+          <ToolTip>Замените на каталог для копирования.</ToolTip>
+          <Default>"C:\SourceDirectory"</Default>
+        </Literal>
+        <Literal>
+          <ID>destDirectory</ID>
+          <ToolTip>Замените на каталог, в который необходимо выполнить копирование.</ToolTip>
+          <Default>"D:\DestinationDirectory"</Default>
+        </Literal>
+      </Declarations>
+      <Code Language="VB" Kind="method body"><![CDATA[My.Computer.FileSystem.CopyDirectory($sourceDir$, $destDirectory$)]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

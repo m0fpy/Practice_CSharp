@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>Сортировать по нескольким полям</Title>
+      <Author>Microsoft Corporation</Author>
+      <Description>Создание запроса, сортирующего результаты по нескольким полям.</Description>
+      <Shortcut>qSortMult</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>queryResult</ID>
+          <Type>item</Type>
+          <ToolTip>Замените на идентификатор запроса.</ToolTip>
+          <Default>query</Default>
+        </Literal>
+        <Literal>
+          <ID>item</ID>
+          <Type>item</Type>
+          <ToolTip>Замените на идентификатор переменной, представляющей элемент из источника данных.</ToolTip>
+          <Default>fruit</Default>
+        </Literal>
+        <Literal>
+          <ID>dataSource</ID>
+          <Type>String</Type>
+          <ToolTip>Замените на идентификатор источника данных.</ToolTip>
+          <Default>New String() {"apple", "orange", "pear", "banana", "strawberry", "blueberry"}</Default>
+        </Literal>
+        <Literal>
+          <ID>field1</ID>
+          <Type>String</Type>
+          <ToolTip>Замените на первое поле, которое необходимо получить из источника данных.</ToolTip>
+          <Default>Length</Default>
+        </Literal>
+        <Literal>
+          <ID>field2</ID>
+          <Type>String</Type>
+          <ToolTip>Замените на второе поле, которое необходимо получить из источника данных.</ToolTip>
+          <Default>ToUpper()</Default>
+        </Literal>
+      </Declarations>
+      <Code Language="VB" Kind="method body"><![CDATA[Dim $queryResult$ = From $item$ In $dataSource$ _
+                     Select $item$.$field1$, $item$.$field2$ _
+                     Order By $field1$, $field2$ Descending]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

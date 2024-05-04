@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>Определить свойство по умолчанию</Title>
+      <Author>Microsoft Corporation</Author>
+      <Description>Определение свойства по умолчанию или свойства индекса.</Description>
+      <Keywords>
+		  <Keyword>Свойство</Keyword>
+		  <Keyword>Индекс</Keyword>
+		  <Keyword>По умолчанию</Keyword>
+      </Keywords>
+      <Shortcut>PropDef</Shortcut>
+    </Header>
+    <Snippet>
+      <Imports>
+        <Import>
+          <Namespace>System</Namespace>
+        </Import>
+      </Imports>
+      <Declarations>
+        <Literal>
+          <ID>propertyName</ID>
+          <Type>
+          </Type>
+          <ToolTip>Замените на описательное имя свойства.</ToolTip>
+          <Default>PropertyName</Default>
+        </Literal>
+        <Literal>
+          <ID>indexType</ID>
+          <Type>
+          </Type>
+          <ToolTip>Замените на тип индекса</ToolTip>
+          <Default>Integer</Default>
+        </Literal>
+        <Literal>
+          <ID>propertyType</ID>
+          <Type>
+          </Type>
+          <ToolTip>Замените на тип, возвращаемый свойством.</ToolTip>
+          <Default>String</Default>
+        </Literal>
+        <Literal>
+          <ID>IndexIsValid</ID>
+          <Type>Boolean</Type>
+          <ToolTip>Замените на выражение для проверки допустимости индекса.</ToolTip>
+          <Default>True</Default>
+        </Literal>
+      </Declarations>
+      <Code Language="VB" Kind="method decl"><![CDATA[Default Property $propertyName$(ByVal index As $indexType$) As $propertyType$
+        Get
+            If $IndexIsValid$ Then
+                
+            Else
+                Throw New ArgumentOutOfRangeException
+            End If
+        End Get
+        Set(ByVal Value As $propertyType$)
+            If $IndexIsValid$ Then
+                
+            Else
+                Throw New ArgumentOutOfRangeException
+            End If
+        End Set
+    End Property]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

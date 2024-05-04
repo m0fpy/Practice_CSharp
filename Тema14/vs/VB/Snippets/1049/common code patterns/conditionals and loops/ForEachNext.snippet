@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>Оператор For Each...Next</Title>
+      <Author>Microsoft Corporation</Author>
+      <Description>Цикл по элементам коллекции.</Description>
+      <Shortcut>ForEach</Shortcut>
+    </Header>
+    <Snippet>
+      <Imports>
+      </Imports>
+      <Declarations>
+        <Literal>
+          <ID>Variable</ID>
+          <Type>Object</Type>
+          <ToolTip>Замените на имя переменной элемента.</ToolTip>
+          <Default>item</Default>
+        </Literal>
+        <Literal>
+          <ID>ObjectType</ID>
+          <Type>Object</Type>
+          <ToolTip>Замените на тип элементов в группе.</ToolTip>
+          <Default>String</Default>
+        </Literal>
+        <Object>
+          <ID>CollectionObject</ID>
+          <Type>Object</Type>
+          <ToolTip>Замените на объект, по элементам которого необходимо пройти.</ToolTip>
+          <Default>collectionObject</Default>
+        </Object>
+      </Declarations>
+      <Code Language="VB" Kind="method body"><![CDATA[For Each $Variable$ As $ObjectType$ In $CollectionObject$
+
+Next]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

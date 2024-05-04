@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Copyright, Microsoft Corporation, All rights reserved.-->
+<ProjectSchemaDefinitions xmlns="http://schemas.microsoft.com/build/2009/properties" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:sys="clr-namespace:System;assembly=mscorlib">
+  <Rule Name="ImageContentTask" PageTemplate="tool" DisplayName="Конвейер содержимого изображений" SwitchPrefix="" Order="300">
+
+    <Rule.Categories>
+      <Category Name="General" DisplayName="Общие"/>
+    </Rule.Categories>
+
+    <Rule.DataSource>
+      <DataSource Persistence="ProjectFile" ItemType="ImageContentTask" Label="" HasConfigurationCondition="true"/>
+    </Rule.DataSource>
+
+    <EnumProperty Name="Compress" DisplayName="Сжатие" Description="Указывает тип сжатия, используемый для изображений. Сжатие применяется только к изображениям. (/compress:[тип])" Category="General" F1Keyword="VC.Project.ImageContentTask.Compress">
+      <EnumValue Name="None" Switch="" DisplayName="Без сжатия" Description="Без сжатия"/>
+      <EnumValue Name="BC1_UNORM" Switch="/compress:BC1_UNORM" DisplayName="Сжатие BC1_UNORM" Description="Сжатие BC1_UNORM"/>
+      <EnumValue Name="BC1_UNORM_SRGB" Switch="/compress:BC1_UNORM_SRGB" DisplayName="Сжатие BC1_UNORM_SRGB" Description="Сжатие BC1_UNORM_SRGB"/>
+      <EnumValue Name="BC2_UNORM" Switch="/compress:BC2_UNORM" DisplayName="Сжатие BC2_UNORM" Description="Сжатие BC2_UNORM"/>
+      <EnumValue Name="BC2_UNORM_SRGB" Switch="/compress:BC2_UNORM_SRGB" DisplayName="Сжатие BC2_UNORM_SRGB" Description="Сжатие BC2_UNORM_SRGB"/>
+      <EnumValue Name="BC3_UNORM" Switch="/compress:BC3_UNORM" DisplayName="Сжатие BC3_UNORM" Description="Сжатие BC3_UNORM"/>
+      <EnumValue Name="BC3_UNORM_SRGB" Switch="/compress:BC3_UNORM_SRGB" DisplayName="Сжатие BC3_UNORM_SRGB" Description="Сжатие BC3_UNORM_SRGB"/>
+      <EnumValue Name="BC4_UNORM" Switch="/compress:BC4_UNORM" DisplayName="Сжатие BC4_UNORM" Description="Сжатие BC4_UNORM"/>
+      <EnumValue Name="BC4_SNORM" Switch="/compress:BC4_SNORM" DisplayName="Сжатие BC4_SNORM" Description="Сжатие BC4_SNORM"/>
+      <EnumValue Name="BC5_UNORM" Switch="/compress:BC5_UNORM" DisplayName="Сжатие BC5_UNORM" Description="Сжатие BC5_UNORM"/>
+      <EnumValue Name="BC5_SNORM" Switch="/compress:BC5_SNORM" DisplayName="Сжатие BC5_SNORM" Description="Сжатие BC5_SNORM"/>
+      <EnumValue Name="BC6H_UF16" Switch="/compress:BC6H_UF16" DisplayName="Сжатие BC6H_UF16" Description="Сжатие BC6H_UF16"/>
+      <EnumValue Name="BC6H_SF16" Switch="/compress:BC6H_SF16" DisplayName="Сжатие BC6H_SF16" Description="Сжатие BC6H_SF16"/>
+      <EnumValue Name="BC7_UNORM" Switch="/compress:BC7_UNORM" DisplayName="Сжатие BC7_UNORM" Description="Сжатие BC7_UNORM"/>
+      <EnumValue Name="BC7_UNORM_SRGB" Switch="/compress:BC7_UNORM_SRGB" DisplayName="Сжатие BC7_UNORM_SRGB" Description="Сжатие BC7_UNORM_SRGB"/>
+    </EnumProperty>
+
+    <BoolProperty Name="GeneratePremultipliedAlpha" DisplayName="Преобразовать в формат предварительно умноженного альфа-канала" Description="Указывает, следует ли преобразовать изображение в формат предварительно умноженного альфа-канала. (/generatepremultipliedalpha)" Category="General" Switch="/generatepremultipliedalpha" F1Keyword="VC.Project.ImageContentTask.GeneratePremultipliedAlpha">
+    </BoolProperty>
+
+    <BoolProperty Name="GenerateMips" DisplayName="Создать MIP-текстурирование" Description="Указывает, следует ли создать полную цепочку MIP-текстурирования для изображений. MIP-текстурирование применяется только к изображениям. (/generatemips)" Category="General" Switch="/generatemips" F1Keyword="VC.Project.ImageContentTask.GenerateMips">
+    </BoolProperty>
+
+    <StringProperty Subtype="file" Name="ContentOutput" DisplayName="Выходные данные содержимого" Description="Выходной файл для содержимого." Category="General" Switch="" F1Keyword="VC.Project.ImageContentTask.ContentOutput">
+    </StringProperty>
+
+  </Rule>
+
+  <ItemType Name="ImageContentTask" DisplayName="Конвейер содержимого изображений"/>
+  <ContentType Name="ImageContentTask" DisplayName="Конвейер содержимого изображений" ItemType="ImageContentTask"/>
+   
+  
+
+
+
+  
+</ProjectSchemaDefinitions>

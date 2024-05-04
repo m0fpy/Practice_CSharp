@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>Создать параметризированную команду SELECT</Title>
+      <Author>Microsoft Corporation</Author>
+      <Description>Создание объекта команды для выполнения инструкции Select с параметрами.</Description>
+      <Shortcut>adoSelectwParams</Shortcut>
+    </Header>
+    <Snippet>
+      <References>
+        <Reference>
+          <Assembly>System.Data.dll</Assembly>
+        </Reference>
+        <Reference>
+          <Assembly>System.Xml.dll</Assembly>
+        </Reference>
+      </References>
+      <Imports>
+        <Import>
+          <Namespace>System.Data.SqlClient</Namespace>
+        </Import>
+        <Import>
+          <Namespace>System.Data</Namespace>
+        </Import>
+      </Imports>
+      <Declarations>
+        <Literal>
+          <ID>SQL</ID>
+          <Type>String</Type>
+          <ToolTip>Замените на оператор SQL.</ToolTip>
+          <Default>SELECT CustomerID, CompanyName FROM Customers WHERE CompanyName LIKE @companyName</Default>
+        </Literal>
+        <Object>
+          <ID>parameter1</ID>
+          <Type>SqlParameter</Type>
+          <ToolTip>Замените на имя параметра, на который ссылается код.</ToolTip>
+          <Default>companyNameParam</Default>
+        </Object>
+        <Literal>
+          <ID>sqlParameterName</ID>
+          <Type>String</Type>
+          <ToolTip>Замените на параметр SQL в запросе.</ToolTip>
+          <Default>@companyName</Default>
+        </Literal>
+        <Literal>
+          <ID>parameterValue</ID>
+          <Type>String</Type>
+          <ToolTip>Замените на значение параметра.</ToolTip>
+          <Default>"a%"</Default>
+        </Literal>
+        <Object>
+          <ID>conn</ID>
+          <Type>SqlConnection</Type>
+          <ToolTip>Замените на объект подключения.</ToolTip>
+          <Default>conn</Default>
+        </Object>
+        <Object>
+          <ID>cmd</ID>
+          <Type>SqlCommand</Type>
+          <ToolTip>Замените на имя объекта SqlCommand.</ToolTip>
+          <Default>cmd</Default>
+        </Object>
+      </Declarations>
+      <Code Language="VB" Kind="method body"><![CDATA[Dim $cmd$ As New SqlCommand
+$cmd$.CommandType = CommandType.Text
+$cmd$.CommandText = "$SQL$"
+$cmd$.Connection = $conn$
+' Create a SqlParameter for each parameter in the stored procedure.
+Dim $parameter1$ As New SqlParameter("$sqlParameterName$", $parameterValue$)
+$cmd$.Parameters.Add($parameter1$)
+]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>Скачать файл по протоколу HTTP</Title>
+      <Author>Microsoft Corporation</Author>
+      <Description>Загрузка файла по протоколу HTTP.</Description>
+      <Shortcut>conDown</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>url</ID>
+          <Type>String</Type>
+          <ToolTip>Замените на URL-адрес файла, который необходимо скачать.</ToolTip>
+          <Default>"http://www.URLtoDownloadFrom.net"</Default>
+        </Literal>
+        <Literal>
+          <ID>location</ID>
+          <Type>String</Type>
+          <ToolTip>Замените на путь к локальному файлу.</ToolTip>
+          <Default>"C:\filename.html"</Default>
+        </Literal>
+      </Declarations>
+      <Code Language="VB" Kind="method body"><![CDATA[My.Computer.Network.DownloadFile($url$, $location$)]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

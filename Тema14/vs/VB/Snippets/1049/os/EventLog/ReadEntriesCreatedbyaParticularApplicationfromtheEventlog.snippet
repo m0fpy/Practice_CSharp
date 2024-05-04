@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>Прочитать записи журнала событий, созданные определенным приложением</Title>
+      <Author>Microsoft Corporation</Author>
+      <Description>Заполнение списка записями журнала событий для приложения.</Description>
+      <Shortcut>evReadApp</Shortcut>
+    </Header>
+    <Snippet>
+      <Imports>
+        <Import>
+          <Namespace>System</Namespace>
+        </Import>
+        <Import>
+          <Namespace>Microsoft.VisualBasic</Namespace>
+        </Import>
+        <Import>
+          <Namespace>System.Diagnostics</Namespace>
+        </Import>
+        <Import>
+          <Namespace>System.Collections.Generic</Namespace>
+        </Import>
+      </Imports>
+      <Declarations>
+        <Literal>
+          <ID>LogName</ID>
+          <Type>String</Type>
+          <ToolTip>Замените на имя журнала. Будет прочитан журнал приложений на локальном компьютере.</ToolTip>
+          <Default>"Application"</Default>
+        </Literal>
+        <Literal>
+          <ID>SourceName</ID>
+          <Type>String</Type>
+          <ToolTip>Замените на имя источника. Имя источника связано с конкретным приложением во время записи событий.</ToolTip>
+          <Default>"SourceName"</Default>
+        </Literal>
+      </Declarations>
+      <Code Language="VB" Kind="method body"><![CDATA[Dim log As New EventLog($LogName$)
+Dim entries As New List(Of EventLogEntry)
+For Each entry As EventLogEntry In log.Entries
+    If entry.Source = $SourceName$ Then
+        entries.Add(entry)
+    End If
+Next]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

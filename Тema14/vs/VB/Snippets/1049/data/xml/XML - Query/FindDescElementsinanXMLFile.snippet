@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>Найти все элементы-потомки в данных XML по имени элемента</Title>
+      <Author>Microsoft Corporation</Author>
+      <Description>Поиск всех элементов-потомков в XML-файле по имени элемента.</Description>
+      <Shortcut>xmlDesc</Shortcut>
+    </Header>
+    <Snippet>
+      <References>
+        <Reference>
+          <Assembly>System.XML.Linq.dll</Assembly>          
+        </Reference>
+      </References>
+      <Imports>
+        <Import>
+          <Namespace>System.Xml.Linq</Namespace>
+        </Import>
+      </Imports>
+      <Declarations>
+        <Literal>
+          <ID>TagName</ID>
+          <Type>XName</Type>
+          <ToolTip>Замените на полное имя элемента. </ToolTip>
+          <Default>ElementName</Default>
+        </Literal>
+        <Object>
+          <ID>XmlVariable</ID>
+          <Type>XElement</Type>
+          <ToolTip>Замените на переменную XElement.</ToolTip>
+          <Default>xmlEle</Default>
+        </Object>
+      </Declarations>
+      <Code Language="VB" Kind="method body"><![CDATA[Dim childElements = $XmlVariable$...<$TagName$>]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

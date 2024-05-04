@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>Переименовать каталог</Title>
+      <Author>Microsoft Corporation</Author>
+      <Description>Переименование каталога.</Description>
+      <Shortcut>filRenDir</Shortcut>
+    </Header>
+    <Snippet>
+      <Imports>
+        <Import>
+          <Namespace>Microsoft.VisualBasic</Namespace>
+        </Import>
+      </Imports>
+      <Declarations>
+        <Literal>
+          <ID>old</ID>
+          <ToolTip>Замените на старое имя и путь каталога.</ToolTip>
+          <Default>"C:\OldDirectory"</Default>
+        </Literal>
+        <Literal>
+          <ID>NewName</ID>
+          <ToolTip>Замените на новое имя каталога</ToolTip>
+          <Default>"NewDirectory"</Default>
+        </Literal>
+      </Declarations>
+      <Code Language="VB" Kind="method body"><![CDATA[My.Computer.FileSystem.RenameDirectory($old$, $NewName$)]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

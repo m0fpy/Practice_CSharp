@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>Объединить (явно) с массивом</Title>
+      <Author>Microsoft Corporation</Author>
+      <Description>Создание запроса, сопоставляющего элементы с элементами массива.</Description>
+      <Shortcut>qJoinExpArray</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>queryResult</ID>
+          <Type>item</Type>
+          <ToolTip>Замените на идентификатор запроса.</ToolTip>
+          <Default>query</Default>
+        </Literal>
+        <Literal>
+          <ID>item</ID>
+          <Type>item</Type>
+          <ToolTip>Замените на идентификатор переменной, представляющей элемент из источника данных.</ToolTip>
+          <Default>fruit</Default>
+        </Literal>
+        <Literal>
+          <ID>dataSource</ID>
+          <Type>String</Type>
+          <ToolTip>Замените на идентификатор источника данных.</ToolTip>
+          <Default>New String() {"apple", "orange", "pear", "banana", "strawberry", "blueberry"}</Default>
+        </Literal>       
+        <Literal>
+          <ID>field1</ID>
+          <Type>String</Type>
+          <ToolTip>Замените на имя поля, определяющего условие предложения Join.</ToolTip>
+          <Default>Length</Default>
+        </Literal>       
+        <Literal>
+          <ID>field2</ID>
+          <Type>String</Type>
+          <ToolTip>Замените на имя выбираемого поля.</ToolTip>
+          <Default>ToUpper()</Default>
+        </Literal> 
+        <Literal>
+          <ID>length</ID>
+          <Type>String</Type>
+          <ToolTip>Замените на переменную диапазона для массива.</ToolTip>
+          <Default>length</Default>
+        </Literal>
+      </Declarations>
+      <Code Language="VB" Kind="method body"><![CDATA[Dim $queryResult$ = From $item$ In $dataSource$ _
+                   Join $length$ In New Integer() { 4, 5 } _
+                                   On $item$.$field1$ Equals $length$ _
+                   Select $item$.$field1$, $item$.$field2$]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

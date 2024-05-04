@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Copyright, Microsoft Corporation, All rights reserved.-->
+<Rule Name="VCEnvironmentVariables" DisplayName="Переменные окружения VC++" Order="8" PageTemplate="generic" Description="Каталоги поиска инструментов" xmlns="http://schemas.microsoft.com/build/2009/properties">
+  <Rule.Categories>
+    <Category Name="Env" DisplayName="Окружение" Description="Переменные окружения Visual C++"/>
+    <Category Name="Dirs" DisplayName="Каталоги" Description="Каталоги Visual C++"/>
+  </Rule.Categories>
+  <Rule.DataSource>
+    <DataSource Persistence="ProjectFile"/>
+  </Rule.DataSource>
+  <StringListProperty Name="Path" DisplayName="PATH" Description="Путь, который нужно использовать при поиске исполняемых файлов при сборке проекта VC++.  Соответствует переменной окружения PATH." F1Keyword="VC.Project.UseEnvVars.Path" Category="Env" Separator=";" ReadOnly="true"/>
+  <StringListProperty Name="Include" DisplayName="INCLUDE" Description="Путь, который нужно использовать при поиске включаемых файлов при сборке проекта VC++.  Соответствует переменной окружения INCLUDE." F1Keyword="VC.Project.UseEnvVars.Include" Category="Env" Separator=";" ReadOnly="true"/>
+  <StringListProperty Name="LibPath" DisplayName="LIBPATH" Description="Путь, который нужно использовать при поиске файлов, обозначенных директивой #using, при сборке проекта VC++.  Соответствует переменной окружения LIBPATH." F1Keyword="VC.Project.UseEnvVars.ReferencePath" Category="Env" Separator=";" ReadOnly="true"/>
+  <StringListProperty Name="Lib" DisplayName="LIB" Description="Путь, который нужно использовать при поиске библиотечных файлов при сборке проекта VC++.  Соответствует переменной окружения LIB." F1Keyword="VC.Project.UseEnvVars.LibraryPath" Category="Env" Separator=";" ReadOnly="true"/>
+  <StringListProperty Name="SourcePath" DisplayName="Каталоги исходного кода" Description="Путь, который нужно использовать при поиске файлов исходного кода, нужных для работы IntelliSense." F1Keyword="VC.Project.VCDirectories.SourcePath" Category="Dirs" Separator=";" Subtype="folder"/>
+  <StringListProperty Name="ExcludePath" DisplayName="Исключаемые каталоги" Description="Путь, который нужно пропустить при поиске зависимостей." F1Keyword="VC.Project.UseEnvVars.ExcludePath" Category="Dirs" Separator=";" Subtype="folder"/>
+</Rule>

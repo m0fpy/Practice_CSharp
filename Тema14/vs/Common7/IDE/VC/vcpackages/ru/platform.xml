@@ -1,0 +1,1603 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>Platform</name>
+  </assembly>
+  <members>
+      <!-- Begin of default namespace -->  
+     <member name="N:default">
+      <summary>Предоставление базовых типов для C++/CX.</summary>
+    </member>
+    
+    <member name="T:default.int8">
+      <summary>Представление default.int8</summary>
+    </member>
+    <member name="F:default.int8._value">
+      <summary>Значение int8 типа.</summary>
+    </member>
+    <member name="M:default.int8.#ctor(default.int8)">
+      <summary>Конструктор объекта default.int8.</summary>
+    </member>    
+    <member name="M:default.int8.Equals(Platform.Object)">
+      <summary>Сравнение объекта с другим объектом Platform.Object.</summary>
+      <returns>Возвращается значение "True", если объекты равны; в противном случае — значение "False".</returns>
+    </member>    
+    <member name="M:default.int8.GetHashCode">
+      <summary>Сформировать хэш-код в соответствии с содержащимися данными.</summary>
+      <returns>Хэш-код объекта.</returns>
+    </member>    
+    <member name="M:default.int8.ToString">
+      <summary>Возврат представления строки объекта.</summary>
+      <returns>Строковое значение объекта.</returns>
+    </member>
+    <member name="M:default.int8.GetType">
+      <summary>Метод возврата Platform.Type, который представляет тип объекта</summary>      
+      <returns>Возврат Platform.Type этого объекта.</returns>
+    </member>
+    
+    <member name="T:default.uint16">
+      <summary>Представление default.uint16</summary>
+    </member>
+    <member name="F:default.uint16._value">
+      <summary>Значение uint16 типа.</summary>
+    </member>
+    <member name="M:default.uint16.#ctor(default.uint16)">
+      <summary>Конструктор объекта uint16.</summary>
+    </member>    
+    <member name="M:default.uint16.Equals(Platform.Object)">
+      <summary>Сравнение объекта с другим объектом Platform.Object.</summary>
+      <returns>Возвращается значение "True", если объекты равны; в противном случае — значение "False".</returns>
+    </member>    
+    <member name="M:default.uint16.GetHashCode">
+      <summary>Сформировать хэш-код в соответствии с содержащимися данными.</summary>
+      <returns>Хэш-код объекта.</returns>
+    </member>    
+    <member name="M:default.uint16.ToString">
+      <summary>Возврат строкового представления объекта.</summary>
+      <returns>Строковое значение объекта.</returns>
+    </member>
+    <member name="M:default.uint16.GetType">
+      <summary>Возврат Platform.Type метода, который представляет тип объекта</summary>      
+      <returns>Возврат Platform.Type этого объекта.</returns>
+    </member>
+
+    <member name="T:default.int16">
+      <summary>Представление default.uint16</summary>
+    </member>
+    <member name="F:default.int16._value">
+      <summary>Значение uint16 типа.</summary>
+    </member>
+    <member name="M:default.int16.#ctor(default.int16)">
+      <summary>Конструктор объекта uint16.</summary>
+    </member>    
+    <member name="M:default.int16.Equals(Platform.Object)">
+      <summary>Сравнение объекта с другим объектом Platform.Object.</summary>
+      <returns>Возвращается значение "True", если объекты равны; в противном случае — значение "False".</returns>
+    </member>    
+    <member name="M:default.int16.GetHashCode">
+      <summary>Сформировать хэш-код в соответствии с содержащимися данными.</summary>
+      <returns>Хэш-код объекта.</returns>
+    </member>    
+    <member name="M:default.int16.ToString">
+      <summary>Возврат строкового представления объекта.</summary>
+      <returns>Строковое значение объекта.</returns>
+    </member>
+    <member name="M:default.int16.GetType">
+      <summary>Возврат Platform.Type метода, который представляет тип объекта</summary>      
+      <returns>Возврат Platform.Type этого объекта.</returns>
+    </member>
+    
+    <member name="T:default.uint32">
+      <summary>Представление default.uint32</summary>
+    </member>
+    <member name="F:default.uint32._value">
+      <summary>Значение uint32 типа.</summary>
+    </member>
+    <member name="M:default.uint32.#ctor(default.uint32)">
+      <summary>Конструктор объекта uint32.</summary>
+    </member>    
+    <member name="M:default.uint32.Equals(Platform.Object)">
+      <summary>Сравнение объекта с другим объектом Platform.Object.</summary>
+      <returns>Возвращается значение "True", если объекты равны; в противном случае — значение "False".</returns>
+    </member>    
+    <member name="M:default.uint32.GetHashCode">
+      <summary>Сформировать хэш-код в соответствии с содержащимися данными.</summary>
+      <returns>Хэш-код объекта.</returns>
+    </member>    
+    <member name="M:default.uint32.ToString">
+      <summary>Возврат строкового представления объекта.</summary>
+      <returns>Строковое значение объекта.</returns>
+    </member>
+    <member name="M:default.uint32.GetType">
+      <summary>Возврат Platform.Type метода, который представляет тип объекта</summary>      
+      <returns>Возврат Platform.Type этого объекта.</returns>
+    </member>
+    
+    <member name="T:default.int32">
+      <summary>Представление default.int32</summary>
+    </member>
+    <member name="F:default.int32._value">
+      <summary>Значение int32 типа.</summary>
+    </member>
+    <member name="M:default.int32.#ctor(default.int32)">
+      <summary>Конструктор объекта int32.</summary>
+    </member>    
+    <member name="M:default.int32.Equals(Platform.Object)">
+      <summary>Сравнение объекта с другим объектом Platform.Object.</summary>
+      <returns>Возвращается значение "True", если объекты равны; в противном случае — значение "False".</returns>
+    </member>    
+    <member name="M:default.int32.GetHashCode">
+      <summary>Сформировать хэш-код в соответствии с содержащимися данными.</summary>
+      <returns>Хэш-код объекта.</returns>
+    </member>    
+    <member name="M:default.int32.ToString">
+      <summary>Возврат строкового представления объекта.</summary>
+      <returns>Строковое значение объекта.</returns>
+    </member>
+    <member name="M:default.int32.GetType">
+      <summary>Возврат Platform.Type метода, который представляет тип объекта</summary>      
+      <returns>Возврат Platform.Type этого объекта.</returns>
+    </member>
+    
+    <member name="T:default.float32">
+      <summary>Представление default.float32</summary>
+    </member>
+    <member name="F:default.float32._value">
+      <summary>Значение float32 типа.</summary>
+    </member>
+    <member name="M:default.float32.#ctor(default.float32)">
+      <summary>Конструктор объекта float32.</summary>
+    </member>    
+    <member name="M:default.float32.Equals(Platform.Object)">
+      <summary>Сравнение объекта с другим объектом Platform.Object.</summary>
+      <returns>Возвращается значение "True", если объекты равны; в противном случае — значение "False".</returns>
+    </member>    
+    <member name="M:default.float32.GetHashCode">
+      <summary>Сформировать хэш-код в соответствии с содержащимися данными.</summary>
+      <returns>Хэш-код объекта.</returns>
+    </member>    
+    <member name="M:default.float32.ToString">
+      <summary>Возврат строкового представления объекта.</summary>
+      <returns>Строковое значение объекта.</returns>
+    </member>
+    <member name="M:default.float32.GetType">
+      <summary>Возврат Platform.Type метода, который представляет тип объекта</summary>      
+      <returns>Возврат Platform.Type этого объекта.</returns>
+    </member>
+    
+    <member name="T:default.float64">
+      <summary>Представление default.float64</summary>
+    </member>
+    <member name="F:default.float64._value">
+      <summary>Значение float64 типа.</summary>
+    </member>
+    <member name="M:default.float64.#ctor(default.float64)">
+      <summary>Конструктор объекта float64.</summary>
+    </member>    
+    <member name="M:default.float64.Equals(Platform.Object)">
+      <summary>Сравнение объекта с другим объектом Platform.Object.</summary>
+      <returns>Возвращается значение "True", если объекты равны; в противном случае — значение "False".</returns>
+    </member>    
+    <member name="M:default.float64.GetHashCode">
+      <summary>Сформировать хэш-код в соответствии с содержащимися данными.</summary>
+      <returns>Хэш-код объекта.</returns>
+    </member>    
+    <member name="M:default.float64.ToString">
+      <summary>Возврат строкового представления объекта.</summary>
+      <returns>Строковое значение объекта.</returns>
+    </member>
+    <member name="M:default.float64.GetType">
+      <summary>Возврат Platform.Type метода, который представляет тип объекта</summary>      
+      <returns>Возврат Platform.Type этого объекта.</returns>
+    </member>
+    
+    <member name="T:default.uint64">
+      <summary>Представление default.uint64</summary>
+    </member>
+    <member name="F:default.uint64._value">
+      <summary>Значение uint64 типа.</summary>
+    </member>
+    <member name="M:default.uint64.#ctor(default.uint64)">
+      <summary>Конструктор объекта uint64.</summary>
+    </member>    
+    <member name="M:default.uint64.Equals(Platform.Object)">
+      <summary>Сравнение объекта с другим объектом Platform.Object.</summary>
+      <returns>Возвращается значение "True", если объекты равны; в противном случае — значение "False".</returns>
+    </member>    
+    <member name="M:default.uint64.GetHashCode">
+      <summary>Сформировать хэш-код в соответствии с содержащимися данными.</summary>
+      <returns>Хэш-код объекта.</returns>
+    </member>    
+    <member name="M:default.uint64.ToString">
+      <summary>Возврат строкового представления объекта.</summary>
+      <returns>Строковое значение объекта.</returns>
+    </member>
+    <member name="M:default.uint64.GetType">
+      <summary>Возврат Platform.Type метода, который представляет тип объекта</summary>      
+      <returns>Возврат Platform.Type этого объекта.</returns>
+    </member>
+
+    <member name="T:default.int64">
+      <summary>Представление default int64</summary>
+    </member>
+    <member name="F:default.int64._value">
+      <summary>Значение int64 типа.</summary>
+    </member>
+    <member name="M:default.int64.#ctor(default.int64)">
+      <summary>Конструктор int64.</summary>
+    </member>    
+    <member name="M:default.int64.Equals(Platform.Object)">
+      <summary>Сравнение объекта с другим объектом Platform.Object.</summary>
+      <returns>Возвращается значение "True", если объекты равны; в противном случае — значение "False".</returns>
+    </member>    
+    <member name="M:default.int64.GetHashCode">
+      <summary>Сформировать хэш-код в соответствии с содержащимися данными.</summary>
+      <returns>Хэш-код объекта.</returns>
+    </member>    
+    <member name="M:default.int64.ToString">
+      <summary>Возврат строкового представления объекта.</summary>
+      <returns>Строковое значение объекта.</returns>
+    </member>
+    <member name="M:default.int64.GetType">
+      <summary>Возврат Platform.Type метода, который представляет тип объекта</summary>      
+      <returns>Возврат Platform.Type этого объекта.</returns>
+    </member>
+    
+    <member name="T:default.char16">
+      <summary>Представление default.char16</summary>
+    </member>
+    <member name="F:default.char16._value">
+      <summary>Значение char16 типа.</summary>
+    </member>
+    <member name="M:default.char16.#ctor(default.char16)">
+      <summary>Конструктор объекта char16.</summary>
+    </member>    
+    <member name="M:default.char16.Equals(Platform.Object)">
+      <summary>Сравнение объекта с другим объектом Platform.Object.</summary>
+      <returns>Возвращается значение "True", если объекты равны; в противном случае — значение "False".</returns>
+    </member>    
+    <member name="M:default.char16.GetHashCode">
+      <summary>Сформировать хэш-код в соответствии с содержащимися данными.</summary>
+      <returns>Хэш-код объекта.</returns>
+    </member>    
+    <member name="M:default.char16.ToString">
+      <summary>Возврат строкового представления объекта.</summary>
+      <returns>Строковое значение объекта.</returns>
+    </member>
+    <member name="M:default.char16.GetType">
+      <summary>Возврат Platform.Type метода, который представляет тип объекта</summary>      
+      <returns>Возврат Platform.Type этого объекта.</returns>
+    </member>
+    
+    <member name="T:default.uint8">
+      <summary>Представление default.uint8</summary>
+    </member>
+    <member name="F:default.uint8._value">
+      <summary>Значение uint8 типа.</summary>
+    </member>
+    <member name="M:default.uint8.#ctor(default.uint8)">
+      <summary>Конструктор объекта uint8.</summary>
+    </member>    
+    <member name="M:default.uint8.Equals(Platform.Object)">
+      <summary>Сравнение объекта с другим объектом Platform.Object.</summary>
+      <returns>Возвращается значение "True", если объекты равны; в противном случае — значение "False".</returns>
+    </member>    
+    <member name="M:default.uint8.GetHashCode">
+      <summary>Сформировать хэш-код в соответствии с содержащимися данными.</summary>
+      <returns>Хэш-код объекта.</returns>
+    </member>    
+    <member name="M:default.uint8.ToString">
+      <summary>Возврат строкового представления объекта.</summary>
+      <returns>Строковое значение объекта.</returns>
+    </member>
+    <member name="M:default.uint8.GetType">
+      <summary>Возврат Platform.Type метода, который представляет тип объекта</summary>      
+      <returns>Возврат Platform.Type этого объекта.</returns>
+    </member>
+
+    <!-- End of default namespace -->  
+  
+    <!-- Begin of Platform namespace -->
+    <member name="N:Platform">
+      <summary>Предоставление общих интерфейсов и классов платформы C++/CX.</summary>
+    </member>
+
+    <member name="T:Platform.AccessDeniedException">
+      <summary>Представляет исключение в отказе к доступу (E_ACCESSDENIED).</summary>
+    </member>
+    <member name="M:Platform.AccessDeniedException.#ctor()">
+      <summary>Конструктор по умолчанию Platform.AccessDeniedException.</summary>
+    </member>
+    <member name="M:Platform.AccessDeniedException.#ctor(Platform.String)">
+      <summary>Конструктор, принимающий сообщения об отладке в качестве параметра.</summary>
+      <param name="message">Ввод сообщения от отладке</param>
+    </member>    
+
+    <member name="T:Platform.Boolean">
+      <summary>Представление типа Platform.Bolean.</summary>
+    </member>
+    <member name="M:Platform.Boolean.#ctor(Platform.Boolean)">
+      <summary>Конструктор по умолчанию Platform.Boolean.</summary>
+    </member>
+    <member name="F:Platform.Boolean._value">
+      <summary>Логическое значение типа.</summary>
+    </member>
+    <member name="M:Platform.Boolean.Equals(Platform.Object)">
+      <summary>Сравнение объекта с другим объектом Platform.Object.</summary>
+      <returns>Возвращается значение "True", если объекты равны; в противном случае — значение "False".</returns>
+    </member>    
+    <member name="M:Platform.Boolean.GetHashCode">
+      <summary>Сформировать хэш-код в соответствии с содержащимися данными.</summary>
+      <returns>Хэш-код объекта.</returns>
+    </member>    
+    <member name="M:Platform.Boolean.ToString">
+      <summary>Возврат строкового представления объекта.</summary>
+      <returns>Строковое значение объекта.</returns>
+    </member>
+    <member name="M:Platform.Boolean.GetType">
+      <summary>Возврат Platform.Type метода, который представляет тип объекта.</summary>      
+      <returns>Возврат Platform.Type этого объекта.</returns>
+    </member>
+
+    <member name="T:Platform.COMException">
+      <summary>Представление типа COMException.</summary>
+    </member>
+    <member name="M:Platform.COMException.#ctor(default.int32)">
+      <summary>Конструктор, принимающий HRESULT в качестве входного параметра.</summary>
+      <param name="hresult">Входное значение HRESULT.</param>
+    </member>
+    <member name="M:Platform.COMException.#ctor(default.int32,Platform.String)">    
+      <summary>Конструктор, принимающий значение HRESULT и сообщение об отладке в качестве параметров.</summary>
+      <param name="hresult">Входное значение HRESULT.</param>
+      <param name="message">Ввод сообщения от отладке</param>
+    </member>
+
+    <member name="T:Platform.CallbackContext">
+      <summary>Представляет класс Platform.CallbackContext.</summary>
+    </member>
+    <member name="F:Platform.CallbackContext.value__">
+      <summary>Значение данных Platform.CallbackContext.</summary>
+    </member>
+    <member name="F:Platform.CallbackContext.Any">
+      <summary>Любой контекст — поддержка маршалера свободных потоков.</summary>
+    </member>
+    <member name="F:Platform.CallbackContext.Same">
+      <summary>Некоторый контекст — без поддержки маршалера свободных потоков.</summary>
+    </member>
+
+    <member name="T:Platform.ChangedStateException">
+      <summary>Представление исключение из измененного состояния (E_CHANGED_STATE).</summary>
+    </member>
+    <member name="M:Platform.ChangedStateException.#ctor">
+      <summary>Конструктор по умолчанию Platform.ChangedStateException.</summary>
+    </member>
+    <member name="M:Platform.ChangedStateException.#ctor(Platform.String)">    
+      <summary>Конструктор, принимающий сообщения об отладке в качестве параметра.</summary>
+      <param name="message">Ввод сообщения от отладке</param>
+    </member>
+
+    <member name="T:Platform.ClassNotRegisteredException">
+      <summary>Представление незарегистрированного исключения класса (REGDB_E_CLASSNOTREG).</summary>
+    </member>
+    <member name="M:Platform.ClassNotRegisteredException.#ctor">
+      <summary>Конструктор по умолчанию Platform.ClassNotRegisteredException.</summary>
+    </member>
+    <member name="M:Platform.ClassNotRegisteredException.#ctor(Platform.String)">    
+      <summary>Конструктор, принимающий сообщения об отладке в качестве параметра.</summary>
+      <param name="message">Ввод сообщения от отладке</param>
+    </member>
+    
+    <member name="T:Platform.Delegate">
+      <summary>Представление класса Platform.Delegate.</summary>
+    </member>
+    <member name="M:Platform.Delegate.#ctor">
+      <summary>Конструктор по умолчанию Platform.Delegate.</summary>
+    </member>
+    <member name="M:Platform.Delegate.Equals(Platform.Object)">
+      <summary>Сравнение объекта с другим объектом Platform.Object.</summary>
+      <returns>Возвращается значение "True", если объекты равны; в противном случае — значение "False".</returns>
+    </member>    
+    <member name="M:Platform.Delegate.GetHashCode">
+      <summary>Сформировать хэш-код в соответствии с содержащимися данными.</summary>
+      <returns>Хэш-код объекта.</returns>
+    </member>    
+    <member name="M:Platform.Delegate.ToString">
+      <summary>Возврат строкового представления объекта.</summary>
+      <returns>Строковое значение объекта.</returns>
+    </member>
+    
+    <member name="T:Platform.DisconnectedException">
+      <summary>Представление отсоединенного исключения (RPC_E_DISCONNECTED).</summary>
+    </member>
+    <member name="M:Platform.DisconnectedException.#ctor">
+      <summary>Конструктор по умолчанию Platform.DisconnectedException.</summary>
+    </member>
+    <member name="M:Platform.DisconnectedException.#ctor(Platform.String)">    
+      <summary>Конструктор, принимающий сообщения об отладке в качестве параметра.</summary>
+      <param name="message">Ввод сообщения от отладке</param>
+    </member>    
+
+    <member name="T:Platform.Enum">
+      <summary>Представление класса Platform.Enum.</summary>
+    </member>
+    <member name="M:Platform.Enum.#ctor">
+      <summary>Конструктор по умолчанию Platform.Enum.</summary>
+    </member>
+    <member name="M:Platform.Enum.Equals(Platform.Object)">
+      <summary>Сравнение объекта с другим объектом Platform.Object.</summary>
+      <returns>Возвращается значение "True", если объекты равны; в противном случае — значение "False".</returns>
+    </member>    
+    <member name="M:Platform.Enum.GetHashCode">
+      <summary>Сформировать хэш-код в соответствии с содержащимися данными.</summary>
+      <returns>Хэш-код объекта.</returns>
+    </member>    
+    <member name="M:Platform.Enum.ToString">
+      <summary>Возврат строкового представления объекта.</summary>
+      <returns>Строковое значение объекта.</returns>
+    </member>
+    
+    <member name="T:Platform.Exception">
+      <summary>Представление класса Platform.Exception.</summary>
+    </member>
+    <member name="F:Platform.Exception.__capabilitySid">
+      <summary>Зарезервировано.</summary>
+    </member>
+    <member name="F:Platform.Exception.__description">
+      <summary>Зарезервировано.</summary>
+    </member>
+    <member name="F:Platform.Exception.__hresult">
+      <summary>Значение HRESULT Platform.Exception.</summary>
+    </member>
+    <member name="F:Platform.Exception.__restrictedErrorReference">
+      <summary>Зарезервировано.</summary>
+    </member>
+    <member name="F:Platform.Exception.__restrictedErrorString">
+      <summary>Зарезервировано.</summary>
+    </member>
+    <member name="F:Platform.Exception.__restrictedInfo">
+      <summary>Зарезервировано.</summary>
+    </member>
+    <member name="F:Platform.Exception.__size">
+      <summary>Зарезервировано.</summary>
+    </member>
+    <member name="F:Platform.Exception.__throwInfo">
+      <summary>Зарезервировано.</summary>
+    </member>
+    <member name="M:Platform.Exception.#ctor(default.int32)">
+      <summary>Конструктор, принимающий значения HRESULT в качестве входного параметра.</summary>
+      <param name="hresult">Входное значение HRESULT.</param>
+    </member>
+    <member name="M:Platform.Exception.#ctor(default.int32,Platform.String)">    
+      <summary>Конструктор, принимающий значение HRESULT и сообщение об отладке в качестве параметров.</summary>
+      <param name="hresult">Входное значение HRESULT.</param>
+      <param name="message">Ввод сообщения от отладке</param>
+    </member>
+    <member name="M:Platform.Exception.CreateException(default.int32)">
+      <summary>Создание экземпляра строго типизованного исключения, которое соответствует входному параметру HRESULT.</summary>
+      <param name="hresult">Входное значение HRESULT.</param>
+      <returns>Экземпляр Platform.Exception.</returns>
+    </member>
+    <member name="M:Platform.Exception.CreateException(default.int32,Platform.String)">    
+      <summary>Создание экземпляра строго типизованного исключения, которое соответствует входному параметру HRESULT.</summary>
+      <param name="hresult">Входное значение HRESULT.</param>
+      <param name="message">Ввод сообщения от отладке</param>
+      <returns>Экземпляр Platform.Exception.</returns>
+    </member>
+    <member name="M:Platform.Exception.Dispose">
+      <summary>Процедура Cleanup для Platform.Exception.</summary>
+    </member>
+    <member name="M:Platform.Exception.Equals(Platform.Object)">
+      <summary>Сравнение объекта с другим объектом Platform.Object.</summary>
+      <returns>Возвращается значение "True", если объекты равны; в противном случае — значение "False".</returns>
+    </member>    
+    <member name="M:Platform.Exception.GetHashCode">
+      <summary>Сформировать хэш-код в соответствии с содержащимися данными.</summary>
+      <returns>Хэш-код объекта.</returns>
+    </member>
+    <member name="M:Platform.Exception.ReCreateException(default.int32)">
+      <summary>Предварительное создание экземпляра строго типизованного исключения, которое соответствует входному параметру и данным HRESULT. IRestrictedErrorInfo.</summary>
+      <param name="hresult">Входное значение HRESULT.</param>
+      <returns>Экземпляр Platform.Exception.</returns>
+    </member>    
+    <member name="P:Platform.Exception.Message">
+      <summary>Указание свойства, которое получает строковое сообщение, представляющее исключение.</summary>      
+    </member>
+    <member name="P:Platform.Exception.HResult">
+      <summary>Указание свойства, которое получает значение HRESULT, представляющее исключение.</summary>      
+    </member>
+    <member name="M:Platform.Exception.ToString">
+      <summary>Возврат строкового представления объекта.</summary>
+      <returns>Строковое значение объекта.</returns>
+    </member>
+    
+    <member name="T:Platform.FailureException">
+      <summary>Представление отсоединенного исключения (E_FAIL).</summary>
+    </member>
+    <member name="M:Platform.FailureException.#ctor">
+      <summary>Конструктор по умолчанию Platform.FailureException.</summary>
+    </member>
+    <member name="M:Platform.FailureException.#ctor(Platform.String)">    
+      <summary>Конструктор, принимающий сообщения об отладке в качестве параметра.</summary>
+      <param name="message">Ввод сообщения от отладке</param>
+    </member>
+
+    <member name="T:Platform.Guid">
+      <summary>Представление класса Platform.Guid.</summary>
+    </member>
+    <member name="F:Platform.Guid.__a">
+      <summary>Первые 4 байта Platform.Guid.</summary>
+    </member>
+    <member name="F:Platform.Guid.__b">
+      <summary>Следующие 2 байта Platform.Guid.</summary>
+    </member>
+    <member name="F:Platform.Guid.__c">
+      <summary>Следующие 2 байта Platform.Guid.</summary>
+    </member>
+    <member name="F:Platform.Guid.__d">
+      <summary>Следующий байт Platform.Guid.</summary>
+    </member>
+    <member name="F:Platform.Guid.__e">
+      <summary>Следующий байт Platform.Guid.</summary>
+    </member>
+    <member name="F:Platform.Guid.__f">
+      <summary>Следующий байт Platform.Guid.</summary>
+    </member>
+    <member name="F:Platform.Guid.__g">
+      <summary>Следующий байт Platform.Guid.</summary>
+    </member>
+    <member name="F:Platform.Guid.__h">
+      <summary>Следующий байт Platform.Guid.</summary>
+    </member>
+    <member name="F:Platform.Guid.__i">
+      <summary>Следующий байт Platform.Guid.</summary>
+    </member>
+    <member name="F:Platform.Guid.__j">
+      <summary>Следующий байт Platform.Guid.</summary>
+    </member>
+    <member name="F:Platform.Guid.__k">
+      <summary>Следующий байт Platform.Guid.</summary>
+    </member>    
+    <member name="M:Platform.Guid.#ctor(Platform.Details._GUID)">
+      <summary>Конструктор, принимающий Platform.Details._GUID в качестве входного параметра.</summary>
+      <param name="guid">Входное значение Platform.Details._GUID.</param>
+    </member>    
+    <member name="M:Platform.Guid.#ctor(default.uint32,default.uint16,default.uint16,default.uint8[])">
+      <summary>Конструктор. допускающий ввод типы примитивов для создания Platform.Guid.</summary>
+      <param name="a">Первые 4 байта Platform.Guid.</param>
+      <param name="b">Первые 2 байта Platform.Guid.</param>
+      <param name="c">Первые 2 байта Platform.Guid.</param>
+      <param name="c">Массив из 8 байтов Platform.Guid.</param>
+    </member>    
+    <member name="M:Platform.Guid.#ctor(default.uint32,default.uint16,default.uint16,default.uint8,default.uint8,default.uint8,default.uint8,default.uint8,default.uint8,default.uint8,default.uint8)">
+      <summary>Конструктор. допускающий ввод типы примитивов для создания Platform.Guid.</summary>
+      <param name="a">Первые 4 байта Platform.Guid.</param>
+      <param name="b">Первые 2 байта Platform.Guid.</param>
+      <param name="c">Первые 2 байта Platform.Guid.</param>
+      <param name="d">Следующий байт Platform.Guid.</param>
+      <param name="e">Следующий байт Platform.Guid.</param>
+      <param name="f">Следующий байт Platform.Guid.</param>
+      <param name="g">Следующий байт Platform.Guid.</param>
+      <param name="h">Следующий байт Platform.Guid.</param>
+      <param name="i">Следующий байт Platform.Guid.</param>
+      <param name="j">Следующий байт Platform.Guid.</param>
+      <param name="k">Следующий байт Platform.Guid.</param>
+    </member>    
+    <member name="M:Platform.Guid.#ctor">
+      <summary>Конструктор по умолчанию Platform.Guid.</summary>
+    </member>
+    <member name="M:Platform.Guid.Equals(Platform.Details._GUID)">
+      <summary>Сравнение объекта с другим объектом Platform.Object.</summary>
+      <param name="a">Входное значение Platform.Details._GUID.</param>
+      <returns>Возвращается значение "True", если Platform.Details._GUID равен; в противном случае — значение "False".</returns>
+    </member>
+    <member name="M:Platform.Guid.Equals(Platform.Guid)">
+      <summary>Сравнение объекта с другим объектом Platform.Object.</summary>
+       <param name="a">Ввод значения Platform.Guid.</param>
+      <returns>Возвращается значение "True", если Platform.Details.Guid равен; в противном случае — значение "False".</returns>
+    </member>
+    <member name="M:Platform.Guid.Equals(Platform.Object)">
+      <summary>Сравнение объекта с другим объектом Platform.Object.</summary>
+      <returns>Возвращается значение "True", если объекты равны; в противном случае — значение "False".</returns>
+    </member>    
+    <member name="M:Platform.Guid.GetHashCode">
+      <summary>Сформировать хэш-код в соответствии с содержащимися данными.</summary>
+      <returns>Хэш-код объекта.</returns>
+    </member>
+    <member name="M:Platform.Guid.GetType">
+      <summary>Метод возврата Platform.Type, который представляет тип объекта</summary>      
+      <returns>Возврат Platform.Type этого объекта.</returns>
+    </member>
+    <member name="M:Platform.Guid.ToString">
+      <summary>Возврат строкового представления объекта.</summary>
+      <returns>Строковое значение объекта.</returns>
+    </member>    
+    <member name="M:Platform.Guid.op_Equality(Platform.Guid,Platform.Guid)">
+      <summary>Возвращается значение "True", если объект равен; в противном случае — значение "False".</summary>
+      <returns>Значение "True", если есть равенство; в противном случае — значение "False".</returns>
+    </member>
+    <member name="M:Platform.Guid.op_Implicit(Platform.Details._GUID)">
+      <summary>преобразовать Platform.Details._GUID в Platform.Guid.</summary>
+      <returns>Возврат Platform.Guid.</returns>
+    </member>
+    <member name="M:Platform.Guid.op_Inequality(Platform.Guid,Platform.Guid)">
+      <summary>Возвращается значение "True", если объекты не равны; в противном случае — значение "False".</summary>
+      <returns>Значение "True", если нет равенства; в противном случае — значение "False".</returns>
+    </member>
+    
+    <member name="T:Platform.IBoxArray`1">
+      <summary>Представление интерфейса окна массива.</summary>
+    </member>    
+    <member name="P:Platform.IBoxArray`1.Value">
+      <summary>Указание свойства, получающего значение, которое содержит Platform.IBoxArray`1.</summary>      
+    </member>    
+    
+    <member name="T:Platform.IBox`1">
+      <summary>Представление интерфейса окна.</summary>
+    </member>
+    <member name="P:Platform.IBox`1.Value">
+      <summary>Указание свойства, получающего значение, которое содержит Platform.IBox`1.</summary>      
+    </member>        
+
+    <member name="T:Platform.IDisposable">
+      <summary>Представление интерфейса, обеспечивающего процедуру cleanup.</summary>
+    </member>    
+    <member name="M:Platform.IDisposable.Dispose">
+      <summary>Процедура Cleanup.</summary>
+    </member>    
+
+    <member name="T:Platform.IValueType">
+      <summary>Представление интерфейса типа значения.</summary>
+    </member>    
+
+    <member name="T:Platform.IntPtr">
+      <summary>Представление типа указателя.</summary>
+    </member>
+    <member name="F:Platform.IntPtr._value">
+      <summary>Значение void* типа.</summary>
+    </member>
+    <member name="M:Platform.IntPtr.#ctor(default.int32)">
+      <summary>Конструктор, принимающий default.int32 в качестве параметра.</summary>
+      <param name="ptr">Значение указателя default.int32.</param>
+    </member>
+    <member name="M:Platform.IntPtr.#ctor(native int)">
+      <summary>Конструктор, принимающий native int в качестве параметра.</summary>
+      <param name="ptr">Значение указателя native int.</param>
+    </member>
+    <member name="M:Platform.IntPtr.#ctor(void*)">
+      <summary>Конструктор, принимающий void* в качестве параметра.</summary>
+      <param name="ptr">Значение указателя void*.</param>
+    </member>
+    <member name="M:Platform.IntPtr.ToInt32">
+      <summary>Предоставление значения default.int32 для Platform.IntPtr.</summary>
+      <param name="ptr">Значение указателя void*.</param>
+    </member>
+    <member name="M:Platform.IntPtr.op_Explicit(void*)~Platform.IntPtr">
+      <summary>Преобразование void* в Platform.IntPtr.</summary>
+      <returns>Возвращается Platform.IntPtr.</returns>
+    </member>
+    <member name="M:Platform.IntPtr.op_Explicit(default.int32)~Platform.IntPtr">
+      <summary>Преобразование default.int32 в Platform.IntPtr.</summary>
+      <returns>Возвращается Platform.IntPtr.</returns>
+    </member>
+    <member name="M:Platform.IntPtr.op_Explicit(native int)~Platform.IntPtr">
+      <summary>Преобразование native int в Platform.IntPtr.</summary>
+      <returns>Возвращается Platform.IntPtr.</returns>
+    </member>
+    
+    <member name="T:Platform.InvalidArgumentException">
+      <summary>Представление исключения недопустимого аргумента (E_INVALIDARG).</summary>
+    </member>
+    <member name="M:Platform.InvalidArgumentException.#ctor">
+      <summary>Конструктор по умолчанию Platform.InvalidArgumentException.</summary>
+    </member>
+    <member name="M:Platform.InvalidArgumentException.#ctor(Platform.String)">    
+      <summary>Конструктор, принимающий сообщения об отладке в качестве параметра.</summary>
+      <param name="message">Ввод сообщения от отладке</param>
+    </member>
+
+    <member name="T:Platform.InvalidCastException">
+      <summary>Представление исключения недопустимого аргумента (E_NOINTERFACE).</summary>
+    </member>
+    <member name="M:Platform.InvalidCastException.#ctor">
+      <summary>Конструктор по умолчанию Platform.InvalidCastException.</summary>
+    </member>
+    <member name="M:Platform.InvalidCastException.#ctor(Platform.String)">    
+      <summary>Конструктор, принимающий сообщения об отладке в качестве параметра.</summary>
+      <param name="message">Ввод сообщения от отладке</param>
+    </member>
+
+    <member name="T:Platform.MTAThreadAttribute">
+      <summary>Представление атрибут MTA.</summary>
+    </member>
+    <member name="M:Platform.MTAThreadAttribute.#ctor">
+      <summary>Конструктор по умолчанию Platform.MTAThreadAttribute.</summary>
+    </member>
+    <member name="M:Platform.MTAThreadAttribute.Equals(Platform.Object)">
+      <summary>Сравнение объекта с другим объектом Platform.Object.</summary>
+      <returns>Возвращается значение "True", если объекты равны; в противном случае — значение "False".</returns>
+    </member>    
+    <member name="M:Platform.MTAThreadAttribute.GetHashCode">
+      <summary>Сформировать хэш-код в соответствии с содержащимися данными.</summary>
+      <returns>Хэш-код объекта.</returns>
+    </member>    
+    <member name="M:Platform.MTAThreadAttribute.ToString">
+      <summary>Возврат строкового представления объекта.</summary>
+      <returns>Строковое значение объекта.</returns>
+    </member>
+
+    <member name="T:Platform.NotImplementedException">
+      <summary>Представление не реализованного исключения (E_NOTIMPL).</summary>
+    </member>    
+    <member name="M:Platform.NotImplementedException.#ctor">
+      <summary>Конструктор по умолчанию Platform.NotImplementedException.</summary>
+    </member>
+    <member name="M:Platform.NotImplementedException.#ctor(Platform.String)">    
+      <summary>Конструктор, принимающий сообщения об отладке в качестве параметра.</summary>
+      <param name="message">Ввод сообщения от отладке</param>
+    </member>    
+
+    <member name="T:Platform.NullReferenceException">
+      <summary>Представление не реализованного исключения (E_POINTER).</summary>
+    </member>
+    <member name="M:Platform.NullReferenceException.#ctor">
+      <summary>Конструктор по умолчанию Platform.NotImplementedException.</summary>
+    </member>
+    <member name="M:Platform.NullReferenceException.#ctor(Platform.String)">    
+      <summary>Конструктор, принимающий сообщения об отладке в качестве параметра.</summary>
+      <param name="message">Ввод сообщения от отладке</param>
+    </member>    
+    
+    <member name="T:Platform.Object">
+      <summary>Представление класса Platform.Object.</summary>
+    </member>
+    <member name="M:Platform.Object.#ctor">
+      <summary>Конструктор по умолчанию Platform.Object.</summary>
+    </member>
+    <member name="M:Platform.Object.Equals(Platform.Object)">
+      <summary>Сравнение объекта с другим объектом Platform.Object.</summary>
+      <returns>Возвращается значение "True", если объекты равны; в противном случае — значение "False".</returns>
+    </member>    
+    <member name="M:Platform.Object.GetHashCode">
+      <summary>Сформировать хэш-код в соответствии с содержащимися данными.</summary>
+      <returns>Хэш-код объекта.</returns>
+    </member>
+    <member name="M:Platform.Object.GetType">
+      <summary>Метод возврата Platform.Type, который представляет тип объекта</summary>      
+      <returns>Возврат Platform.Type этого объекта.</returns>
+    </member>
+    <member name="M:Platform.Object.ReferenceEquals(Platform.Object,Platform.Object)">
+      <summary>Сравнение ссылок двух объектов Platform.Object на предмет их равнозначности.</summary>
+      <param name="obj1">Значение Platform.Object.</param>
+      <param name="obj2">Значение Platform.Object.</param>
+      <returns>Возвращается значение "True", если ссылки равны; в противном случае — значение "False".</returns>
+    </member>
+    <member name="M:Platform.Object.ReferenceEquals(Platform.String,Platform.String)">
+      <summary>Сравнение ссылок двух строк Platform.Object на предмет их равнозначности.</summary>    
+      <param name="str1">Значение Platform.String.</param>
+      <param name="str2">Значение Platform.String.</param>
+      <returns>Возвращается значение "True", если ссылки равны; в противном случае — значение "False".</returns>
+    </member>
+    <member name="M:Platform.Object.ToString">
+      <summary>Возврат представления строки объекта.</summary>
+      <returns>Строковое значение объекта.</returns>
+    </member>
+    
+    <member name="T:Platform.OperationCanceledException">
+      <summary>Представление исключение отмененной операции (E_ABORT).</summary>
+    </member>
+    <member name="M:Platform.OperationCanceledException.#ctor">
+      <summary>Конструктор по умолчанию Platform.OperationCanceledException.</summary>
+    </member>
+    <member name="M:Platform.OperationCanceledException.#ctor(Platform.String)">    
+      <summary>Конструктор, принимающий сообщения об отладке в качестве параметра.</summary>
+      <param name="message">Ввод сообщения от отладке</param>
+    </member>
+
+    <member name="T:Platform.OutOfBoundsException">
+      <summary>Представление исключения, находящегося вне допустимого диапазона (E_BOUNDS).</summary>
+    </member>
+    <member name="M:Platform.OutOfBoundsException.#ctor">
+      <summary>Конструктор по умолчанию Platform.OutOfBoundsException.</summary>
+    </member>
+    <member name="M:Platform.OutOfBoundsException.#ctor(Platform.String)">    
+      <summary>Конструктор, принимающий сообщения об отладке в качестве параметра.</summary>
+      <param name="message">Ввод сообщения от отладке</param>
+    </member>    
+    
+    <member name="T:Platform.OutOfMemoryException">
+      <summary>Представление исключения, находящегося вне памяти(E_OUTOFMEMORY).</summary>
+    </member>
+    <member name="M:Platform.OutOfMemoryException.#ctor">
+      <summary>Конструктор по умолчанию Platform.OutOfMemoryException.</summary>
+    </member>
+    <member name="M:Platform.OutOfMemoryException.#ctor(Platform.String)">    
+      <summary>Конструктор, принимающий сообщения об отладке в качестве параметра.</summary>
+      <param name="message">Ввод сообщения от отладке</param>
+    </member>
+    
+    <member name="T:Platform.STAThreadAttribute">
+      <summary>Представление атрибута STA.</summary>
+    </member>
+    <member name="M:Platform.STAThreadAttribute.#ctor">
+      <summary>Конструктор по умолчанию Platform.STAThreadAttribute.</summary>
+    </member>
+    <member name="M:Platform.STAThreadAttribute.Equals(Platform.Object)">
+    <summary>Сравнение объекта с другим объектом Platform.Object.</summary>
+      <returns>Возвращается значение "True", если объекты равны; в противном случае — значение "False".</returns>
+    </member>
+    <member name="M:Platform.STAThreadAttribute.GetHashCode">
+      <summary>Сформировать хэш-код в соответствии с содержащимися данными.</summary>
+      <returns>Хэш-код объекта.</returns>
+    </member>
+    <member name="M:Platform.STAThreadAttribute.ToString">
+      <summary>Возврат строкового представления объекта.</summary>
+      <returns>Строковое значение объекта.</returns>
+    </member>
+
+    <member name="T:Platform.SizeT">
+      <summary>Представление класса Platform.SizeT.</summary>
+    </member>
+    <member name="F:Platform.SizeT._value">
+      <summary>Значение void* типа.</summary>
+    </member>
+    <member name="M:Platform.SizeT.#ctor(default.int32)">
+      <summary>Конструктор, принимающий default.int32 в качестве параметра.</summary>
+      <param name="ptr">Значение указателя default.int32.</param>
+    </member>
+    <member name="M:Platform.SizeT.#ctor(void*)">
+      <summary>Конструктор, принимающий void* в качестве параметра.</summary>
+      <param name="ptr">Значение указателя void*.</param>
+    </member>
+    <member name="M:Platform.SizeT.Equals(Platform.Object)">
+    <summary>Сравнение объекта с другим объектом Platform.Object.</summary>
+      <returns>Возвращается значение "True", если объекты равны; в противном случае — значение "False".</returns>
+    </member>
+    <member name="M:Platform.SizeT.GetHashCode">
+      <summary>Сформировать хэш-код в соответствии с содержащимися данными.</summary>
+      <returns>Хэш-код объекта.</returns>
+    </member>
+    <member name="M:Platform.SizeT.ToString">
+      <summary>Возврат строкового представления объекта.</summary>
+      <returns>Строковое значение объекта.</returns>
+    </member>
+
+    <member name="T:Platform.String">
+      <summary>Представление класса Platform.String.</summary>
+    </member>
+    <member name="M:Platform.String.#ctor(char modopt(Platform.Runtime.CompilerServices.IsConst)*)">
+      <summary>Конструктор, принимающий HSTRING/wchar_t* в качестве входного параметра.</summary>
+      <param name="str">Указатель строки.</param>
+    </member>
+    <member name="M:Platform.String.#ctor(char modopt(Platform.Runtime.CompilerServices.IsConst)*, default.uint32)">
+      <summary>Конструктор, принимающий wchar_t* в качестве входного параметра и длины строки.</summary>
+      <param name="str">Указатель строки.</param>
+      <param name="strLen">Длина строки.</param>
+    </member>
+    <member name="M:Platform.String.#ctor">
+      <summary>Конструктор по умолчанию Platform.String.</summary>
+    </member>
+    <member name="M:Platform.String.Begin">
+        <summary>Предоставление указателя, указывающего за пределы конца вектора.</summary>
+        <returns>Возвращается указатель.</returns>
+    </member>
+    <member name="M:Platform.String.CompareOrdinal(Platform.String,Platform.String)">
+      <summary>Сравниваются все строки и возвращается значение "True", если они одинаковы; в противном случае — значение "False".</summary>
+      <param name="str1">Входное значение Platform.String.</param>
+      <param name="str2">Входное значение Platform.String.</param>
+      <returns>Возвращается default.int32.</returns>
+    </member>
+    <member name="M:Platform.String.Concat(Platfrom.Object,Platform.Object)">
+      <summary>Объединение двух объектов в качестве строк.</summary>
+      <param name="str1">Входное значение Platform.Object.</param>
+      <param name="str2">Входное значение Platform.Object.</param>
+      <returns>Возвращается Platform.String.</returns>
+    </member>
+    <member name="M:Platform.String.Concat(Platform.String,Platform.String)">
+      <summary>Объединение двух строк.</summary>
+      <param name="str1">Входное значение Platform.String.</param>
+      <param name="str2">Входное значение Platform.String.</param>
+      <returns>Возвращается Platform.String.</returns>
+    </member>
+    <member name="M:Platform.String.Data">
+      <summary>Извлечение буфера wchar_t* из Platform.String.</summary>
+      <returns>Возвращается буфер wchar_t*.</returns>
+    </member>    
+    <member name="M:Platform.String.Dispose">
+      <summary>Процедура Cleanup для Platform.Exception.</summary>
+    </member>
+    <member name="M:Platform.String.End">
+      <summary>Предоставляет указатель первому элементу в контейнере.</summary>
+      <returns>Возвращается указатель.</returns>
+    </member>
+    <member name="M:Platform.String.Equals(Platform.Object)">
+      <summary>Сравнение объекта с другим объектом Platform.Object.</summary>
+      <param name="obj">Объект платформы.</param>
+      <returns>Возвращается значение "True", если значения строк объектов идентичны; в противном случае — значение "False".</returns>
+    </member>
+    <member name="M:Platform.String.Equals(Platform.String)">
+      <summary>Сравнение объекта с другим Platform.String.</summary>
+      <param name="str">Строковый объект.</param>
+      <returns>Возвращается значение "True", если строки идентичны; в противном случае — значение "False".</returns>
+    </member>
+    <member name="M:Platform.String.GetHashCode">
+      <summary>Сформировать хэш-код в соответствии с содержащимися данными.</summary>
+      <returns>Хэш-код объекта.</returns>
+    </member>
+    <member name="M:Platform.String.IsEmpty">
+      <summary>Проверяется, является ли Platform.String пустым значением.</summary>
+      <returns>Возвращается значение "True", если значение Platform.String является пустым; в противном случае — значение "False".</returns>
+    </member>
+    <member name="M:Platform.String.IsFastPass">
+      <summary>Проверяется, является ли Platform.String быстрым паролем.</summary>
+      <returns>Возвращается значение "True", если значение Platform.String является быстрым паролем; в противном случае — значение "False".</returns>
+    </member>
+    <member name="M:Platform.String.Length">
+      <summary>Возвращается длина строки.</summary>
+      <returns>Длина строки.</returns>
+    </member>
+    <member name="M:Platform.String.ToString">
+      <summary>Возвращается строка.</summary>
+      <returns>Значение строки.</returns>
+    </member>
+    <member name="M:Platform.Guid.op_Equality(Platform.String,Platform.String)">
+      <summary>Возвращается значение "True", если значение Platform.String равно; в противном случае — значение "False".</summary>
+      <param name="str1">Входное значение Platform.String.</param>
+      <param name="str2">Входное значение Platform.String.</param>
+      <returns>Значение "True", если есть равенство; в противном случае — значение "False".</returns>
+    </member>
+    <member name="M:Platform.Guid.op_GreaterThan(Platform.String,Platform.String)">
+      <summary>Возвращается значение "True", если первая строка больше второй; в противном случае — значение "False".</summary>
+      <param name="str1">Входное значение Platform.String.</param>
+      <param name="str2">Входное значение Platform.String.</param>
+      <returns>Значение "True", если первая строка больше второй; в противном случае — значение "False".</returns>
+    </member>
+    <member name="M:Platform.Guid.op_GreaterThanOrEqual(Platform.String,Platform.String)">
+      <summary>Возвращается значение "True", если первая строка больше или равна второй; в противном случае — значение "False".</summary>
+      <param name="str1">Входное значение Platform.String.</param>
+      <param name="str2">Входное значение Platform.String.</param>
+      <returns>Значение "True", если первая строка больше или равна второй; в противном случае — значение "False".</returns>
+    </member>
+    <member name="M:Platform.Guid.op_Inequality(Platform.String,Platform.String)">
+      <summary>Значение "True", если значение Platform.String не равно; в противном случае — значение "False".</summary>
+      <param name="str1">Входное значение Platform.String.</param>
+      <param name="str2">Входное значение Platform.String.</param>
+      <returns>Значение "True", если нет равенства; в противном случае — значение "False".</returns>
+    </member>
+    <member name="M:Platform.Guid.op_LessThan(Platform.String,Platform.String)">
+      <summary>Возвращается значение "True", если вторая строка больше первой; в противном случае — значение "False".</summary>
+      <param name="str1">Входное значение Platform.String.</param>
+      <param name="str2">Входное значение Platform.String.</param>
+      <returns>Значение "True", если вторая строка больше первой; в противном случае — значение "False".</returns>
+    </member>
+    <member name="M:Platform.Guid.op_LessThanOrEqual(Platform.String,Platform.String)">
+      <summary>Возвращается значение "True", если вторая строка больше или равна первой; в противном случае — значение "False".</summary>
+      <param name="str1">Входное значение Platform.String.</param>
+      <param name="str2">Входное значение Platform.String.</param>
+      <returns>Возвращается значение "True", если вторая строка больше или равна первой; в противном случае — значение "False".</returns>
+    </member>
+    
+    <member name="T:Platform.Type">
+      <summary>Представление класса Platform.Type.</summary>
+    </member>
+    <member name="F:Platform.Type._descriptior">
+      <summary>Зарезервировано.</summary>
+    </member>
+    <member name="F:Platform.Type._owndescriptior">
+      <summary>Зарезервировано.</summary>
+    </member>
+    <member name="M:Platform.Type.#ctor(Windows.UI.Xaml.Interop.TypeName)">
+      <summary>Конструктор, принимающий Windows.UI.Xaml.Interop.TypeName в качестве параметра.</summary>
+      <param name="type">Входное значение Windows.UI.Xaml.Interop.TypeName.</param>
+    </member>
+    <member name="M:Platform.Type.#ctor(Platform.Object)">
+      <summary>Конструктор, принимающий Platform.Object в качестве параметра.</summary>
+      <param name="obj">Входное значение Platform.Object.</param>
+    </member>
+    <member name="M:Platform.Type.#ctor(Platform.IntPtr)">
+      <summary>Конструктор, принимающий Constructor Platform.IntPtr в качестве параметра.</summary>
+      <param name="ptr">Входное значение Platform.IntPtr.</param>
+    </member>
+    <member name="M:Platform.Type.Equals(Platform.Object)">
+      <summary>Сравнение объекта с другим объектом Platform.Object.</summary>
+      <returns>Возвращается значение "True", если объекты равны; в противном случае — значение "False".</returns>
+    </member>    
+    <member name="M:Platform.Type.GetHashCode">
+      <summary>Сформировать хэш-код в соответствии с содержащимися данными.</summary>
+      <returns>Хэш-код объекта.</returns>
+    </member>
+    <member name="M:Platform.Type.GetTypeCode(Platform.Type)">
+      <summary>Получение Platform.TypeCode из Platform.Type.</summary>
+      <param name="type">Значение Platform.Type.</param>
+      <returns>Возвращается Plaform.TypeCode.</returns>
+    </member>
+    <member name="M:Platform.Type.ToString">
+      <summary>Возврат строкового представления объекта.</summary>
+      <returns>Строковое значение объекта.</returns>
+    </member>
+    <member name="P:Platform.Type.FullName">
+      <summary>Указание свойства, получающего полное имя типа объекта.</summary>      
+    </member>
+    <member name="M:Platform.Type.op_Implicit Windows.UI.Xaml.Interop.TypeName(Platform.Type)">
+      <summary>Преобразование Platform.Type в Windows.UI.Xaml.Interop.TypeName.</summary>
+      <returns>Возвращается Windows.UI.Xaml.Interop.TypeName.</returns>
+    </member>
+    <member name="M:Platform.Type.op_Implicit(Windows.UI.Xaml.Interop.TypeName)">
+      <summary>Преобразование Windows.UI.Xaml.Interop.TypeName в Platform.Type.</summary>
+      <returns>Возвращается Platform.Type.</returns>
+    </member>
+    
+    <member name="T:Platform.TypeCode">
+      <summary>Представление класс Platform.TypeCode.</summary>
+    </member>
+    <member name="F:Platform.TypeCode._value">
+      <summary>Значение default.int32 типа.</summary>
+    </member>
+    <member name="F:Platform.TypeCode.Empty">
+      <summary>Значение пустого типа.</summary>
+    </member>
+    <member name="F:Platform.TypeCode.Object">
+      <summary>Значение для типа объекта.</summary>
+    </member>
+    <member name="F:Platform.TypeCode.Boolean">
+      <summary>Значение для логического типа.</summary>
+    </member>
+    <member name="F:Platform.TypeCode.Char16">
+      <summary>Значение для типа Char16.</summary>
+    </member>
+    <member name="F:Platform.TypeCode.Int8">
+      <summary>Значение для типа Int8.</summary>
+    </member>
+    <member name="F:Platform.TypeCode.UInt8">
+      <summary>Значение для типа UInt8.</summary>
+    </member>
+    <member name="F:Platform.TypeCode.Int16">
+      <summary>Значение для типа Int16.</summary>
+    </member>
+    <member name="F:Platform.TypeCode.UInt16">
+      <summary>Значение для типа UInt16.</summary>
+    </member>
+    <member name="F:Platform.TypeCode.Int32">
+      <summary>Значение для типа Int32.</summary>
+    </member>
+    <member name="F:Platform.TypeCode.UInt32">
+      <summary>Значение для типа UInt32.</summary>
+    </member>
+    <member name="F:Platform.TypeCode.Int64">
+      <summary>Значение для типа Int64.</summary>
+    </member>
+    <member name="F:Platform.TypeCode.UInt64">
+      <summary>Значение для типа UInt64.</summary>
+    </member>
+    <member name="F:Platform.TypeCode.Single">
+      <summary>Значение для типа Single.</summary>
+    </member>
+    <member name="F:Platform.TypeCode.Double">
+      <summary>Значение для типа Double.</summary>
+    </member>
+    <member name="F:Platform.TypeCode.DateTime">
+      <summary>Значение для типа DateTime.</summary>
+    </member>
+    <member name="F:Platform.TypeCode.String">
+      <summary>Значение для типа String.</summary>
+    </member>
+    <member name="F:Platform.TypeCode.TimeSpan">
+      <summary>Значение для типа TimeSpan.</summary>
+    </member>
+    <member name="F:Platform.TypeCode.Point">
+      <summary>Значение для типа Point.</summary>
+    </member>
+    <member name="F:Platform.TypeCode.Size">
+      <summary>Значение для типа Size.</summary>
+    </member>
+    <member name="F:Platform.TypeCode.Rect">
+      <summary>Значение для типа Rect.</summary>
+    </member>
+    <member name="F:Platform.TypeCode.Guid">
+      <summary>Значение для типа Guid.</summary>
+    </member>
+    <member name="F:Platform.TypeCode.Custom">
+      <summary>Значение для типа Custom.</summary>
+    </member>
+
+    <member name="T:Platform.UIntPtr">
+      <summary>Представление типа беззнакового указателя.</summary>
+    </member>
+    <member name="F:Platform.UIntPtr._value">
+      <summary>Значение void* типа.</summary>
+    </member>
+    
+    <member name="T:Platform.ValueType">
+      <summary>Представление класса Platform.ValueType.</summary>
+    </member>
+    <member name="M:Platform.ValueType.#ctor">
+      <summary>Конструктор по умолчанию Platform.Object.</summary>
+    </member>
+    <member name="M:Platform.ValueType.Equals(Platform.Object)">
+      <summary>Сравнение объекта с другим Platform.ValueType.</summary>
+      <returns>Возвращается значение "True", если объекты равны; в противном случае — значение "False".</returns>
+    </member>    
+    <member name="M:Platform.ValueType.GetHashCode">
+      <summary>Сформировать хэш-код в соответствии с содержащимися данными.</summary>
+      <returns>Хэш-код объекта.</returns>
+    </member>
+    <member name="M:Platform.ValueType.GetType">
+      <summary>Метод возврата Platform.Type, который представляет тип объекта</summary>      
+      <returns>Возврат Platform.Type этого объекта.</returns>
+    </member>
+    <member name="M:Platform.ValueType.ToString">
+      <summary>Возврат представления строки объекта.</summary>
+      <returns>Строковое значение объекта.</returns>
+    </member>
+    
+    <member name="T:Platform.WrongThreadException">
+      <summary>Представление исключения неправильного потока (RPC_E_WRONG_THREAD).</summary>
+    </member>
+    <member name="M:Platform.WrongThreadException.#ctor">
+      <summary>Конструктор по умолчанию Platform.WrongThreadException.</summary>
+    </member>
+    <member name="M:Platform.WrongThreadException.#ctor(Platform.String)">    
+      <summary>Конструктор, принимающий сообщения об отладке в качестве параметра.</summary>
+      <param name="message">Ввод сообщения от отладке</param>
+    </member>    
+    
+    <!-- End of Platform namespace -->
+    
+    <!-- Begin of Platform.Details namespace -->
+    <member name="N:Platform.Details">
+      <summary>Предоставление общих классов и интерфейсов внутренней реализации платформы C++/CX.</summary>
+    </member>
+    
+    <member name="T:Platform.Details.Console">
+      <summary>Представление стандартного выходного потока.</summary>
+    </member>
+    <member name="M:Platform.Details.Console.WriteLine(Platform.Object)">
+      <summary>Вывод на печать значения строки Platform.Object в стандартный выходной поток.</summary>
+      <param name="obj">Ввод значения Platform.Object</param>
+    </member>
+    <member name="M:Platform.Details.Console.WriteLine(Platform.String)">
+      <summary>Печать Platform.String в стандартный выходной поток.</summary>
+      <param name="string">Ввод значения Platform.String</param>
+    </member>
+    <member name="M:Platform.Details.Console.WriteLine">
+      <summary>Печать конца строки в стандартный выходной поток.</summary>      
+    </member>
+    
+    <member name="T:Platform.Details.Heap">
+      <summary>Представление объекта Heap</summary>
+    </member>
+    <member name="M:Platform.Details.Heap.AlignedAllocate(Platform.SizeT, Platform.SizeT)">
+      <summary>Размещение памяти на указанной границе выравнивания.</summary>
+      <param name="size">Размер запрошенного размещения памяти.</param>
+      <param name="alignment">Значение выравнивания, которое должно быть целочисленной степенью числа 2.</param>
+      <returns>Указатель на размещенную память.</returns>      
+    </member>    
+    <member name="M:Platform.Details.Heap.AllignedFree(void*, Platform.SizeT)">
+      <summary>Освобождение блока памяти с помощью Platfrom.Details.Heap.AlignedAllocate.</summary>
+      <param name="ptr">Указание на размещенную память с помощью Platform.Details.Heap.AlignedAllocate.</param>
+      <param name="alignment">Значение выравнивания, которое должно быть целочисленной степенью числа 2.</param>
+    </member>    
+    <member name="M:Platform.Details.Heap.Allocate(Platform.SizeT,void*)">
+      <summary>Размещение расположения.</summary>
+    </member>
+    <member name="M:Platform.Details.Heap.Allocate(Platform.SizeT)">
+      <summary>Размещение блоков памяти</summary>
+      <param name="size">Байты для размещения.</param>
+      <returns>Указатель на размещенную память.</returns>      
+    </member>
+    <member name="M:Platform.Details.Heap.EnumerateAllocatedObjects(Platform.Details.HeapEntryHandler)">
+      <summary>Перечисление всех размещенных объектов с помощью Platform.Details.HeapEntryHandler</summary>
+      <param name="size">Делегат, вызываемый при перечислении.</param>
+    </member>    
+    <member name="M:Platform.Details.Heap.Free(void*)">
+      <summary>Отмена размещения или освобождение блока памяти.</summary>
+      <param name="ptr">Освобождаемый предыдущий размещенный блок памяти.</param>      
+    </member>
+    <member name="M:Platform.Details.Heap.PlacementFree(void*, void*)">
+      <summary>Освобождение расположения</summary>      
+    </member>
+    <member name="P:Platform.Details.Heap.BreakOnAllocationId">
+      <summary>Указывается свойство, которое задает или получает идентификатор для размещения, вызываемый Platform.Details.Heap для прерывания отладки.</summary>      
+    </member>
+    <member name="P:Platform.Details.Heap.BreakOnFreeId">
+      <summary>Указывается свойство, которое задает или получает идентификатор для освобождения, вызываемый Platform.Details.Heap для прерывания отладки.</summary>
+    </member>
+    <member name="P:Platform.Details.Heap.CurrentAllocationId">
+      <summary>Указывается свойство, которое получает идентификатор текущего размещения от Platform.Details.Heap.</summary>      
+    </member>
+    <member name="P:Platform.Details.Heap.ObjectCount">
+      <summary>Указывается свойство, которое получает число объектов от Platform.Details.Heap.</summary>      
+    </member>
+    <member name="P:Platform.Details.Heap.TrackingLevel">
+      <summary>Указывается свойство, которое задает или получает уровень отслеживания для Platform.Details.Heap.</summary>      
+    </member>
+    
+    <member name="T:Platform.Details.HeapAllocationTrackingLevel">
+      <summary>Представление значения уровня отслеживания размещения</summary>
+    </member>
+    <member name="F:Platform.Details.HeapAllocationTrackingLevel.value__">
+      <summary>Значение для уровня отслеживания размещения.</summary>
+    </member>
+    <member name="F:Platform.Details.HeapAllocationTrackingLevel.NoTracking">
+      <summary>Отслеживание отключено.</summary>
+    </member>
+    <member name="F:Platform.Details.HeapAllocationTrackingLevel.ObjectCount">
+      <summary>Отслеживать число объектов.</summary>
+    </member>
+    <member name="F:Platform.Details.HeapAllocationTrackingLevel.ObjectInstances">
+      <summary>Экземпляры объектов отслеживания.</summary>
+    </member>
+    <member name="F:Platform.Details.HeapAllocationTrackingLevel.BreakOnErrors">
+      <summary>Прерывание при ошибках.</summary>
+    </member>
+
+    <member name="T:Platform.Details.HeapEntryHandler">
+      <summary>Представление делегата, которого может вызвать Platform.Details.Heap при перечислении объектов</summary>
+    </member>
+    <member name="M:Platform.Details.HeapEntryHandler.Invoke(Platform.Object, default.int32)">
+      <summary>Запускает задаваемое пользователем действие при вызове Platform.Details.Heap.EnumerateAllocatedObjects</summary>
+      <param name="obj">Объекты Platform.Object, которые разместил Platform.Details.Heap</param>
+      <param name="allocId">Идентификатор размещения</param>
+    </member>
+    
+    <member name="T:Platform.Details.IActivationFactory">
+      <summary>Необходимо реализовать этот интерфейс для каждого класса, который имеет активируемый идентификатор и который можно зарегистрировать в магазине активации среды выполнения Windows.</summary>
+    </member>
+    <member name="M:Platform.Details.IActivationFactory.ActivateInstance">
+      <summary>Создается новый экземпляр класса среды выполнения Windows, который связан с текущей фабрикой активации.</summary>
+      <returns>Возвращается запрашиваемый объект</returns>
+    </member>
+    
+    <member name="T:Platform.Details.IAgileObject">
+      <summary>Интерфейс помечается как гибкий для всех апартаментам.</summary>
+    </member>
+    
+    <member name="T:Platform.Details.IClassFactory">
+      <summary>Включение возможности создавать класс объектов.</summary>
+    </member>
+    <member name="M:Platform.Details.IClassFactory.CreateInstance(Platform.Object, Platform.Guid)">
+      <summary>Создание неинициализированного объекта.</summary>
+      <param name="pUnkOuter">Если объект создается как часть агрегата, задайте указатель на управляющий интерфейс IUnknown этого агрегата. В противном случае этот параметр должен иметь значение Null.</param>
+      <param name="riid">Ссылка на идентификатор интерфейса, который будет использоваться для сообщения с вновь созданным объектом. Если pUnkOuter имеет значение Null, этот параметр обычно является IID инициализирующего интерфейса; если значение pUnkOuter отлично от Null, riid должен быть IID_IUnknown.</param>
+      <returns>Возвращается запрашиваемый объект</returns>
+    </member>
+    <member name="M:Platform.Details.IClassFactory.LockSever(default.int32)">
+      <summary>Блокирует приложение объекта в памяти в открытом состоянии. Это позволяет быстрее создавать экземпляры.</summary>
+      <param name="fLock">Если значение "True", счетчик блокировок увеличивается на 1; если значение "False", счетчик блокировок уменьшается на 1.</param>
+    </member>
+    
+    <member name="T:Platform.Details.IEquatable">
+      <summary>Представление default.int8</summary>
+    </member>
+    <member name="M:Platform.Details.IEquatable.Equals(Platform.Object)">
+      <summary>Сравнение объекта с другим объектом Platform.Object.</summary>
+      <returns>Возвращается значение "True", если объекты равны; в противном случае — значение "False".</returns>
+    </member>
+    <member name="M:Platform.Details.IEquatable.GetHashCode">
+      <summary>Сформировать хэш-код в соответствии с содержащимися данными.</summary>
+      <returns>Хэш-код объекта.</returns>
+    </member>
+    
+    <member name="T:Platform.Details.IPrintable">
+      <summary>Представление доступного для печати интерфейса для объекта.</summary>
+    </member>
+    <member name="M:Platform.Details.IPrintable.ToString">
+      <summary>Возвращается строковое представление объекта.</summary>
+      <returns>Строковое значение объекта.</returns>
+    </member>
+    
+    <member name="T:Platform.Details.IWeakReference">
+      <summary>Представление интерфейса слабой ссылки объекту.</summary>
+    </member>
+    <member name="M:Platform.Details.IWeakReference.Resolve(Platform.Guid)">
+      <summary>Разрешение слабой ссылки через возврат сильной ссылки указанному объекту.</summary>
+      <returns>Возвращается Platform.Object</returns>
+    </member>
+
+    <member name="T:Platform.Details.IWeakReferenceSource">
+      <summary>Представление исходного объекта, для которого может быть получена слабая ссылка.</summary>
+    </member>    
+    <member name="M:Platform.Details.IWeakReferenceSource.GetWeakReference">
+      <summary>Получение слабой ссылки из Platform.IWeakReferenceSource.</summary>
+      <returns>Возвращается интерфейс Platform.IWeakReference</returns>
+    </member>
+    
+    <member name="T:Platform.Details._GUID">
+      <summary>Представление Platform._GUID.</summary>
+    </member>
+    
+    <!-- End of Platform.Details namespace -->
+    
+    <!-- Begin of Platform.Metadata namespace -->
+    <member name="N:Platform.Metadata">
+      <summary>Предоставление типов для атрибутов метаданных.</summary>
+    </member>
+    
+    <member name="T:Platform.Metadata.Attribute">
+      <summary>Представление Platform.Metadata.Attribute.</summary>
+    </member>
+    <member name="M:Platform.Metadata.Attribute.#ctor">
+      <summary>Конструктор по умолчанию для объекта Platform.Metadata.Attribute.</summary>
+    </member>    
+    <member name="M:Platform.Metadata.Attribute.Equals(Platform.Object)">
+      <summary>Сравнение объекта с другим объектом Platform.Object.</summary>
+      <returns>Возвращается значение "True", если объекты равны; в противном случае — значение "False".</returns>
+    </member>    
+    <member name="M:Platform.Metadata.Attribute.GetHashCode">
+      <summary>Сформировать хэш-код в соответствии с содержащимися данными.</summary>
+      <returns>Хэш-код объекта.</returns>
+    </member>    
+    <member name="M:Platform.Metadata.Attribute.ToString">
+      <summary>Возврат представления строки объекта.</summary>
+      <returns>Строковое значение объекта.</returns>
+    </member>
+    
+    <member name="T:Platform.Metadata.DefaultMemberAttribute">
+      <summary>Представление Platform.Metadata.DefaultMemberAttribute.</summary>
+    </member>
+    <member name="M:Platform.Metadata.DefaultMemberAttribute.#ctor(Platform.String)">
+      <summary>Конструктор по умолчанию для объекта Platform.Metadata.DefaultMemberAttribute.</summary>
+      <param name="str">Входное значение Platform.String.</param>
+    </member>    
+    <member name="M:Platform.Metadata.DefaultMemberAttribute.Equals(Platform.Object)">
+      <summary>Сравнение объекта с другим объектом Platform.Object.</summary>
+      <returns>Возвращается значение "True", если объекты равны; в противном случае — значение "False".</returns>
+    </member>    
+    <member name="M:Platform.Metadata.DefaultMemberAttribute.GetHashCode">
+      <summary>Сформировать хэш-код в соответствии с содержащимися данными.</summary>
+      <returns>Хэш-код объекта.</returns>
+    </member>    
+    <member name="M:Platform.Metadata.DefaultMemberAttribute.ToString">
+      <summary>Возврат представления строки объекта.</summary>
+      <returns>Строковое значение объекта.</returns>
+    </member>
+    
+    <member name="T:Platform.Metadata.FlagsAttribute">
+      <summary>Представление Platform.Metadata.FlagsAttribute.</summary>
+    </member>
+    <member name="M:Platform.Metadata.FlagsAttribute.#ctor">
+      <summary>Конструктор по умолчанию для объекта Platform.Metadata.FlagsAttribute.</summary>
+    </member>    
+    <member name="M:Platform.Metadata.FlagsAttribute.Equals(Platform.Object)">
+      <summary>Сравнение объекта с другим объектом Platform.Object.</summary>
+      <returns>Возвращается значение "True", если объекты равны; в противном случае — значение "False".</returns>
+    </member>    
+    <member name="M:Platform.Metadata.FlagsAttribute.GetHashCode">
+      <summary>Сформировать хэш-код в соответствии с содержащимися данными.</summary>
+      <returns>Хэш-код объекта.</returns>
+    </member>    
+    <member name="M:Platform.Metadata.FlagsAttribute.ToString">
+      <summary>Возврат представления строки объекта.</summary>
+      <returns>Строковое значение объекта.</returns>
+    </member>
+    
+    <member name="T:Platform.Metadata.RuntimeClassNameAttribute">
+      <summary>Представление Platform.Metadata.RuntimeClassNameAttribute. Указывается интерфейс, из которого следует брать имя класса среды выполнения.</summary>
+    </member>
+    <member name="M:Platform.Metadata.RuntimeClassNameAttribute.#ctor">
+      <summary>Конструктор по умолчанию для объекта Platform.Metadata.RuntimeClassNameAttribute.</summary>
+    </member>    
+    <member name="M:Platform.Metadata.RuntimeClassNameAttribute.Equals(Platform.Object)">
+      <summary>Сравнение объекта с другим объектом Platform.Object.</summary>
+      <returns>Возвращается значение "True", если объекты равны; в противном случае — значение "False".</returns>
+    </member>    
+    <member name="M:Platform.Metadata.RuntimeClassNameAttribute.GetHashCode">
+      <summary>Сформировать хэш-код в соответствии с содержащимися данными.</summary>
+      <returns>Хэш-код объекта.</returns>
+    </member>    
+    <member name="M:Platform.Metadata.RuntimeClassNameAttribute.ToString">
+      <summary>Возврат представления строки объекта.</summary>
+      <returns>Строковое значение объекта.</returns>
+    </member>    
+    <!-- End of Platform.Metadata namespace -->
+    
+    
+    <!-- Begin of Platform.Runtime.CompilerServices namespace -->
+    <member name="N:Platform.Runtime.CompilerServices">
+      <summary>Зарезервированные модификаторы компилятора.</summary>
+    </member>
+    
+    <member name="T:Platform.Runtime.CompilerServices.CallConvCdecl">
+      <summary>Указывается соглашение о вызове __cdecl.</summary>
+    </member>
+    <member name="T:Platform.Runtime.CompilerServices.CallConvFastcall">
+      <summary>Указывается соглашение о вызове __fastcall.</summary>
+    </member>
+    <member name="T:Platform.Runtime.CompilerServices.CallConvStdcall">
+      <summary>Указывается соглашение о вызове __stdcall.</summary>
+    </member>
+    <member name="T:Platform.Runtime.CompilerServices.CallConvThiscall">
+      <summary>Указывается соглашение о вызове __thiscall.</summary>
+    </member>
+    <member name="T:Platform.Runtime.CompilerServices.CompilerMarshalOverride">
+      <summary>Указывается переопределение маршала компилятора.</summary>
+    </member>
+
+    <member name="T:Platform.Runtime.CompilerServices.IndexerNameAttribute">
+      <summary>Указывается атрибут имени индексатора.</summary>
+    </member>
+	<member name="M:Platform.Runtime.CompilerServices.IndexerNameAttribute.#ctor(Platform.String)">
+      <summary>Конструктор объекта Platform.Runtime.CompilerServices.IndexerNameAttribute.</summary>
+      <param name="str">Входная строка.</param>
+    </member>  
+	<member name="M:Platform.Runtime.CompilerServices.IndexerNameAttribute.Equals(Platform.Object)">
+      <summary>Сравнение объекта с другим объектом Platform.Object.</summary>
+      <returns>Возвращается значение "True", если объекты равны; в противном случае — значение "False".</returns>
+    </member>    
+    <member name="M:Platform.Runtime.CompilerServices.IndexerNameAttribute.GetHashCode">
+      <summary>Сформировать хэш-код в соответствии с содержащимися данными.</summary>
+      <returns>Хэш-код объекта.</returns>
+    </member>    
+    <member name="M:Platform.Runtime.CompilerServices.IndexerNameAttribute.ToString">
+      <summary>Возврат представления строки объекта.</summary>
+      <returns>Строковое значение объекта.</returns>
+    </member>    
+
+    <member name="T:Platform.Runtime.CompilerServices.IsBoxed">
+      <summary>Указывается, что тип находится в окне.</summary>
+    </member>
+    <member name="T:Platform.Runtime.CompilerServices.IsByValue">
+      <summary>Указывается, что тип задается значением.</summary>
+    </member>
+    <member name="T:Platform.Runtime.CompilerServices.IsConst">
+      <summary>Указывается, что тип является константой.</summary>
+    </member>
+    <member name="T:Platform.Runtime.CompilerServices.IsCopyConstructed">
+      <summary>Указывается, что тип создан конструктором копирования.</summary>
+    </member>
+    <member name="T:Platform.Runtime.CompilerServices.IsExplicitlyDereferenced">
+      <summary>Указывается, что тип явным образом не имеет ссылок.</summary>
+    </member>
+    <member name="T:Platform.Runtime.CompilerServices.IsImplicitlyDereferenced">
+      <summary>Указывается, что тип неявным образом не имеет ссылок.</summary>
+    </member>
+    <member name="T:Platform.Runtime.CompilerServices.IsLong">
+      <summary>Указывается, что тип является длинным</summary>
+    </member>
+    <member name="T:Platform.Runtime.CompilerServices.IsSignUnspecifiedByte">
+      <summary>Указывается байт без заданного знака.</summary>
+    </member>
+    <member name="T:Platform.Runtime.CompilerServices.IsSigned">
+      <summary>Указывается, что тип имеет подпись.</summary>
+    </member>
+    <member name="T:Platform.Runtime.CompilerServices.IsUdtReturn">
+      <summary>Указывается возврат udt.</summary>
+    </member>
+    <member name="T:Platform.Runtime.CompilerServices.IsVolatile">
+      <summary>Указывается, что тип является временным.</summary>
+    </member>
+    <member name="T:Platform.Runtime.CompilerServices.OnePhaseConstructedAttribute">
+      <summary>Указывается тип, использующий однофазную конструкцию.</summary>
+    </member>    
+	<member name="M:Platform.Runtime.CompilerServices.OnePhaseConstructedAttribute.#ctor(Platform.String)">
+      <summary>Конструктор по умолчанию.</summary>
+    </member>  
+	<member name="M:Platform.Runtime.CompilerServices.OnePhaseConstructedAttribute.Equals(Platform.Object)">
+      <summary>Сравнение объекта с другим объектом Platform.Object.</summary>
+      <returns>Возвращается значение "True", если объекты равны; в противном случае — значение "False".</returns>
+    </member>    
+    <member name="M:Platform.Runtime.CompilerServices.OnePhaseConstructedAttribute.GetHashCode">
+      <summary>Сформировать хэш-код в соответствии с содержащимися данными.</summary>
+      <returns>Хэш-код объекта.</returns>
+    </member>    
+    <member name="M:Platform.Runtime.CompilerServices.OnePhaseConstructedAttribute.ToString">
+      <summary>Возврат представления строки объекта.</summary>
+      <returns>Строковое значение объекта.</returns>
+    </member>   
+    <!-- End of Platform.Runtime.CompilerServices namespace -->
+
+    <!-- Begin of Platform.Runtime.InteropServices namespace -->
+    <member name="N:Platform.Runtime.InteropServices">
+      <summary>Модификаторы прерывания.</summary>
+    </member>
+    
+    <member name="T:Platform.Runtime.InteropServices.ComInterfaceType">
+      <summary>Представление Platform.Runtime.InteropServices.ComInterfaceType.</summary>
+    </member>
+    <member name="F:Platform.Runtime.InteropServices.ComInterfaceType.value__">
+      <summary>Значение default.int32 типа.</summary>
+    </member>
+    <member name="F:Platform.Runtime.InteropServices.ComInterfaceType.InterfaceIsDual">
+      <summary>Интерфейс является двойным.</summary>
+    </member>
+    <member name="F:Platform.Runtime.InteropServices.ComInterfaceType.InterfaceIsIDispatch">
+      <summary>Интерфейс можно подготовить к отправке.</summary>
+    </member>
+    <member name="F:Platform.Runtime.InteropServices.ComInterfaceType.InterfaceIsIInspectable">
+      <summary>Интерфейс основан на IInspectable.</summary>
+    </member>
+    <member name="F:Platform.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown">
+      <summary>Интерфейс основан на IUnknown.</summary>
+    </member>
+    
+    <member name="T:Platform.Runtime.InteropServices.LayoutKind">
+      <summary>Представление Platform.Runtime.InteropServices.LayoutKind.</summary>
+    </member>
+    <member name="F:Platform.Runtime.InteropServices.LayoutKind.value__">
+      <summary>Значение default.int32 типа.</summary>
+    </member>
+    <member name="F:Platform.Runtime.InteropServices.LayoutKind.Auto">
+      <summary>Макет является автоматическим.</summary>
+    </member>
+    <member name="F:Platform.Runtime.InteropServices.LayoutKind.Explicit">
+      <summary>Макет является явным.</summary>
+    </member>
+    <member name="F:Platform.Runtime.InteropServices.LayoutKind.Sequential">
+      <summary>Макет является последовательным.</summary>
+    </member>
+    
+    <member name="T:Platform.Runtime.InteropServices.MarshalAsAttribute">
+      <summary>Представление Platform.Runtime.InteropServices.MarshalAsAttribute.</summary>
+    </member>
+    <member name="M:Platform.Runtime.InteropServices.MarshalAsAttribute.#ctor">
+      <summary>Конструктор по умолчанию объекта Platform.Runtime.InteropServices.MarshalAsAttribute.</summary>
+    </member>    
+    <member name="M:Platform.Runtime.InteropServices.MarshalAsAttribute.Equals(Platform.Object)">
+      <summary>Сравнение объекта с другим объектом Platform.Object.</summary>
+      <returns>Возвращается значение "True", если объекты равны; в противном случае — значение "False".</returns>
+    </member>    
+    <member name="M:Platform.Runtime.InteropServices.MarshalAsAttribute.GetHashCode">
+      <summary>Сформировать хэш-код в соответствии с содержащимися данными.</summary>
+      <returns>Хэш-код объекта.</returns>
+    </member>    
+    <member name="M:Platform.Runtime.InteropServices.MarshalAsAttribute.ToString">
+      <summary>Возврат представления строки объекта.</summary>
+      <returns>Строковое значение объекта.</returns>
+    </member>
+	
+	<member name="T:Platform.Runtime.InteropServices.InterfaceTypeAttribute">
+      <summary>Представление Platform.Runtime.InteropServices.InterfaceTypeAttribute.</summary>
+    </member>
+    <member name="M:Platform.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(Platform.Runtime.InteropServices.ComInterfaceType)">
+      <summary>Конструктор объекта Platform.Runtime.InteropServices.InterfaceTypeAttribute.</summary>
+	  <param name="interface type">Тип интерфейса.</param>
+    </member>    
+    <member name="M:Platform.Runtime.InteropServices.InterfaceTypeAttribute.Equals(Platform.Object)">
+      <summary>Сравнение объекта с другим объектом Platform.Object.</summary>
+      <returns>Возвращается значение "True", если объекты равны; в противном случае — значение "False".</returns>
+    </member>    
+    <member name="M:Platform.Runtime.InteropServices.InterfaceTypeAttribute.GetHashCode">
+      <summary>Сформировать хэш-код в соответствии с содержащимися данными.</summary>
+      <returns>Хэш-код объекта.</returns>
+    </member>    
+    <member name="M:Platform.Runtime.InteropServices.InterfaceTypeAttribute.ToString">
+      <summary>Возврат представления строки объекта.</summary>
+      <returns>Строковое значение объекта.</returns>
+    </member>
+    
+	 <member name="T:Platform.Runtime.InteropServices.StructLayoutAttribute">
+      <summary>Представление Platform.Runtime.InteropServices.StructLayoutAttribute .</summary>
+    </member>
+    <member name="M:Platform.Runtime.InteropServices.StructLayoutAttribute.#ctor(Platform.Runtime.InteropServices.LayoutKind)">
+      <summary>Конструктор объекта Platform.Runtime.InteropServices.StructLayoutAttribute.</summary>
+	  <param name="layout">Вид макета.</param>
+    </member>    
+    <member name="M:Platform.Runtime.InteropServices.StructLayoutAttribute.Equals(Platform.Object)">
+      <summary>Сравнение объекта с другим объектом Platform.Object.</summary>
+      <returns>Возвращается значение "True", если объекты равны; в противном случае — значение "False".</returns>
+    </member>    
+    <member name="M:Platform.Runtime.InteropServices.StructLayoutAttribute.GetHashCode">
+      <summary>Сформировать хэш-код в соответствии с содержащимися данными.</summary>
+      <returns>Хэш-код объекта.</returns>
+    </member>    
+    <member name="M:Platform.Runtime.InteropServices.StructLayoutAttribute.ToString">
+      <summary>Возврат представления строки объекта.</summary>
+      <returns>Строковое значение объекта.</returns>
+    </member>
+    
+	
+    <member name="T:Platform.Runtime.InteropServices.UnmanagedType">
+      <summary>Представление Platform.Runtime.InteropServices.UnmanagedType.</summary>
+    </member>
+    <member name="F:Platform.Runtime.InteropServices.UnmanagedType.value__">
+      <summary>Значение default.int32 типа.</summary>
+    </member>
+    <member name="F:Platform.Runtime.InteropServices.UnmanagedType.BStr">
+      <summary>Неуправляемый тип является BStr.</summary>
+    </member>
+    <member name="F:Platform.Runtime.InteropServices.UnmanagedType.LPWStr">
+      <summary>Неуправляемый тип является LPWstr.</summary>
+    </member>
+    <!-- End of Platform.Runtime.InteropServices namespace -->
+    
+  </members>
+</doc>

@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>Отобразить результаты в окне консоли</Title>
+      <Author>Microsoft Corporation</Author>
+      <Description>Отображение результатов запроса в окне консоли.</Description>
+      <Shortcut>qConsole</Shortcut>
+    </Header>
+    <Snippet>
+       <Declarations>
+        <Literal>
+          <ID>queryResult</ID>
+          <Type>item</Type>
+          <ToolTip>Замените на идентификатор запроса.</ToolTip>
+          <Default>query</Default>
+        </Literal>
+        <Literal>
+          <ID>item</ID>
+          <Type>item</Type>
+          <ToolTip>Замените на идентификатор переменной, представляющей элемент из источника данных.</ToolTip>
+          <Default>process</Default>
+        </Literal>
+        <Literal>
+          <ID>dataSource</ID>
+          <Type>String</Type>
+          <ToolTip>Замените на идентификатор источника данных.</ToolTip>
+          <Default>System.Diagnostics.Process.GetProcesses()</Default>
+        </Literal>
+                 <Literal>
+          <ID>field1</ID>
+          <Type>String</Type>
+          <ToolTip>Замените на идентификатор первого поля, которое необходимо получить из источника данных.</ToolTip>
+          <Default>ProcessName</Default>
+        </Literal>
+        <Literal>
+          <ID>field2</ID>
+          <Type>String</Type>
+          <ToolTip>Замените на идентификатор второго поля, которое необходимо получить из источника данных.</ToolTip>
+          <Default>MainWindowTitle</Default>
+        </Literal>
+        <Literal>
+          <ID>alias</ID>
+          <Type>String</Type>
+          <ToolTip>Замените на псевдоним для этих данных.</ToolTip>
+          <Default>WindowTitle</Default>
+        </Literal>
+        <Literal>
+          <ID>iterationVar</ID>
+          <Type>String</Type>
+          <ToolTip>Замените на идентификатор переменной итерации, представляющей элемент запроса.</ToolTip>
+          <Default>process</Default>
+        </Literal>
+      </Declarations>
+      <Code Language="VB" Kind="method body"><![CDATA[Dim $queryResult$ = From $item$ In $dataSource$ _
+                    Select $item$.$field1$, $alias$ = $item$.$field2$ _
+                    Order By $field1$
+
+                 For Each $iterationVar$ In $queryResult$
+                     Console.WriteLine($iterationVar$.$field1$ & " " & $iterationVar$.$alias$)
+                 Next]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

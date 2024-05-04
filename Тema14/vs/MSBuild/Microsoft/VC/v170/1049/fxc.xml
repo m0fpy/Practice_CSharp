@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Copyright, Microsoft Corporation, All rights reserved.-->
+<ProjectSchemaDefinitions xmlns="http://schemas.microsoft.com/build/2009/properties" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:sys="clr-namespace:System;assembly=mscorlib">
+  <Rule Name="FXC" PageTemplate="tool" DisplayName="Компилятор HLSL" SwitchPrefix="/" Order="300">
+
+    <Rule.Categories>
+      <Category Name="General" DisplayName="Общие"/>
+      <Category Name="Advanced" DisplayName="Дополнительно"/>
+      <Category Name="Output Files" DisplayName="Выходные файлы"/>
+      <Category Name="All Options" DisplayName="Все параметры" Subtype="Search"/>
+      <Category Name="Command Line" DisplayName="Командная строка" Subtype="CommandLine"/>
+    </Rule.Categories>
+
+    <Rule.DataSource>
+      <DataSource Persistence="ProjectFile" ItemType="FxCompile" Label="" HasConfigurationCondition="true"/>
+    </Rule.DataSource>
+
+    <StringListProperty Subtype="folder" Name="AdditionalIncludeDirectories" DisplayName="Дополнительные каталоги включаемых файлов" Description="Задает один или несколько каталогов для добавления в качестве пути включения; несколько значений разделяются точками с запятой. (/I[path])" Category="General" Switch="I" F1Keyword="VC.Project.FXCompilerTool.AdditionalIncludeDirectories">
+    </StringListProperty>
+
+    <BoolProperty Name="SuppressStartupBanner" DisplayName="Отключить загрузочный баннер" Description="Подавляет отображение заставки запуска и информационного сообщения. (/nologo)" Category="Advanced" Switch="nologo" F1Keyword="VC.Project.FXCompilerTool.SuppressStartupBanner">
+    </BoolProperty>
+
+    <StringProperty Name="EntryPointName" DisplayName="Имя точки входа" Description="Задает им точки входа шейдера (/E[name])" Category="General" Switch="E" F1Keyword="VC.Project.FXCompilerTool.EntryPointName">
+    </StringProperty>
+
+    <BoolProperty Name="TreatWarningAsError" DisplayName="Обрабатывать предупреждения как ошибки" Description="Интерпретирует все предупреждения компилятора как ошибки. Для нового проекта наиболее эффективным может быть использование /WX во всех компиляциях; разрешение всех предупреждений обеспечит минимальное число трудно выявляемых дефектов кода." Category="Advanced" Switch="WX" F1Keyword="VC.Project.FXCompilerTool.TreatWarningAsError">
+    </BoolProperty>
+
+    <BoolProperty Name="DisableOptimizations" DisplayName="Отключение оптимизаций" Description="Отключение оптимизаций. /Od предполагает, что использование /Gfp в результатах может не быть идентичным использованию /Od /Gfp." Category="General" Switch="Od" F1Keyword="VC.Project.FXCompilerTool.DisableOptimizations">
+    </BoolProperty>
+
+    <BoolProperty Name="EnableDebuggingInformation" DisplayName="Включение отладочной информации" Description="Включение отладочной информации." Category="General" Switch="Zi" F1Keyword="VC.Project.FXCompilerTool.EnableDebuggingInformation">
+    </BoolProperty>
+
+    <EnumProperty Name="ShaderType" DisplayName="Тип шейдера" Description="Задает тип шейдера.  (/T [type]_[model])" Category="General" Switch="T" F1Keyword="VC.Project.FXCompilerTool.ShaderType">
+      <EnumValue Name="Effect" Switch="fx" DisplayName="Эффект">
+        <Argument Property="ShaderModel" IsRequired="true" Separator="_"/>
+      </EnumValue>
+      <EnumValue Name="Vertex" Switch="vs" DisplayName="Шейдер вершин">
+        <Argument Property="ShaderModel" IsRequired="true" Separator="_"/>
+      </EnumValue>
+      <EnumValue Name="Pixel" Switch="ps" DisplayName="Шейдер пикселей">
+        <Argument Property="ShaderModel" IsRequired="true" Separator="_"/>
+      </EnumValue>
+      <EnumValue Name="Geometry" Switch="gs" DisplayName="Шейдер геометрии">
+        <Argument Property="ShaderModel" IsRequired="true" Separator="_"/>
+      </EnumValue>
+      <EnumValue Name="Hull" Switch="hs" DisplayName="Шейдер поверхности">
+        <Argument Property="ShaderModel" IsRequired="true" Separator="_"/>
+      </EnumValue>
+      <EnumValue Name="Domain" Switch="ds" DisplayName="Шейдер доменов">
+        <Argument Property="ShaderModel" IsRequired="true" Separator="_"/>
+      </EnumValue>
+      <EnumValue Name="Compute" Switch="cs" DisplayName="Шейдер вычислений">
+        <Argument Property="ShaderModel" IsRequired="true" Separator="_"/>
+      </EnumValue>
+      <EnumValue Name="Library" Switch="lib" DisplayName="Библиотека">
+        <Argument Property="ShaderModel" IsRequired="true" Separator="_"/>
+      </EnumValue>
+      <EnumValue Name="Mesh" Switch="ms" DisplayName="Шейдер сетки">
+        <Argument Property="ShaderModel" IsRequired="true" Separator="_"/>
+      </EnumValue>
+      <EnumValue Name="Amplification" Switch="as" DisplayName="Шейдер усиления">
+        <Argument Property="ShaderModel" IsRequired="true" Separator="_"/>
+      </EnumValue>
+      <EnumValue Name="RootSignature" Switch="" DisplayName="Создать объект корневой подписи">
+        <Argument Property="ShaderModel" IsRequired="true" Separator=" "/>
+      </EnumValue>
+    </EnumProperty>
+
+    <DynamicEnumProperty Name="ShaderModel" DisplayName="Модель шейдера" Description="Задает модель шейдера. Некоторые типы шейдеров можно использовать только с последними моделями шейдеров (/T [type]_[model])" Category="General" F1Keyword="VC.Project.FXCompilerTool.ShaderModel" EnumProvider="ShaderModelEnumProvider"/>
+
+    <BoolProperty Name="AllResourcesBound" DisplayName="Все ресурсы привязаны" Description="Компилятор предполагает, что все ресурсы, на которые может ссылаться шейдер, связаны и находятся в работоспособном состоянии на протяжении всего выполнения шейдера (/all_resources_bound). Доступно для модели шейдеров версии 5.1 и более поздней." Category="General" Switch="all_resources_bound" F1Keyword="VC.Project.FXCompilerTool.AllResourcesBound">
+    </BoolProperty>
+
+    <BoolProperty Name="EnableUnboundedDescriptorTables" DisplayName="Включить неограниченные таблицы дескрипторов" Description="Уведомление компилятора о том, что шейдер может содержать объявление массива ресурсов с неограниченным диапазоном (/enable_unbounded_descriptor_tables). Доступно для модели шейдеров версии 5.1 и более поздней." Category="General" Switch="enable_unbounded_descriptor_tables" F1Keyword="VC.Project.FXCompilerTool.EnableUnboundedDescriptorTables">
+    </BoolProperty>
+
+    <StringProperty Name="SetRootSignature" DisplayName="Задать корневую подпись" Description="Прикрепление корневой подписи к байт-коду шейдера (/setrootsignature). Доступно для модели шейдеров версии 5.0 и более поздней." Category="General" Switch="setrootsignature" F1Keyword="VC.Project.FXCompilerTool.SetRootSignature">
+    </StringProperty>
+
+    <StringListProperty Name="PreprocessorDefinitions" DisplayName="Определения препроцессора" Description="Определяет символы предобработки файла с исходным кодом." Category="General" Switch="D " F1Keyword="VC.Project.FXCompilerTool.PreprocessorDefinitions">
+    </StringListProperty>
+
+    <StringProperty Name="AdditionalOptions" DisplayName="Дополнительные параметры" Description="Дополнительные параметры" Category="Command Line" F1Keyword="VC.Project.FXCompilerTool.AdditionalOptionsPage">
+    </StringProperty>
+
+    <StringProperty Name="VariableName" DisplayName="Имя переменной заголовков" Description="Задает имя переменной в файле заголовков (/Vn [name])" Category="Output Files" Switch="Vn" F1Keyword="VC.Project.FXCompilerTool.VariableName">
+    </StringProperty>
+
+    <StringProperty Subtype="file" Name="HeaderFileOutput" DisplayName="Имя файла заголовков" Description="Задает имя файла заголовков, содержащего объектный код. (/Fh [name])" Category="Output Files" Switch="Fh" F1Keyword="VC.Project.FXCompilerTool.HeaderFileOutput">
+    </StringProperty>
+
+    <StringProperty Subtype="file" Name="ObjectFileOutput" DisplayName="Имя объектного файла" Description="Задает имя объектного файла. (/Fo [name])" Category="Output Files" Switch="Fo" F1Keyword="VC.Project.FXCompilerTool.ObjectFileOutput">
+    </StringProperty>
+
+    <EnumProperty Name="AssemblerOutput" DisplayName="Файл ассемблерного кода" Description="Задает содержимое выходного файла языка сборки. (/Fc, /Fx)" Category="Output Files" F1Keyword="VC.Project.FXCompilerTool.AssemblerOutput">
+      <EnumValue Name="NoListing" Switch="" DisplayName="Без листинга" Description="Без листинга. ">
+      </EnumValue>
+      <EnumValue Name="AssemblyCode" Switch="Fc" DisplayName="Только код сборки" Description="Файл с кодом сборки">
+        <Argument Property="AssemblerOutputFile" IsRequired="true" Separator=" "/>
+      </EnumValue>
+      <EnumValue Name="AssemblyCodeAndHex" Switch="Fx" DisplayName="Код сборки и шестнадцатеричный код" Description="Код и шестнадцатеричный файл листинга сборки">
+        <Argument Property="AssemblerOutputFile" IsRequired="true" Separator=" "/>
+      </EnumValue>
+    </EnumProperty>
+
+    <StringProperty Name="AssemblerOutputFile" Subtype="file" DisplayName="Выходной файл ассемблера" Description="Задает имя файла листинга с кодом сборки" Category="Output Files" F1Keyword="VC.Project.FXCompilerTool.AssemblerOutputFile">
+    </StringProperty>
+
+    <BoolProperty Name="CompileD2DCustomEffect" DisplayName="Компиляция настраиваемого эффекта построителя текстуры Direct2D." Description="Компиляция настраиваемого эффекта Direct2D, содержащего построители текстуры. Не используйте для вершины или нестандартного эффекта вычисления." Category="General" Switch="" F1Keyword="VC.Project.FXCompilerTool.CompileD2DCustomEffect">
+    </BoolProperty>
+
+    <BoolProperty Name="MultiProcFXC" DisplayName="Многопроцессорная компиляция" Description="Одновременное выполнение нескольких экземпляров." Category="General" F1Keyword="VC.Project.FXCompilerTool.MultiProcFXC">
+      <BoolProperty.DataSource>
+        <DataSource ItemType=""/>
+      </BoolProperty.DataSource>
+    </BoolProperty>
+  </Rule>
+
+</ProjectSchemaDefinitions>

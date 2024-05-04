@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Copyright, Microsoft Corporation, All rights reserved.-->
+<Rule Name="CL" DisplayName="Общие" PageTemplate="generic" Description="Общие" SwitchPrefix="/" xmlns="http://schemas.microsoft.com/build/2009/properties">
+  <Rule.Categories>
+    <Category Name="General" DisplayName="Общие" Description="Общие"/>
+  </Rule.Categories>
+  <Rule.DataSource>
+    <DataSource Persistence="ProjectFile" ItemType="ClCompile" Label="" HasConfigurationCondition="false"/>
+  </Rule.DataSource>
+  <StringListProperty Name="AdditionalIncludeDirectories" DisplayName="Путь поиска включаемых файлов" Description="Задает один или несколько каталогов, добавляемых к пути поиска включаемых файлов; для указания нескольких значений используется точка с запятой.     (/I[путь])" F1Keyword="VC.Project.VCCLCompilerTool.AdditionalIncludeDirectories" Switch="I" Category="General" Subtype="folder"/>
+  <StringListProperty Name="ForcedIncludeFiles" DisplayName="Принудительно включаемый файл" Description="Один или несколько принудительно включаемых файлов.     (/FI[имя])" Category="General" Switch="FI" F1Keyword="VC.Project.VCCLCompilerTool.ForcedIncludeFiles" Subtype="file"/>
+  <StringListProperty Name="PreprocessorDefinitions" DisplayName="Определения препроцессора" Description="Определяет символы предварительной обработки для исходного файла.     (/D[макрос])" Category="General" Switch="D" F1Keyword="VC.Project.VCCLCompilerTool.PreprocessorDefinitions">
+  </StringListProperty>
+  <StringListProperty Name="UndefinePreprocessorDefinitions" DisplayName="Отменить определения препроцессора" Description="Задает одну или несколько отмен определений препроцессора.     (/U[макрос])" Category="General" Switch="U" F1Keyword="VC.Project.VCCLCompilerTool.UndefinePreprocessorDefinitions">
+  </StringListProperty>
+</Rule>

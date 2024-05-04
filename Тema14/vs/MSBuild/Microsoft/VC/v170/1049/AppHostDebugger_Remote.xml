@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Copyright, Microsoft Corporation, All rights reserved.
+    Remote debug properties for Windows UWP apps-->
+<Rule Name="UWPRemoteDebugger" DisplayName="Удаленный компьютер" PageTemplate="debugger" Order="400" Description="Параметры удаленного отладчика" xmlns:sys="clr-namespace:System;assembly=mscorlib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns="http://schemas.microsoft.com/build/2009/properties">
+  
+  <Rule.Metadata>
+    <sys:Guid x:Key="DebugTargetTypeCommandGuid">FEEA6E9D-77D8-423F-9EDE-3970CBB76125</sys:Guid>
+    <sys:UInt32 x:Key="DebugTargetTypeCommandId">0x400</sys:UInt32>
+  </Rule.Metadata>
+  <Rule.DataSource>
+    <DataSource Persistence="UserFile"/>
+  </Rule.DataSource>
+
+  <BoolProperty Name="DebuggerLaunchApplication" DisplayName="Запустить приложение" F1Keyword="VC.Project.IVCAppHostRemoteDebugPageObject.LaunchApplication" Description="Указывает, должно ли приложение запускаться немедленного или после ожидания отладки."/>
+  <BoolProperty Name="AllowLocalNetworkLoopback" DisplayName="Разрешить петлевой адрес в локальной сети" F1Keyword="VC.Project.IVCAppHostLocalDebugPageObject.AllowLocalNetworkLoopback" Description="При отладке приложений для Магазина Windows разрешает использовать локальные службы, отлаживать сетевой трафик и использовать локальные петлевые адреса для связи с компонентами на том же компьютере."/>
+  <EnumProperty Name="DebuggerType" DisplayName="Тип отладчика" F1Keyword="VC.Project.IVCAppHostRemoteDebugPageObject.DebuggerType" Description="Указывает тип кода для отладки.">
+    <EnumProperty.Metadata>
+      <NameValuePair Name="IsDebugType" Value="true"/>
+    </EnumProperty.Metadata>
+    <EnumValue Name="NativeOnly" DisplayName="Только машинный код"/>
+    <EnumValue Name="ManagedCore" DisplayName="Только управляемый код"/>
+    <EnumValue Name="GPUOnly" DisplayName="Только GPU (C++ AMP)"/>
+    <EnumValue Name="Script" DisplayName="Только скрипт"/>
+    <EnumValue Name="NativeWithManagedCore" DisplayName="Управляемый и машинный"/>
+    <EnumValue Name="NativeWithScript" DisplayName="Скрипт и машинный код"/>
+  </EnumProperty>
+  <StringProperty Name="DebuggerMachineName" DisplayName="Имя компьютера" F1Keyword="VC.Project.IVCAppHostRemoteDebugPageObject.MachineName" Description="Задает имя компьютера для удаленной отладки.">
+    <StringProperty.ValueEditors>
+      <ValueEditor EditorType="CppUniversalRemoteDebuggerPropertyEditor" DisplayName="&lt;Поиск...&gt;">
+        <ValueEditor.Metadata>
+          <NameValuePair Name="AuthenticationPropertyName" Value="DebuggerRequireAuthentication"/>
+        </ValueEditor.Metadata>
+      </ValueEditor>
+    </StringProperty.ValueEditors>
+  </StringProperty> 
+  <EnumProperty Name="DebuggerRequireAuthentication" DisplayName="Тип проверки подлинности" F1Keyword="VC.Project.IVCAppHostRemoteDebugPageObject.Authentication" Description="Указывает, какой тип проверки подлинности требуется при отладке на удаленных устройствах.">
+    <EnumValue Name="True" DisplayName="Проверка подлинности Windows"/>
+    <EnumValue Name="False" DisplayName="Без проверки подлинности"/>
+    <EnumValue Name="Universal" DisplayName="Универсальный (незашифрованный протокол)"/>
+  </EnumProperty>
+  <DynamicEnumProperty Name="GPUDebuggerTargetType" DisplayName="Тип акселератора отладки" EnumProvider="GPUTargets" F1Keyword="VC.Project.IVCAppHostRemoteDebugPageObject.GPUDebuggerTargetType" Description="Тип ускорителя отладки для использования при отладке кода графического процессора. (Доступен, если отладчик графического процессора активен.)">
+    <DynamicEnumProperty.Metadata>
+      <NameValuePair Name="ParentPropertyName" Value="DebuggerType"/>
+      <NameValuePair Name="ParentPropertyValue" Value="GPUOnly"/>
+    </DynamicEnumProperty.Metadata>
+  </DynamicEnumProperty>
+  <EnumProperty Name="GPURefDebuggerBreakOnAllThreads" DisplayName="Стандартное поведение точек останова для GPU" Description="Задает частоту остановок отладчика GPU." F1Keyword="VC.Project.IVCAppHostRemoteDebugPageObject.BreakpointBehavior">
+    <EnumValue Name="GPURefBreakOncePerWarp" DisplayName="Остановка один раз для порции" Description="Остановка один раз для порции"/>
+    <EnumValue Name="GPURefBreakForCPUThread" DisplayName="Остановка для каждого потока (как ЦП)" Description="Остановка для каждого потока (как ЦП)"/>
+    <EnumProperty.Metadata>
+      <NameValuePair Name="ParentPropertyName" Value="DebuggerType"/>
+      <NameValuePair Name="ParentPropertyValue" Value="GPUOnly"/>
+    </EnumProperty.Metadata>
+  </EnumProperty>
+  <BoolProperty Name="RemoteDebuggerDeployDebugCppRuntime" DisplayName="Развертывание отладочных библиотек времени выполнения Visual C++" Description="Указывает, следует ли развернуть отладочные библиотеки времени выполнения для активной платформы (Win32, x64 или ARM)." F1Keyword="VC.Project.IVCRemoteDebugPageObject.Remote"/>
+  <DynamicEnumProperty Name="DebuggerAmpDefaultAccelerator" DisplayName="Ускоритель по умолчанию для AMP" EnumProvider="AmpAccelerators" F1Keyword="VC.Project.IVCAppHostRemoteDebugPageObject.AmpDefaultAccelerator" Description="Переопределить выбор ускорителя по умолчанию для C++ AMP. Свойство не применимо при отладке управляемого кода.">
+  </DynamicEnumProperty>
+  <StringProperty Name="LayoutDir" DisplayName="Путь макета пакета" Description="Расположение макета пакета, в которое будут копироваться двоичные выходные данные. Это расположение может также содержать недвоичные ресурсы проекта."/>
+  <EnumProperty Name="RemoteDeploymentType" DisplayName="Расширенный тип удаленного развертывания" Description="Тип удаленного развертывания: выберите &quot;Копировать на устройство&quot;, чтобы физически скопировать макет пакета на удаленное устройство, или &quot;Регистрация из сети&quot;, чтобы зарегистрировать макет из общей сетевой папки.">
+    <EnumValue Name="CopyToDevice" DisplayName="Копировать на устройство"/>
+    <EnumValue Name="RegisterFromNetwork" DisplayName="Регистрация из сети"/>
+  </EnumProperty>
+  <StringProperty Name="PackageRegistrationPath" DisplayName="Путь регистрации пакета" Description="Для развертывания &quot;Копировать на устройство&quot; означает физическое расположение на удаленном устройстве, в которое будет скопирован макет, и является необязательным параметром. Для развертывания &quot;Регистрация из сети&quot;
+означает удаленное сетевое расположение макета пакета и является обязательным параметром."/>
+  <BoolProperty Name="RemoveNonLayoutFiles" DisplayName="Удалять файлы, не относящиеся к макету, с устройства" Description="Должны ли файлы, не являющиеся частью макета, удаляться с целевого устройства при развертывании. Применимо только для развертывания &quot;Копировать на устройство&quot;."/>
+  <StringProperty Name="CommandLineArgs" DisplayName="Аргументы командной строки" Description="Аргументы командной строки, передаваемые в отладчик."/>
+</Rule>

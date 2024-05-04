@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>Определить свойство WriteOnly</Title>
+      <Author>Microsoft Corporation</Author>
+      <Description>Определение свойства WriteOnly с резервным полем.</Description>
+      <Shortcut>PropWrite</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>PropertyName</ID>
+          <Type>String</Type>
+          <ToolTip>Замените на имя свойства.</ToolTip>
+          <Default>NewProperty</Default>
+        </Literal>
+        <Literal>
+          <ID>PropertyType</ID>
+          <Type>
+          </Type>
+          <ToolTip>Замените на тип свойства.</ToolTip>
+          <Default>Integer</Default>
+        </Literal>
+        <Object>
+          <ID>PrivateVariable</ID>
+          <Type>Object</Type>
+          <ToolTip>Замените на имя частной переменной.</ToolTip>
+          <Default>newPropertyValue</Default>
+        </Object>
+      </Declarations>
+      <Code Language="VB" Kind="method decl"><![CDATA[Private $PrivateVariable$ As $PropertyType$
+Public WriteOnly Property $PropertyName$() As $PropertyType$
+    Set(ByVal value as $PropertyType$)
+        $PrivateVariable$ = value
+    End Set
+End Property]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

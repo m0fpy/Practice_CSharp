@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Copyright, Microsoft Corporation, All rights reserved.-->
+<Rule Name="ConfigurationDirectories" DisplayName="Каталоги VC++" Order="8" PageTemplate="generic" Description="Каталоги поиска инструментов" xmlns="http://schemas.microsoft.com/build/2009/properties">
+  <Rule.Categories>
+    <Category Name="VC++" DisplayName="Общие" Description="Каталоги Visual C++"/>
+    <Category Name="References" DisplayName="Содержимое общедоступного проекта" Description="Каталоги, используемые в ссылающихся проектах"/>
+  </Rule.Categories>
+  <Rule.DataSource>
+    <DataSource Persistence="ProjectFile"/>
+  </Rule.DataSource>
+  <StringListProperty Name="ExecutablePath" DisplayName="Каталоги исполняемых файлов" Description="Путь, который нужно использовать при поиске исполняемых файлов при сборке проекта VC++.  Соответствует переменной окружения PATH." F1Keyword="VC.Project.VCDirectories.ExecutablePath" Category="VC++" Separator=";" Subtype="folder"/>
+  <StringListProperty Name="IncludePath" DisplayName="Включаемые каталоги" Description="Путь, который нужно использовать при поиске включаемых файлов при сборке проекта VC++.  Соответствует переменной окружения INCLUDE." F1Keyword="VC.Project.VCDirectories.IncludePath" Category="VC++" Separator=";" Subtype="folder"/>
+  <StringListProperty Name="ExternalIncludePath" DisplayName="Внешние каталоги включения" Description="Путь, который будет рассматриваться как внешний или системный во время компиляции и пропускаться при проверке актуальности сборки." F1Keyword="VC.Project.VCDirectories.ExternalIncludePath" Category="VC++" Separator=";" Subtype="folder"/>
+  <StringListProperty Name="ReferencePath" DisplayName="Каталоги ссылок" Description="Путь, который нужно использовать при поиске файлов метаданных при сборке проекта VC++. Соответствует переменной окружения LIBPATH." F1Keyword="VC.Project.VCDirectories.ReferencePath" Category="VC++" Separator=";" Subtype="folder"/>
+  <StringListProperty Name="LibraryPath" DisplayName="Каталоги библиотек" Description="Путь, который нужно использовать при поиске библиотечных файлов при сборке проекта VC++.  Соответствует переменной окружения LIB." F1Keyword="VC.Project.VCDirectories.LibraryPath" Category="VC++" Separator=";" Subtype="folder"/>
+  <StringListProperty Name="LibraryWPath" DisplayName="Каталоги библиотек WinRT" Description="Путь, используемый при поиске файлов, добавленных с помощью команды &quot;#win using&quot; при сборке проекта VC++. Соответствует переменной среды LIBW." F1Keyword="VC.Project.VCDirectories.LibraryWPath" Category="VC++" Separator=";" Subtype="folder"/>
+  <StringListProperty Name="SourcePath" DisplayName="Каталоги исходного кода" Description="Путь, который нужно использовать при поиске файлов исходного кода, нужных для работы IntelliSense." F1Keyword="VC.Project.VCDirectories.SourcePath" Category="VC++" Separator=";" Subtype="folder"/>
+  <StringListProperty Name="ExcludePath" DisplayName="Исключаемые каталоги" Description="Путь, который нужно пропустить при поиске зависимостей." F1Keyword="VC.Project.VCDirectories.ExcludePath" Category="VC++" Separator=";" Subtype="folder"/>
+  <StringListProperty Name="PublicIncludeDirectories" Separator=";" Subtype="folder" DisplayName="Общедоступные каталоги включаемых файлов" Description="Один или несколько каталогов, которые будут автоматически добавлены в путь включения в ссылающихся проектах." Category="References" F1Keyword="VC.Project.VCConfiguration.PublicIncludeDirectories"/>
+  <BoolProperty Name="AllProjectIncludesArePublic" DisplayName="Все файлы заголовков являются общедоступными." Description="Указывает, должны ли каталоги или все файлы заголовков проекта быть автоматически добавлены в путь включения в ссылающихся проектах." Category="References" F1Keyword="VC.Project.VCConfiguration.AllProjectIncludesArePublic"/>                
+  <StringListProperty Name="PublicModuleDirectories" Separator=";" Subtype="folder" DisplayName="Каталоги общедоступных модулей C++" Description="Один или несколько каталогов проекта, содержащие модуль C++ и (или) источники блоков заголовка, которые будут автоматически доступны в ссылающихся проектах." Category="References" F1Keyword="VC.Project.VCConfiguration.PublicModuleDirectories"/>
+  <BoolProperty Name="AllProjectBMIsArePublic" DisplayName="Все модули являются общедоступными." Description="Указывает, должны ли все модули проекта и блоки заголовков быть автоматически доступны в ссылающихся проектах." Category="References" F1Keyword="VC.Project.VCConfiguration.AllProjectBMIsArePublic"/>
+
+</Rule>

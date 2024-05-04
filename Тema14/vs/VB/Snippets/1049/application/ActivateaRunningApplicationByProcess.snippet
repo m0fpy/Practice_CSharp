@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>Активировать выполняющееся приложение по идентификатору процесса</Title>
+      <Author>Microsoft Corporation</Author>
+      <Description>Активация выполняющегося приложения с помощью идентификатора процесса приложения.</Description>
+      <Shortcut>appActPro</Shortcut>
+    </Header>
+    <Snippet>
+      <References>
+        <Reference>
+          <Assembly>System.dll</Assembly>
+        </Reference>
+      </References>
+      <Imports>
+        <Import>
+          <Namespace>System</Namespace>
+        </Import>
+        <Import>
+          <Namespace>Microsoft.VisualBasic</Namespace>
+        </Import>
+      </Imports>
+      <Declarations>
+        <Literal>
+          <ID>applicationFileName</ID>
+          <Type>String</Type>
+          <ToolTip>Замените на имя файла приложения, которое нужно выполнить.</ToolTip>
+          <Default>"NOTEPAD.EXE"</Default>
+        </Literal>
+      </Declarations>
+      <Code Language="VB" Kind="method body"><![CDATA[Dim processID As Integer
+
+processID = Shell($applicationFileName$, AppWinStyle.NormalFocus)
+
+AppActivate(processID)]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

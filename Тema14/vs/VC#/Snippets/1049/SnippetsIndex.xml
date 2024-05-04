@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SnippetCollection>
+    <Language Lang="CSharp" Guid="{694DD9B6-B865-4C5B-AD85-86356E9C88DC}">
+        <SnippetDir>
+            <OnOff>On</OnOff>
+            <Installed>true</Installed>
+            <Locale>1049</Locale>
+            <DirPath>%InstallRoot%\VC#\Snippets\%LCID%\Visual C#\</DirPath>	
+            <LocalizedName>Visual C#</LocalizedName>
+        </SnippetDir>
+        <SnippetDir>
+            <OnOff>On</OnOff>
+            <Installed>true</Installed>
+            <Locale>1049</Locale>
+            <DirPath>%InstallRoot%\VC#\Snippets\%LCID%\officedevelopment</DirPath>	
+            <LocalizedName>Разработка для Office</LocalizedName>
+            <SnippetSubDir>
+                <OnOff>On</OnOff>
+                <Installed>true</Installed>
+                <Locale>1049</Locale>
+                <DirPath>%InstallRoot%\VC#\Snippets\%LCID%\officedevelopment\excel</DirPath>	
+                <LocalizedName>Excel</LocalizedName>
+                <SnippetSubDir>
+                    <OnOff>On</OnOff>
+                    <Installed>true</Installed>
+                    <Locale>1049</Locale>
+                    <DirPath>%InstallRoot%\VC#\Snippets\%LCID%\officedevelopment\excel\analytics</DirPath>	
+                    <LocalizedName>Аналитика — сводная таблица</LocalizedName>
+                </SnippetSubDir>
+                <SnippetSubDir>
+                    <OnOff>On</OnOff>
+                    <Installed>true</Installed>
+                    <Locale>1049</Locale>
+                    <DirPath>%InstallRoot%\VC#\Snippets\%LCID%\officedevelopment\excel\controls</DirPath>
+                    <LocalizedName>Элементы управления</LocalizedName>
+                </SnippetSubDir>
+                <SnippetSubDir>
+                    <OnOff>On</OnOff>
+                    <Installed>true</Installed>
+                    <Locale>1049</Locale>
+                    <DirPath>%InstallRoot%\VC#\Snippets\%LCID%\officedevelopment\excel\environment</DirPath>
+                    <LocalizedName>Окружение</LocalizedName>
+                </SnippetSubDir>
+                <SnippetSubDir>
+                    <OnOff>On</OnOff>
+                    <Installed>true</Installed>
+                    <Locale>1049</Locale>
+                    <DirPath>%InstallRoot%\VC#\Snippets\%LCID%\officedevelopment\excel\formatting</DirPath>
+                    <LocalizedName>Форматирование</LocalizedName>
+                </SnippetSubDir>
+                <SnippetSubDir>
+                    <OnOff>On</OnOff>
+                    <Installed>true</Installed>
+                    <Locale>1049</Locale>
+                    <DirPath>%InstallRoot%\VC#\Snippets\%LCID%\officedevelopment\excel\importing</DirPath>	
+                    <LocalizedName>Импорт</LocalizedName>
+                </SnippetSubDir>
+                <SnippetSubDir>
+                    <OnOff>On</OnOff>
+                    <Installed>true</Installed>
+                    <Locale>1049</Locale>
+                    <DirPath>%InstallRoot%\VC#\Snippets\%LCID%\officedevelopment\excel\exporting</DirPath>	
+                    <LocalizedName>Экспорт</LocalizedName>
+                </SnippetSubDir>
+            </SnippetSubDir>
+            <SnippetSubDir>
+                <OnOff>On</OnOff>
+                <Installed>true</Installed>
+                <Locale>1049</Locale>
+                <DirPath>%InstallRoot%\VC#\Snippets\%LCID%\officedevelopment\word</DirPath>
+                <LocalizedName>Word</LocalizedName>
+                <SnippetSubDir>
+                    <OnOff>On</OnOff>
+                    <Installed>true</Installed>
+                    <Locale>1049</Locale>
+                    <DirPath>%InstallRoot%\VC#\Snippets\%LCID%\officedevelopment\word\controls</DirPath>
+                    <LocalizedName>Элементы управления</LocalizedName>
+                </SnippetSubDir>
+                <SnippetSubDir>
+                    <OnOff>On</OnOff>
+                    <Installed>true</Installed>
+                    <Locale>1049</Locale>
+                    <DirPath>%InstallRoot%\VC#\Snippets\%LCID%\officedevelopment\word\environment</DirPath>
+                    <LocalizedName>Окружение — переменные документа</LocalizedName>
+                </SnippetSubDir>
+                <SnippetSubDir>
+                    <OnOff>On</OnOff>
+                    <Installed>true</Installed>
+                    <Locale>1049</Locale>
+                    <DirPath>%InstallRoot%\VC#\Snippets\%LCID%\officedevelopment\word\formatting</DirPath>
+                    <LocalizedName>Форматирование</LocalizedName>
+                </SnippetSubDir>
+                <SnippetSubDir>
+                    <OnOff>On</OnOff>
+                    <Installed>true</Installed>
+                    <Locale>1049</Locale>
+                    <DirPath>%InstallRoot%\VC#\Snippets\%LCID%\officedevelopment\word\importing</DirPath>
+                    <LocalizedName>Импорт</LocalizedName>
+                </SnippetSubDir>
+            </SnippetSubDir>
+            <SnippetSubDir>
+                <OnOff>On</OnOff>
+                <Installed>true</Installed>
+                <Locale>1049</Locale>
+                <DirPath>%InstallRoot%\VC#\Snippets\%LCID%\officedevelopment\office</DirPath>
+                <LocalizedName>Office</LocalizedName>
+                <SnippetSubDir>
+                    <OnOff>On</OnOff>
+                    <Installed>true</Installed>
+                    <Locale>1049</Locale>
+                    <DirPath>%InstallRoot%\VC#\Snippets\%LCID%\officedevelopment\office\environment</DirPath>
+                    <LocalizedName>Окружение — меню, панель действий</LocalizedName>
+                </SnippetSubDir>
+                <SnippetSubDir>
+                    <OnOff>On</OnOff>
+                    <Installed>true</Installed>
+                    <Locale>1049</Locale>
+                    <DirPath>%InstallRoot%\VC#\Snippets\%LCID%\officedevelopment\office\server</DirPath>
+                    <LocalizedName>Сервер — кэшированные данные, документ на сервере</LocalizedName>
+                </SnippetSubDir>
+            </SnippetSubDir>
+        </SnippetDir>
+        <SnippetDir>
+            <OnOff>on</OnOff>
+            <Installed>true</Installed>
+            <Locale>1049</Locale>
+            <DirPath>%InstallRoot%\VC#\Snippets\%LCID%\Test\</DirPath>
+            <LocalizedName>Тест</LocalizedName>
+        </SnippetDir>
+    </Language>
+</SnippetCollection>

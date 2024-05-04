@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Copyright, Microsoft Corporation, All rights reserved.-->
+<Rule Name="ConfigurationGeneralAdvanced" OverrideMode="Extend" xmlns="http://schemas.microsoft.com/build/2009/properties">
+  
+  <EnumProperty Name="PreferredToolArchitecture" DisplayName="Архитектура предпочитаемых средств сборки" Description="Определяет, какие средства сборки будут использоваться для компиляции программ (32-разрядные, 64-разрядные или 64-разрядные ARM)." Category="General" F1Keyword="VC.Project.VCConfiguration.PreferredToolArchitecture">
+    <EnumValue Name="" DisplayName="По умолчанию"/>
+    <EnumValue Name="arm64" DisplayName="64-разрядная ARM (arm64)"/>
+    <EnumValue Name="x86" DisplayName="32-разрядная версия (x86)"/>
+    <EnumValue Name="x64" DisplayName="64-разрядная версия (x64)"/>
+  </EnumProperty>
+</Rule>

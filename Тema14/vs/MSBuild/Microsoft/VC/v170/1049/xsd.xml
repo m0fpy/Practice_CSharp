@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Copyright, Microsoft Corporation, All rights reserved.-->
+<Rule Name="XSD" PageTemplate="tool" DisplayName="Инструмент создания XML-данных" SwitchPrefix="/" Order="120" xmlns="http://schemas.microsoft.com/build/2009/properties" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:sys="clr-namespace:System;assembly=mscorlib">
+  <Rule.Categories>
+    <Category Name="General" DisplayName="Общие"/>
+    <Category Name="All Options" DisplayName="Все параметры" Subtype="Search"/>
+    <Category Name="Command Line" DisplayName="Командная строка" Subtype="CommandLine"/>
+  </Rule.Categories>
+  <Rule.DataSource>
+    <DataSource Persistence="ProjectFile" ItemType="Xsd" Label="" HasConfigurationCondition="true"/>
+  </Rule.DataSource>
+  <BoolProperty Name="SuppressStartupBanner" DisplayName="Отключить загрузочный баннер" Description="Выполнение без отображения стандартных сведений об авторских правах Майкрософт. (/nologo)" Category="General" Switch="nologo" F1Keyword="VC.Project.VCXMLDataGeneratorTool.SupressStartupBanner">
+  </BoolProperty>
+  <StringProperty Name="Namespace" DisplayName="Пространство имен" Description="Пространство имен для создаваемых файлов класса. Стандартное пространство имен - глобальное. (/namespace:[строка])" Category="General" Switch="namespace:" F1Keyword="VC.Project.VCXMLDataGeneratorTool.Namespace">
+  </StringProperty>
+  <StringProperty Name="Language" DisplayName="Язык" Description="Язык, используемый для созданного кода. Выбрать из CS, VB, JS, VJS, CPP или предоставить полностью квалифицированное имя класса, реализующего System.CodeDom.Compiler.CodeDomProvider. Стандартный язык - CS (CSharp). (/language:[строка])" Category="General" Switch="language:" Visible="false">
+  </StringProperty>
+  <EnumProperty Name="GenerateFromSchema" DisplayName="Создать из схемы" Description="Типы созданные из схемы" Category="General" F1Keyword="VC.Project.VCXMLDataGeneratorTool.GenerateFromSchema">
+    <EnumValue Name="classes" Switch="classes" DisplayName="Классы" Description="Создать классы для этой схемы (/classes)">
+    </EnumValue>
+    <EnumValue Name="dataset" Switch="dataset" DisplayName="Набор данных" Description="Создать набор данных подкласса для этой схемы. (/dataset)">
+    </EnumValue>
+  </EnumProperty>
+  <StringProperty Name="AdditionalOptions" DisplayName="Дополнительные параметры" Description="Дополнительные параметры" Category="Command Line" F1Keyword="vc.project.AdditionalOptionsPage">
+  </StringProperty>
+  <StringProperty Subtype="folder" Name="TrackerLogDirectory" DisplayName="Каталог журнала отслеживания" Description="Каталог журнала отслеживания." Category="General" IncludeInCommandLine="false" Visible="false">
+  </StringProperty>
+</Rule>

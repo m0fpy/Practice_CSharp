@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>Создать коллекцию с одним типом элементов с ключом.</Title>
+      <Author>Microsoft Corporation</Author>
+      <Description>Создание словаря для хранения элементов определенного типа, индексированных по ключу.</Description>
+      <Shortcut>colCreateKey</Shortcut>
+    </Header>
+    <Snippet>
+      <Imports>
+        <Import>
+          <Namespace>Microsoft.VisualBasic</Namespace>
+        </Import>
+        <Import>
+          <Namespace>System.Collections.Generic</Namespace>
+        </Import>
+        <Import>
+          <Namespace>System.Collections</Namespace>
+        </Import>
+      </Imports>
+      <Declarations>
+        <Literal>
+          <ID>storageVar</ID>
+          <ToolTip>Замените на идентификатор резервного хранилища.</ToolTip>
+          <Default>stateCaps</Default>
+        </Literal>
+        <Literal>
+          <ID>keyType</ID>
+          <ToolTip>Замените на тип ключей в коллекции. </ToolTip>
+          <Default>String</Default>
+        </Literal>
+		<Literal>
+			<ID>itemType</ID>
+			<ToolTip>Замените на тип элементов, хранимых в коллекции. </ToolTip>
+			<Default>String</Default>
+		</Literal>
+	<Literal>
+          <ID>keyValue1</ID>
+          <ToolTip>Замените на ключ первого элемента. </ToolTip>
+          <Default>"WA"</Default>
+        </Literal>
+        <Literal>
+          <ID>keyValue2</ID>
+          <ToolTip>Замените на ключ второго элемента. </ToolTip>
+          <Default>"NM"</Default>
+        </Literal>
+	<Literal>
+          <ID>value1</ID>
+          <ToolTip>Замените на значение первого элемента. </ToolTip>
+          <Default>"Olympia"</Default>
+        </Literal>
+	<Literal>
+          <ID>value2</ID>
+          <ToolTip>Замените на значение второго элемента. </ToolTip>
+          <Default>"Santa Fe"</Default>
+        </Literal>
+      </Declarations>
+      <Code Language="VB" Kind="method body"><![CDATA[' Backing storage -- a generic dictionary
+Dim $storageVar$ As New Dictionary(Of $keyType$, $itemType$)
+
+' Add items to the dictionary
+$storageVar$.Add( $keyValue1$ , $value1$)
+$storageVar$.Add( $keyValue2$ , $value2$)]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

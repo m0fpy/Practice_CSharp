@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>Копировать экземпляр класса в буфер обмена</Title>
+      <Author>Microsoft Corporation</Author>
+      <Description>Копирование экземпляра сериализуемого класса в буфер обмена.</Description>
+      <Shortcut>clipCopyClass</Shortcut>
+    </Header>
+    <Snippet>
+		<References>
+			<Reference>
+				<Assembly>System.Windows.Forms.dll</Assembly>
+			</Reference>
+		</References>
+		<Imports>
+			<Import>
+				<Namespace>System</Namespace>
+			</Import>
+			<Import>
+				<Namespace>Microsoft.VisualBasic</Namespace>
+			</Import>
+			<Import>
+				<Namespace>System.Windows.Forms</Namespace>
+			</Import>
+		</Imports>
+      <Declarations>
+        <Literal>
+          <ID>className</ID>
+          <Type>String</Type>
+          <ToolTip>Замените на тип экземпляра (например, String), который необходимо копировать в буфер обмена.  Имейте в виду, что заданный тип должен поддерживать сериализацию.</ToolTip>
+          <Default>Object</Default>
+        </Literal>
+        <Object>
+          <ID>classInstance</ID>
+          <Type>Object</Type>
+          <ToolTip>Замените на экземпляр, который необходимо копировать в буфер обмена.</ToolTip>
+          <Default>classInstance</Default>
+        </Object>
+      </Declarations>
+      <Code Language="VB" Kind="method decl"><![CDATA[My.Computer.Clipboard.SetData("$className$", $classInstance$)]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

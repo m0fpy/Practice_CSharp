@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>Получить случайное число с помощью класса Random</Title>
+      <Author>Microsoft Corporation</Author>
+      <Description>Создание случайного целого числа между верхней и нижней границей.</Description>
+      <Shortcut>mathRand</Shortcut>
+    </Header>
+    <Snippet>
+      <Imports>
+        <Import>
+          <Namespace>System</Namespace>
+        </Import>
+        <Import>
+          <Namespace>Microsoft.VisualBasic</Namespace>
+        </Import>
+      </Imports>
+      <Declarations>
+        <Literal>
+          <ID>LowerBound</ID>
+          <Type>Integer</Type>
+          <ToolTip>Замените на наименьшее целое число, которое необходимо получить в результирующем наборе.</ToolTip>
+          <Default>10</Default>
+        </Literal>
+        <Literal>
+          <ID>UpperBound</ID>
+          <Type>Integer</Type>
+          <ToolTip>Замените на число, на единицу большее наибольшего числа, которое необходимо получить в результирующем наборе.</ToolTip>
+          <Default>100</Default>
+        </Literal>
+      </Declarations>
+      <Code Language="VB" Kind="method body"><![CDATA[Dim generator As New Random
+Dim randomValue As Integer
+randomValue = generator.Next($LowerBound$, $UpperBound$)
+]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

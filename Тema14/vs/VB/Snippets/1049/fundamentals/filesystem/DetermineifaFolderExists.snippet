@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>Определить наличие папки </Title>
+      <Author>Microsoft Corporation</Author>
+      <Description>Установка значения логической переменной, показывающей, существует ли указанная папка.</Description>
+      <Shortcut>filExistFold</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>folderName</ID>
+          <ToolTip>Замените на имя папки для поиска.</ToolTip>
+          <Default>"C:\TestDirectory"</Default>
+        </Literal>
+      </Declarations>
+      <Code Language="VB" Kind="method body"><![CDATA[Dim folderExists As Boolean
+folderExists = My.Computer.FileSystem.DirectoryExists($folderName$)]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

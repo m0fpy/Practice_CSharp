@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--Copyright, Microsoft Corporation, All rights reserved.-->
+<Rule Name="WindowsRemoteDebugger" DisplayName="Удаленный отладчик Windows" PageTemplate="debugger" Description="Параметры удаленного отладчика Windows" xmlns="http://schemas.microsoft.com/build/2009/properties">
+  <Rule.DataSource>
+    <DataSource Persistence="UserFile" />
+  </Rule.DataSource>
+  <StringProperty Name="RemoteDebuggerCommand" DisplayName="Удаленная команда" Description="Команда отладки для выполнения." F1Keyword="VC.Project.IVCRemoteDebugPageObject.RemoteCommand" />
+  <StringProperty Name="RemoteDebuggerCommandArguments" DisplayName="Аргументы удаленной команды" Description="Аргументы для командной строки, которые будут переданы приложению." F1Keyword="VC.Project.IVCRemoteDebugPageObject.CommandArguments">
+    <Argument Property="RemoteDebuggerCommand" />
+  </StringProperty>
+  <StringProperty Name="RemoteDebuggerWorkingDirectory" DisplayName="Рабочий каталог" Description="Рабочий каталог приложения. По умолчанию это каталог, содержащий файл проекта." Subtype="folder" F1Keyword="VC.Project.IVCRemoteDebugPageObject.WorkingDirectory" />
+  <StringProperty Name="RemoteDebuggerServerName" DisplayName="Имя удаленного сервера" Description="Определяет имя удаленного сервера." F1Keyword="VC.Project.IVCRemoteDebugPageObject.RemoteMachine" />
+  <EnumProperty Name="RemoteDebuggerConnection" DisplayName="Подключение" Description="Определяет тип подключения." F1Keyword="VC.Project.IVCRemoteDebugPageObject.Remote">
+    <EnumValue Name="RemoteWithAuthentication" DisplayName="Удаленный доступ с аутентификацией Windows" Description="Удаленный доступ с аутентификацией Windows" />
+    <EnumValue Name="RemoteWithoutAuthentication" DisplayName="Удаленный доступ без аутентификации" Description="Удаленный доступ без аутентификации" />
+  </EnumProperty>
+  <EnumProperty Name="RemoteDebuggerDebuggerType" DisplayName="Тип отладчика" Description="Определение тип используемого отладчика. При выборе значения &quot;Авто&quot; тип отладчика будет выбран в зависимости от содержимого exe-файла." F1Keyword="VC.Project.IVCRemoteDebugPageObject.DebuggerType">
+    <EnumProperty.Metadata>
+      <NameValuePair Name="IsDebugType" Value="true" />
+    </EnumProperty.Metadata>
+    <EnumValue Name="NativeOnly" DisplayName="Только машинный код" />
+    <EnumValue Name="ManagedOnly" DisplayName="Только управляемый код (.NET Framework)" />
+    <EnumValue Name="Mixed" DisplayName="Смешанный код (.NET Framework)" />
+    <EnumValue Name="ManagedCore" DisplayName="Только управляемый код (.NET Core)" />
+    <EnumValue Name="NativeWithManagedCore" DisplayName="Смешанный код (.NET Core)" />
+    <EnumValue Name="Auto" DisplayName="Авто" />
+    <EnumValue Name="Script" DisplayName="Скрипт" />
+    <EnumValue Name="GPUOnly" DisplayName="Только GPU (C++ AMP)" />
+    <EnumValue Name="JavaScriptForWebView2" DisplayName="JavaScript (WebView2)" />
+  </EnumProperty>
+  <StringListProperty Name="RemoteDebuggerEnvironment" DisplayName="Окружение" Description="Задает окружение для отладчика. Также можно указать переменные, которые будут объединены с существующим окружением." Separator="&#xA;" F1Keyword="VC.Project.IVCRemoteDebugPageObject.Environment" />
+  <DynamicEnumProperty Name="RemoteGPUDebuggerTargetType" DisplayName="Тип акселератора отладки" Category="GPUOptions" EnumProvider="GPUTargets" F1Keyword="VC.Project.IVCRemoteDebugPageObject.GPUDebuggerTargetType" Description="Тип акселератора отладки для отладки кода GPU.  (Доступно, только когда  отладчик GPU активен.)">
+    <DynamicEnumProperty.Metadata>
+      <NameValuePair Name="ParentPropertyName" Value="RemoteDebuggerDebuggerType" />
+      <NameValuePair Name="ParentPropertyValue" Value="GPUOnly" />
+    </DynamicEnumProperty.Metadata>
+  </DynamicEnumProperty>
+  <EnumProperty Name="GPURefDebuggerBreakOnAllThreads" DisplayName="Стандартное поведение точек останова для GPU" Category="GPUOptions" Description="Задает частоту остановок отладчика GPU." F1Keyword="VC.Project.IVCRemoteDebugPageObject.GPUBreakOnAllThreads">
+    <EnumValue Name="GPURefBreakOncePerWarp" DisplayName="Остановка один раз для порции" Description="Остановка один раз для порции" />
+    <EnumValue Name="GPURefBreakForCPUThread" DisplayName="Остановка для каждого потока (как ЦП)" Description="Остановка для каждого потока (как ЦП)" />
+    <EnumProperty.Metadata>
+      <NameValuePair Name="ParentPropertyName" Value="RemoteDebuggerDebuggerType" />
+      <NameValuePair Name="ParentPropertyValue" Value="GPUOnly" />
+    </EnumProperty.Metadata>
+  </EnumProperty>
+  <BoolProperty Name="RemoteDebuggerAttach" DisplayName="Присоединиться" Description="Определяет, будет ли отладчик пытаться присоединиться к существующему процессу при начале отладки." F1Keyword="VC.Project.IVCRemoteDebugPageObject.Attach" />
+  <BoolProperty Name="RemoteDebuggerSQLDebugging" DisplayName="Отладка SQL" Description="Присоединение SQL-отладчика." F1Keyword="VC.Project.IVCRemoteDebugPageObject.SQLDebugging" />
+  <StringProperty Name="DeploymentDirectory" DisplayName="Папка развертывания" Description="Если при отладке на удаленном компьютере необходимо скопировать содержимое вывода проекта (за исключением PDB-файлов) на удаленный компьютер, укажите здесь путь" F1Keyword="VC.Project.IVCRemoteDebugPageObject.DeploymentDirectory" />
+  <StringProperty Name="AdditionalFiles" DisplayName="Дополнительные файлы развертывания" Description="При отладке на удаленном компьютере указанные здесь файлы и каталоги (помимо вывода проекта) копируются в каталог развертывания, если он задан." Subtype="file" F1Keyword="VC.Project.IVCRemoteDebugPageObject.AdditionalFiles" />
+  <BoolProperty Name="RemoteDebuggerDeployDebugCppRuntime" DisplayName="Развертывание отладочных библиотек времени выполнения Visual C++" Description="Указывает, следует ли развернуть отладочные библиотеки времени выполнения для активной платформы." F1Keyword="VC.Project.IVCRemoteDebugPageObject.Remote" />
+  <BoolProperty Name="RemoteDebuggerDeployCppRuntime" DisplayName="Развертывание библиотек времени выполнения Visual C++" Description="Указывает, следует ли развернуть библиотеки времени выполнения для активной платформы." F1Keyword="VC.Project.IVCRemoteDebugPageObject.Remote" />
+  <BoolProperty Name="UseLegacyManagedDebugger" Visible="false" />
+  <DynamicEnumProperty Name="RemoteDebuggerAmpDefaultAccelerator" DisplayName="Ускоритель по умолчанию для AMP" EnumProvider="AmpAccelerators" F1Keyword="VC.Project.IVCRemoteDebugPageObject.AmpDefaultAccelerator" Description="Переопределить выбор ускорителя по умолчанию для C++ AMP. Свойство не применимо при отладке управляемого кода.">
+  </DynamicEnumProperty>
+</Rule>

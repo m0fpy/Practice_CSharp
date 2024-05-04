@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Copyright, Microsoft Corporation, All rights reserved.-->
+<Rule Name="ConfigurationGeneralAdvanced" OverrideMode="Extend" xmlns="http://schemas.microsoft.com/build/2009/properties">
+
+
+  <EnumProperty Name="TargetFramework" DisplayName="Целевая платформа .NET" Description="Целевая версия .NET в проекте. Она применяется, только если для параметра &quot;Поддержка общеязыковой среды выполнения (CLR)&quot; задано значение &quot;Поддержка среды выполнения .NET&quot;." Category="CLR" F1Keyword="VC.Project.TargetFrameworkVersion">
+    <EnumProperty.DataSource>
+      <DataSource Persistence="ProjectFile" Label="Globals" HasConfigurationCondition="False"/>
+    </EnumProperty.DataSource>
+    <EnumValue Name="netcoreapp3.1" DisplayName=".NET Core 3.1"/>
+    <EnumValue Name="net5.0" DisplayName=".NET 5.0"/>
+    <EnumValue Name="net6.0" DisplayName=".NET 6.0"/>
+    <EnumValue Name="net7.0" DisplayName=".NET 7.0"/>
+    <EnumValue Name="net8.0" DisplayName="NET 8.0"/>
+  </EnumProperty>
+
+  <StringProperty Name="TargetFrameworkVersion" Visible="false" DisplayName="Целевая версия платформы .NET Framework" Description="Целевая версия .NET Framework в проекте. Она применяется, только если задано значение &quot;Поддержка среды выполнения .NET Framework&quot;." Category="CLR" F1Keyword="VC.Project.TargetFrameworkVersion">
+    <StringProperty.DataSource>
+      <DataSource Persistence="ProjectFile" Label="Globals" HasConfigurationCondition="False"/>
+    </StringProperty.DataSource>
+  </StringProperty>
+
+  <BoolProperty Name="EnableManagedIncrementalBuild" Visible="false" DisplayName="Разрешить управляемую добавочную сборку" Description="Разрешает сценарии управляемой добавочной сборки с использованием metagen." Category="CLR" F1Keyword="VC.Project.VCConfiguration.EnableManagedIncrementalBuild">
+    <BoolProperty.DataSource>
+      <DataSource Persistence="ProjectFile" Label=""/>
+    </BoolProperty.DataSource>
+  </BoolProperty>
+
+  <DynamicEnumProperty Name="WindowsTargetPlatformMinVersion" DisplayName="Целевая версия Windows для .NET" Description="Минимальная версия Windows, которая может быть целевой в этом проекте при сборке со значением &quot;Поддержка среды выполнения .NET&quot;." Category="CLR" EnumProvider="PreviousPlatformVersions" Visible="true" F1Keyword="VC.Project.WindowsTargetPlatformMinVersion">
+    <DynamicEnumProperty.DataSource>
+      <DataSource Persistence="ProjectFile" Label="Globals" SourceOfDefaultValue="AfterContext" HasConfigurationCondition="False"/>
+    </DynamicEnumProperty.DataSource>
+    <DynamicEnumProperty.ProviderSettings>
+      <NameValuePair Name="Value" Value="8.0"/>
+      <NameValuePair Name="Value" Value="7.0"/>
+    </DynamicEnumProperty.ProviderSettings>
+  </DynamicEnumProperty>
+
+</Rule>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>Создать папку </Title>
+      <Author>Microsoft Corporation</Author>
+      <Description>Создание новой папки на компьютере.</Description>
+      <Shortcut>filCreateFold</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>folderName</ID>
+          <ToolTip>Замените на имя создаваемой папки.</ToolTip>
+          <Default>"C:\NewDirectory"</Default>
+        </Literal>
+      </Declarations>
+      <Code Language="VB" Kind="method body"><![CDATA[My.Computer.FileSystem.CreateDirectory($folderName$)]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

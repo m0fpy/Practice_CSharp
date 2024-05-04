@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>uclass</Title>
+			<Shortcut>uclass</Shortcut>
+			<Description>Макрос UCLASS Unreal Engine</Description>
+			<Author>Microsoft Corporation</Author>
+			<SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+			</SnippetTypes>
+		</Header>
+		<Snippet>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<Default>UMyClass</Default>
+					<ToolTip>Имя UCLASS</ToolTip>
+				</Literal>
+				<Literal>
+					<ID>parent</ID>
+					<Default>UObject</Default>
+					<ToolTip>Родительский класс UCLASS</ToolTip>
+				</Literal>
+			</Declarations>
+			<Code Language="cpp"><![CDATA[UCLASS()
+				class $name$ : public $parent$
+				{
+					GENERATED_BODY()
+					$end$
+				public: $name$();
+				protected:
+				private:
+				};]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>

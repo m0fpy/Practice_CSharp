@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>Вычислить функцию Max()</Title>
+      <Author>Microsoft Corporation</Author>
+      <Description>Подсчет максимального количества символов в имени плода с помощью агрегатной функции.</Description>
+      <Shortcut>qAggregateMax</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>queryResult</ID>
+          <Type>item</Type>
+          <ToolTip>Замените на идентификатор запроса.</ToolTip>
+          <Default>query</Default>
+        </Literal>
+        <Literal>
+          <ID>item</ID>
+          <Type>item</Type>
+          <ToolTip>Замените на идентификатор переменной, представляющей элемент из источника данных.</ToolTip>
+          <Default>fruit</Default>
+        </Literal>
+        <Literal>
+          <ID>dataSource</ID>
+          <Type>String</Type>
+          <ToolTip>Замените на идентификатор источника данных.</ToolTip>
+          <Default>New String() {"apple", "orange", "pear", "banana", "apple"}</Default>
+        </Literal>
+        <Literal>
+          <ID>field</ID>
+          <Type>String</Type>
+          <ToolTip>Замените на имя поля, используемого для второй статистической функции.</ToolTip>
+          <Default>Length</Default>
+       </Literal>
+        <Literal>
+          <ID>groupingCondition</ID>
+          <Type>String</Type>
+          <ToolTip>Замените на статистическую функцию для вызова в группе.</ToolTip>
+          <Default>Max</Default>
+        </Literal>
+      </Declarations>
+      <Code Language="VB" Kind="method body"><![CDATA[Dim $queryResult$ = Aggregate $item$ In $dataSource$ _
+                     Into $groupingCondition$($item$.$field$)]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>
