@@ -1,6 +1,0 @@
-{
-  "$schema": "../../../schemas/servicehub.host.schema.json",
-  "hostExecutable": "./ServiceHub.Host.AnyCPU.exe",
-  "hostArgs": [ "$HOSTID", "$PIPE", "/AppBasePath:%VSAPPIDDIR%", "/ConfigFile:%PkgDefApplicationConfigFile%", "$TELEMETRYSESSION" ],
-  "additionalEnvironmentVariables": {}
-}

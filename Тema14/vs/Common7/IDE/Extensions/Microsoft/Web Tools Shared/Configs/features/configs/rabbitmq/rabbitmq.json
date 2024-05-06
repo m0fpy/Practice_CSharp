@@ -1,9 +1,0 @@
-{
-  "components": {
-    "secretStore": {
-      "modifiers": [
-        "secretStore.local.connectionId"
-      ]
-    }
-  }
-}

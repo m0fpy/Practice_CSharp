@@ -1,6 +1,0 @@
-{
-  "$schema": "../../../schemas/servicehub.host.schema.json",
-  "hostExecutable": "./ServiceHub.LiveUnitTesting.RemoteSyncManager",
-  "hostArgs": [ "$HOSTID", "$PIPE", "$TELEMETRYSESSION" ],
-  "additionalEnvironmentVariables": {}
-}

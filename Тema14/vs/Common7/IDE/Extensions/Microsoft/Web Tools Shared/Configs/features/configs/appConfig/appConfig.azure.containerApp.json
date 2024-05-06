@@ -1,9 +1,0 @@
-{
-  "components": {
-    "nuget": {
-      "modifiers": [
-        "appConfig.nuget"
-      ]
-    }
-  }
-}
