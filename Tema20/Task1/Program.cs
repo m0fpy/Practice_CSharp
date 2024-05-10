@@ -9,7 +9,7 @@
                 Console.WriteLine("Введите трехзначное число: ");
                 int number = int.Parse(Console.ReadLine());
 
-                if (number >= 1000 || number < 100)
+                if (number > 999 || number < 100)
                 {
                     throw new ArgumentException("Число должно быть трехзначным");
                 }
