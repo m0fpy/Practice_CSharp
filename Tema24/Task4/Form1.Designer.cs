@@ -64,7 +64,6 @@
             salaryGroupBox = new GroupBox();
             ToLabel = new Label();
             label1 = new Label();
-            FromLabel = new Label();
             ToSalary = new NumericUpDown();
             FromSalary = new NumericUpDown();
             workTimeGroupBox = new GroupBox();
@@ -97,9 +96,9 @@
             SurnameLabel.Margin = new Padding(5, 0, 5, 0);
             SurnameLabel.Name = "SurnameLabel";
             helpProvider1.SetShowHelp(SurnameLabel, true);
-            SurnameLabel.Size = new Size(114, 32);
+            SurnameLabel.Size = new Size(118, 32);
             SurnameLabel.TabIndex = 0;
-            SurnameLabel.Text = "Surname:";
+            SurnameLabel.Text = "Фамилия:";
             // 
             // NameLabel
             // 
@@ -108,9 +107,9 @@
             NameLabel.Margin = new Padding(5, 0, 5, 0);
             NameLabel.Name = "NameLabel";
             helpProvider1.SetShowHelp(NameLabel, true);
-            NameLabel.Size = new Size(83, 32);
+            NameLabel.Size = new Size(66, 32);
             NameLabel.TabIndex = 1;
-            NameLabel.Text = "Name:";
+            NameLabel.Text = "Имя:";
             // 
             // MiddleNameLabel
             // 
@@ -119,42 +118,42 @@
             MiddleNameLabel.Margin = new Padding(5, 0, 5, 0);
             MiddleNameLabel.Name = "MiddleNameLabel";
             helpProvider1.SetShowHelp(MiddleNameLabel, true);
-            MiddleNameLabel.Size = new Size(137, 32);
+            MiddleNameLabel.Size = new Size(122, 32);
             MiddleNameLabel.TabIndex = 2;
-            MiddleNameLabel.Text = "Patronymic:";
+            MiddleNameLabel.Text = "Отчество:";
             // 
             // SurnameTextBox
             // 
-            helpProvider1.SetHelpString(SurnameTextBox, "Field for surname");
+            helpProvider1.SetHelpString(SurnameTextBox, "Поле для ввода фамилии");
             SurnameTextBox.Location = new Point(169, 27);
             SurnameTextBox.Margin = new Padding(5);
             SurnameTextBox.Name = "SurnameTextBox";
             helpProvider1.SetShowHelp(SurnameTextBox, true);
             SurnameTextBox.Size = new Size(420, 39);
             SurnameTextBox.TabIndex = 3;
-            toolTip1.SetToolTip(SurnameTextBox, "Field for surname");
+            toolTip1.SetToolTip(SurnameTextBox, "Поле для ввода фамилии");
             // 
             // NameTextBox
             // 
-            helpProvider1.SetHelpString(NameTextBox, "Field for Name");
+            helpProvider1.SetHelpString(NameTextBox, "Поле для ввода имени");
             NameTextBox.Location = new Point(167, 85);
             NameTextBox.Margin = new Padding(5);
             NameTextBox.Name = "NameTextBox";
             helpProvider1.SetShowHelp(NameTextBox, true);
             NameTextBox.Size = new Size(422, 39);
             NameTextBox.TabIndex = 4;
-            toolTip1.SetToolTip(NameTextBox, "Field for Name");
+            toolTip1.SetToolTip(NameTextBox, "Поле для ввода имени");
             // 
             // MiddleNameTextBox
             // 
-            helpProvider1.SetHelpString(MiddleNameTextBox, "Field for patronymic");
+            helpProvider1.SetHelpString(MiddleNameTextBox, "Поле для ввода отчества");
             MiddleNameTextBox.Location = new Point(167, 138);
             MiddleNameTextBox.Margin = new Padding(5);
             MiddleNameTextBox.Name = "MiddleNameTextBox";
             helpProvider1.SetShowHelp(MiddleNameTextBox, true);
             MiddleNameTextBox.Size = new Size(422, 39);
             MiddleNameTextBox.TabIndex = 5;
-            toolTip1.SetToolTip(MiddleNameTextBox, "Field for patronymic");
+            toolTip1.SetToolTip(MiddleNameTextBox, "Поле для ввода отчества");
             // 
             // SexGroupBox
             // 
@@ -168,36 +167,36 @@
             SexGroupBox.Size = new Size(213, 149);
             SexGroupBox.TabIndex = 6;
             SexGroupBox.TabStop = false;
-            SexGroupBox.Text = "Sex:";
+            SexGroupBox.Text = "Пол:";
             // 
             // FemaleRadioButton
             // 
             FemaleRadioButton.AutoSize = true;
-            helpProvider1.SetHelpString(FemaleRadioButton, "Choose Female");
+            helpProvider1.SetHelpString(FemaleRadioButton, "Выбрать женский пол");
             FemaleRadioButton.Location = new Point(24, 91);
             FemaleRadioButton.Margin = new Padding(5);
             FemaleRadioButton.Name = "FemaleRadioButton";
             helpProvider1.SetShowHelp(FemaleRadioButton, true);
-            FemaleRadioButton.Size = new Size(122, 36);
+            FemaleRadioButton.Size = new Size(144, 36);
             FemaleRadioButton.TabIndex = 1;
             FemaleRadioButton.TabStop = true;
-            FemaleRadioButton.Text = "Female";
-            toolTip1.SetToolTip(FemaleRadioButton, "Choose Female");
+            FemaleRadioButton.Text = "Женский";
+            toolTip1.SetToolTip(FemaleRadioButton, "Выбрать женский пол");
             FemaleRadioButton.UseVisualStyleBackColor = true;
             // 
             // MaleRadioButton
             // 
             MaleRadioButton.AutoSize = true;
-            helpProvider1.SetHelpString(MaleRadioButton, "Choose Male");
+            helpProvider1.SetHelpString(MaleRadioButton, "Выбрать мужской пол");
             MaleRadioButton.Location = new Point(24, 43);
             MaleRadioButton.Margin = new Padding(5);
             MaleRadioButton.Name = "MaleRadioButton";
             helpProvider1.SetShowHelp(MaleRadioButton, true);
-            MaleRadioButton.Size = new Size(98, 36);
+            MaleRadioButton.Size = new Size(148, 36);
             MaleRadioButton.TabIndex = 0;
             MaleRadioButton.TabStop = true;
-            MaleRadioButton.Text = "Male";
-            toolTip1.SetToolTip(MaleRadioButton, "Choose Male");
+            MaleRadioButton.Text = "Мужской";
+            toolTip1.SetToolTip(MaleRadioButton, "Выбрать мужской пол");
             MaleRadioButton.UseVisualStyleBackColor = true;
             // 
             // BirthDateGroupBox
@@ -211,18 +210,18 @@
             BirthDateGroupBox.Size = new Size(361, 154);
             BirthDateGroupBox.TabIndex = 7;
             BirthDateGroupBox.TabStop = false;
-            BirthDateGroupBox.Text = "Date of Birth:";
+            BirthDateGroupBox.Text = "Дата рождения:";
             // 
             // DateBirtPicker
             // 
-            helpProvider1.SetHelpString(DateBirtPicker, "Field for date of birth");
+            helpProvider1.SetHelpString(DateBirtPicker, "Поле для выбора даты рождения");
             DateBirtPicker.Location = new Point(24, 62);
             DateBirtPicker.Margin = new Padding(5);
             DateBirtPicker.Name = "DateBirtPicker";
             helpProvider1.SetShowHelp(DateBirtPicker, true);
             DateBirtPicker.Size = new Size(306, 39);
             DateBirtPicker.TabIndex = 0;
-            toolTip1.SetToolTip(DateBirtPicker, "Field for date of birth");
+            toolTip1.SetToolTip(DateBirtPicker, "Поле для выбора даты рождения");
             // 
             // LocationLabel
             // 
@@ -231,9 +230,9 @@
             LocationLabel.Margin = new Padding(5, 0, 5, 0);
             LocationLabel.Name = "LocationLabel";
             helpProvider1.SetShowHelp(LocationLabel, true);
-            LocationLabel.Size = new Size(110, 32);
+            LocationLabel.Size = new Size(92, 32);
             LocationLabel.TabIndex = 8;
-            LocationLabel.Text = "Address: ";
+            LocationLabel.Text = "Адрес: ";
             // 
             // EMailLabel
             // 
@@ -242,25 +241,25 @@
             EMailLabel.Margin = new Padding(5, 0, 5, 0);
             EMailLabel.Name = "EMailLabel";
             helpProvider1.SetShowHelp(EMailLabel, true);
-            EMailLabel.Size = new Size(76, 32);
+            EMailLabel.Size = new Size(318, 32);
             EMailLabel.TabIndex = 9;
-            EMailLabel.Text = "Email:";
+            EMailLabel.Text = "Адрес электронной почты: ";
             // 
             // emailTextBox
             // 
-            helpProvider1.SetHelpString(emailTextBox, "Field for email");
+            helpProvider1.SetHelpString(emailTextBox, "Поле для ввода адреса электронной почты");
             emailTextBox.Location = new Point(499, 285);
             emailTextBox.Margin = new Padding(5);
             emailTextBox.Name = "emailTextBox";
             helpProvider1.SetShowHelp(emailTextBox, true);
             emailTextBox.Size = new Size(727, 39);
             emailTextBox.TabIndex = 10;
-            toolTip1.SetToolTip(emailTextBox, "Field for email");
+            toolTip1.SetToolTip(emailTextBox, "Поле для ввода адреса электронной почты");
             // 
             // LocationTextBox
             // 
             LocationTextBox.FormattingEnabled = true;
-            helpProvider1.SetHelpString(LocationTextBox, "File for address");
+            helpProvider1.SetHelpString(LocationTextBox, "Поле для ввода адреса");
             LocationTextBox.Items.AddRange(new object[] { "Гродно", "Минск", "Витебск", "Гомель", "Могилёв", "Брест" });
             LocationTextBox.Location = new Point(499, 229);
             LocationTextBox.Margin = new Padding(5);
@@ -268,7 +267,7 @@
             helpProvider1.SetShowHelp(LocationTextBox, true);
             LocationTextBox.Size = new Size(727, 40);
             LocationTextBox.TabIndex = 11;
-            toolTip1.SetToolTip(LocationTextBox, "File for address");
+            toolTip1.SetToolTip(LocationTextBox, "Поле для ввода адреса");
             // 
             // phoneLabel
             // 
@@ -277,14 +276,14 @@
             phoneLabel.Margin = new Padding(5, 0, 5, 0);
             phoneLabel.Name = "phoneLabel";
             helpProvider1.SetShowHelp(phoneLabel, true);
-            phoneLabel.Size = new Size(182, 32);
+            phoneLabel.Size = new Size(348, 32);
             phoneLabel.TabIndex = 12;
-            phoneLabel.Text = "Phone Number:";
+            phoneLabel.Text = "Номер мобильного телефона:";
             // 
             // operatorBox
             // 
             operatorBox.FormattingEnabled = true;
-            helpProvider1.SetHelpString(operatorBox, "Field for mobil operator");
+            helpProvider1.SetHelpString(operatorBox, "Поле для выбора мобильного оператора");
             operatorBox.Items.AddRange(new object[] { "МТС", "А1", "Life" });
             operatorBox.Location = new Point(499, 346);
             operatorBox.Margin = new Padding(5);
@@ -292,18 +291,18 @@
             helpProvider1.SetShowHelp(operatorBox, true);
             operatorBox.Size = new Size(171, 40);
             operatorBox.TabIndex = 13;
-            toolTip1.SetToolTip(operatorBox, "Field for mobil operator");
+            toolTip1.SetToolTip(operatorBox, "Поле для выбора мобильного оператора");
             // 
             // phoneBox
             // 
-            helpProvider1.SetHelpString(phoneBox, "Field for phone number");
+            helpProvider1.SetHelpString(phoneBox, "Поле для ввода мобильного телефона");
             phoneBox.Location = new Point(712, 347);
             phoneBox.Margin = new Padding(5);
             phoneBox.Name = "phoneBox";
             helpProvider1.SetShowHelp(phoneBox, true);
             phoneBox.Size = new Size(514, 39);
             phoneBox.TabIndex = 14;
-            toolTip1.SetToolTip(phoneBox, "Field for phone number");
+            toolTip1.SetToolTip(phoneBox, "Поле для ввода мобильного телефона");
             // 
             // workExpGroupBox
             // 
@@ -320,81 +319,81 @@
             workExpGroupBox.Size = new Size(1219, 200);
             workExpGroupBox.TabIndex = 15;
             workExpGroupBox.TabStop = false;
-            workExpGroupBox.Text = "Work Experience:";
+            workExpGroupBox.Text = "Опыт работы:";
             // 
             // From5To9RB
             // 
             From5To9RB.AutoSize = true;
-            helpProvider1.SetHelpString(From5To9RB, "If you have from 5 to 9 years of experience");
-            From5To9RB.Location = new Point(484, 106);
+            helpProvider1.SetHelpString(From5To9RB, "Если у вас от 5 до 9 лет опыта работы");
+            From5To9RB.Location = new Point(481, 118);
             From5To9RB.Margin = new Padding(5);
             From5To9RB.Name = "From5To9RB";
             helpProvider1.SetShowHelp(From5To9RB, true);
-            From5To9RB.Size = new Size(231, 36);
+            From5To9RB.Size = new Size(190, 36);
             From5To9RB.TabIndex = 4;
             From5To9RB.TabStop = true;
-            From5To9RB.Text = "From 5 to 9 years";
-            toolTip1.SetToolTip(From5To9RB, "If you have from 5 to 9 years of experience");
+            From5To9RB.Text = "От 5 до 9 лет";
+            toolTip1.SetToolTip(From5To9RB, "Если у вас от 5 до 9 лет опыта работы");
             From5To9RB.UseVisualStyleBackColor = true;
             // 
             // LessThen1RB
             // 
             LessThen1RB.AutoSize = true;
-            helpProvider1.SetHelpString(LessThen1RB, "If you have <1 year of experience");
-            LessThen1RB.Location = new Point(36, 106);
+            helpProvider1.SetHelpString(LessThen1RB, "Если у вас меньше 1 года опыта работы");
+            LessThen1RB.Location = new Point(33, 118);
             LessThen1RB.Margin = new Padding(5);
             LessThen1RB.Name = "LessThen1RB";
             helpProvider1.SetShowHelp(LessThen1RB, true);
-            LessThen1RB.Size = new Size(217, 36);
+            LessThen1RB.Size = new Size(213, 36);
             LessThen1RB.TabIndex = 3;
             LessThen1RB.TabStop = true;
-            LessThen1RB.Text = "Less then 1 year";
-            toolTip1.SetToolTip(LessThen1RB, "If you have <1 year of experience");
+            LessThen1RB.Text = "Меньше 1 года";
+            toolTip1.SetToolTip(LessThen1RB, "Если у вас меньше 1 года опыта работы");
             LessThen1RB.UseVisualStyleBackColor = true;
             // 
             // MoreThen10RB
             // 
             MoreThen10RB.AutoSize = true;
             helpProvider1.SetHelpString(MoreThen10RB, "If you have more than 10 years of experience");
-            MoreThen10RB.Location = new Point(912, 42);
+            MoreThen10RB.Location = new Point(909, 54);
             MoreThen10RB.Margin = new Padding(5);
             MoreThen10RB.Name = "MoreThen10RB";
             helpProvider1.SetShowHelp(MoreThen10RB, true);
-            MoreThen10RB.Size = new Size(252, 36);
+            MoreThen10RB.Size = new Size(206, 36);
             MoreThen10RB.TabIndex = 2;
             MoreThen10RB.TabStop = true;
-            MoreThen10RB.Text = "More than 10 years";
+            MoreThen10RB.Text = "Больше 10 лет";
             toolTip1.SetToolTip(MoreThen10RB, "If you have more than 10 years of experience");
             MoreThen10RB.UseVisualStyleBackColor = true;
             // 
             // From1To5RB
             // 
             From1To5RB.AutoSize = true;
-            helpProvider1.SetHelpString(From1To5RB, "If you have from 1 to 5 years of experience");
-            From1To5RB.Location = new Point(484, 42);
+            helpProvider1.SetHelpString(From1To5RB, "Если у вас от 1 до 5 лет опыта работы");
+            From1To5RB.Location = new Point(481, 54);
             From1To5RB.Margin = new Padding(5);
             From1To5RB.Name = "From1To5RB";
             helpProvider1.SetShowHelp(From1To5RB, true);
-            From1To5RB.Size = new Size(231, 36);
+            From1To5RB.Size = new Size(245, 36);
             From1To5RB.TabIndex = 1;
             From1To5RB.TabStop = true;
-            From1To5RB.Text = "From 1 to 5 years";
-            toolTip1.SetToolTip(From1To5RB, "If you have from 1 to 5 years of experience");
+            From1To5RB.Text = "От 1 года до 5 лет";
+            toolTip1.SetToolTip(From1To5RB, "Если у вас от 1 до 5 лет опыта работы");
             From1To5RB.UseVisualStyleBackColor = true;
             // 
             // NoWorkRB
             // 
             NoWorkRB.AutoSize = true;
-            helpProvider1.SetHelpString(NoWorkRB, "If you have 0 experience");
-            NoWorkRB.Location = new Point(36, 42);
+            helpProvider1.SetHelpString(NoWorkRB, "Если у вас 0 опыта работы");
+            NoWorkRB.Location = new Point(33, 54);
             NoWorkRB.Margin = new Padding(5);
             NoWorkRB.Name = "NoWorkRB";
             helpProvider1.SetShowHelp(NoWorkRB, true);
-            NoWorkRB.Size = new Size(200, 36);
+            NoWorkRB.Size = new Size(266, 36);
             NoWorkRB.TabIndex = 0;
             NoWorkRB.TabStop = true;
-            NoWorkRB.Text = "No experience";
-            toolTip1.SetToolTip(NoWorkRB, "If you have 0 experience");
+            NoWorkRB.Text = "Никогда не работал";
+            toolTip1.SetToolTip(NoWorkRB, "Если у вас 0 опыта работы");
             NoWorkRB.UseVisualStyleBackColor = true;
             // 
             // OthersGroupBox
@@ -414,12 +413,12 @@
             OthersGroupBox.Size = new Size(470, 238);
             OthersGroupBox.TabIndex = 16;
             OthersGroupBox.TabStop = false;
-            OthersGroupBox.Text = "OtherDetails";
+            OthersGroupBox.Text = "Дополнительные сведения: ";
             // 
             // categoryD
             // 
             categoryD.AutoSize = true;
-            helpProvider1.SetHelpString(categoryD, "If you have category D");
+            helpProvider1.SetHelpString(categoryD, "Если у вас есть категория D");
             categoryD.Location = new Point(262, 184);
             categoryD.Margin = new Padding(5);
             categoryD.Name = "categoryD";
@@ -427,13 +426,13 @@
             categoryD.Size = new Size(63, 36);
             categoryD.TabIndex = 6;
             categoryD.Text = "D";
-            toolTip1.SetToolTip(categoryD, "If you have category D");
+            toolTip1.SetToolTip(categoryD, "Если у вас есть категория D");
             categoryD.UseVisualStyleBackColor = true;
             // 
             // categoryC
             // 
             categoryC.AutoSize = true;
-            helpProvider1.SetHelpString(categoryC, "If you have category C");
+            helpProvider1.SetHelpString(categoryC, "Если у вас есть категория С");
             categoryC.Location = new Point(179, 184);
             categoryC.Margin = new Padding(5);
             categoryC.Name = "categoryC";
@@ -441,13 +440,13 @@
             categoryC.Size = new Size(61, 36);
             categoryC.TabIndex = 5;
             categoryC.Text = "C";
-            toolTip1.SetToolTip(categoryC, "If you have category C");
+            toolTip1.SetToolTip(categoryC, "Если у вас есть категория С");
             categoryC.UseVisualStyleBackColor = true;
             // 
             // categoryB
             // 
             categoryB.AutoSize = true;
-            helpProvider1.SetHelpString(categoryB, "If you have category B");
+            helpProvider1.SetHelpString(categoryB, "Если у вас есть категория В");
             categoryB.Location = new Point(107, 184);
             categoryB.Margin = new Padding(5);
             categoryB.Name = "categoryB";
@@ -455,13 +454,13 @@
             categoryB.Size = new Size(60, 36);
             categoryB.TabIndex = 4;
             categoryB.Text = "B";
-            toolTip1.SetToolTip(categoryB, "If you have category B");
+            toolTip1.SetToolTip(categoryB, "Если у вас есть категория В");
             categoryB.UseVisualStyleBackColor = true;
             // 
             // categoryA
             // 
             categoryA.AutoSize = true;
-            helpProvider1.SetHelpString(categoryA, "If you have category A");
+            helpProvider1.SetHelpString(categoryA, "Если у вас есть категория А");
             categoryA.Location = new Point(36, 184);
             categoryA.Margin = new Padding(5);
             categoryA.Name = "categoryA";
@@ -469,7 +468,7 @@
             categoryA.Size = new Size(61, 36);
             categoryA.TabIndex = 3;
             categoryA.Text = "A";
-            toolTip1.SetToolTip(categoryA, "If you have category A");
+            toolTip1.SetToolTip(categoryA, "Если у вас есть категория А");
             categoryA.UseVisualStyleBackColor = true;
             // 
             // driveCategory
@@ -479,43 +478,42 @@
             driveCategory.Margin = new Padding(5, 0, 5, 0);
             driveCategory.Name = "driveCategory";
             helpProvider1.SetShowHelp(driveCategory, true);
-            driveCategory.Size = new Size(202, 32);
+            driveCategory.Size = new Size(191, 32);
             driveCategory.TabIndex = 2;
-            driveCategory.Text = "Liscence category";
+            driveCategory.Text = "Категория прав:";
             // 
             // driveLicense
             // 
             driveLicense.AutoSize = true;
-            helpProvider1.SetHelpString(driveLicense, "If you have drive liscence");
+            helpProvider1.SetHelpString(driveLicense, "Если у вас есть водительские права");
             driveLicense.Location = new Point(21, 90);
             driveLicense.Margin = new Padding(5);
             driveLicense.Name = "driveLicense";
             helpProvider1.SetShowHelp(driveLicense, true);
-            driveLicense.Size = new Size(193, 36);
+            driveLicense.Size = new Size(271, 36);
             driveLicense.TabIndex = 1;
-            driveLicense.Text = "Drive liscence";
-            toolTip1.SetToolTip(driveLicense, "If you have drive liscence");
+            driveLicense.Text = "Водительские права";
+            toolTip1.SetToolTip(driveLicense, "Если у вас есть водительские права");
             driveLicense.UseVisualStyleBackColor = true;
             // 
             // haveAuto
             // 
             haveAuto.AutoSize = true;
-            helpProvider1.SetHelpString(haveAuto, "If you have your own car");
+            helpProvider1.SetHelpString(haveAuto, "Если у вас есть личный авто");
             haveAuto.Location = new Point(21, 42);
             haveAuto.Margin = new Padding(5);
             haveAuto.Name = "haveAuto";
             helpProvider1.SetShowHelp(haveAuto, true);
-            haveAuto.Size = new Size(345, 36);
+            haveAuto.Size = new Size(283, 36);
             haveAuto.TabIndex = 0;
-            haveAuto.Text = "Availability of a personal car";
-            toolTip1.SetToolTip(haveAuto, "If you have your own car");
+            haveAuto.Text = "Собственная машина";
+            toolTip1.SetToolTip(haveAuto, "Если у вас есть личный авто");
             haveAuto.UseVisualStyleBackColor = true;
             // 
             // salaryGroupBox
             // 
             salaryGroupBox.Controls.Add(ToLabel);
             salaryGroupBox.Controls.Add(label1);
-            salaryGroupBox.Controls.Add(FromLabel);
             salaryGroupBox.Controls.Add(ToSalary);
             salaryGroupBox.Controls.Add(FromSalary);
             salaryGroupBox.Location = new Point(613, 656);
@@ -526,7 +524,7 @@
             salaryGroupBox.Size = new Size(643, 104);
             salaryGroupBox.TabIndex = 17;
             salaryGroupBox.TabStop = false;
-            salaryGroupBox.Text = "Wage bill:";
+            salaryGroupBox.Text = "Объем заработной платы:";
             // 
             // ToLabel
             // 
@@ -535,36 +533,25 @@
             ToLabel.Margin = new Padding(5, 0, 5, 0);
             ToLabel.Name = "ToLabel";
             helpProvider1.SetShowHelp(ToLabel, true);
-            ToLabel.Size = new Size(39, 32);
+            ToLabel.Size = new Size(45, 32);
             ToLabel.TabIndex = 3;
-            ToLabel.Text = "To";
+            ToLabel.Text = "До";
             // 
             // label1
             // 
             label1.AutoSize = true;
             label1.ImeMode = ImeMode.NoControl;
-            label1.Location = new Point(0, 46);
+            label1.Location = new Point(23, 46);
             label1.Margin = new Padding(5, 0, 5, 0);
             label1.Name = "label1";
             helpProvider1.SetShowHelp(label1, true);
-            label1.Size = new Size(69, 32);
+            label1.Size = new Size(42, 32);
             label1.TabIndex = 2;
-            label1.Text = "From";
-            // 
-            // FromLabel
-            // 
-            FromLabel.AutoSize = true;
-            FromLabel.Location = new Point(10, 46);
-            FromLabel.Margin = new Padding(5, 0, 5, 0);
-            FromLabel.Name = "FromLabel";
-            helpProvider1.SetShowHelp(FromLabel, true);
-            FromLabel.Size = new Size(69, 32);
-            FromLabel.TabIndex = 2;
-            FromLabel.Text = "From";
+            label1.Text = "От";
             // 
             // ToSalary
             // 
-            helpProvider1.SetHelpString(ToSalary, "Field for max bill you want");
+            helpProvider1.SetHelpString(ToSalary, "Поле для ввода максимального обхема заработной платы");
             ToSalary.Location = new Point(400, 42);
             ToSalary.Margin = new Padding(5);
             ToSalary.Maximum = new decimal(new int[] { 10000000, 0, 0, 0 });
@@ -573,12 +560,12 @@
             helpProvider1.SetShowHelp(ToSalary, true);
             ToSalary.Size = new Size(244, 39);
             ToSalary.TabIndex = 1;
-            toolTip1.SetToolTip(ToSalary, "Field for max bill you want");
+            toolTip1.SetToolTip(ToSalary, "Поле для ввода максимального обхема заработной платы");
             ToSalary.Value = new decimal(new int[] { 550, 0, 0, 0 });
             // 
             // FromSalary
             // 
-            helpProvider1.SetHelpString(FromSalary, "Field for minimum bill you want");
+            helpProvider1.SetHelpString(FromSalary, "Поле для ввода минимального объема заработной платы");
             FromSalary.Location = new Point(75, 42);
             FromSalary.Margin = new Padding(5);
             FromSalary.Maximum = new decimal(new int[] { 10000000, 0, 0, 0 });
@@ -587,7 +574,7 @@
             helpProvider1.SetShowHelp(FromSalary, true);
             FromSalary.Size = new Size(244, 39);
             FromSalary.TabIndex = 0;
-            toolTip1.SetToolTip(FromSalary, "Field for minimum bill you want");
+            toolTip1.SetToolTip(FromSalary, "Поле для ввода минимального объема заработной платы");
             FromSalary.Value = new decimal(new int[] { 550, 0, 0, 0 });
             // 
             // workTimeGroupBox
@@ -604,71 +591,71 @@
             workTimeGroupBox.Size = new Size(643, 125);
             workTimeGroupBox.TabIndex = 18;
             workTimeGroupBox.TabStop = false;
-            workTimeGroupBox.Text = "Preferred work schedule:";
+            workTimeGroupBox.Text = "Предпочитаемый график работы:";
             // 
             // TimeWorkRB
             // 
             TimeWorkRB.AutoSize = true;
-            helpProvider1.SetHelpString(TimeWorkRB, "If you want shift work");
+            helpProvider1.SetHelpString(TimeWorkRB, "Если хотите посменную работу");
             TimeWorkRB.Location = new Point(362, 77);
             TimeWorkRB.Margin = new Padding(5);
             TimeWorkRB.Name = "TimeWorkRB";
             helpProvider1.SetShowHelp(TimeWorkRB, true);
-            TimeWorkRB.Size = new Size(152, 36);
+            TimeWorkRB.Size = new Size(252, 36);
             TimeWorkRB.TabIndex = 3;
             TimeWorkRB.TabStop = true;
-            TimeWorkRB.Text = "Shift work";
-            toolTip1.SetToolTip(TimeWorkRB, "If you want shift work");
+            TimeWorkRB.Text = "Посменная работа";
+            toolTip1.SetToolTip(TimeWorkRB, "Если хотите посменную работу");
             TimeWorkRB.UseVisualStyleBackColor = true;
             // 
             // WorkAtHomeRB
             // 
             WorkAtHomeRB.AutoSize = true;
-            helpProvider1.SetHelpString(WorkAtHomeRB, "If you want work at home");
+            helpProvider1.SetHelpString(WorkAtHomeRB, "Если хотите работать на дому");
             WorkAtHomeRB.Location = new Point(23, 77);
             WorkAtHomeRB.Margin = new Padding(5);
             WorkAtHomeRB.Name = "WorkAtHomeRB";
             helpProvider1.SetShowHelp(WorkAtHomeRB, true);
-            WorkAtHomeRB.Size = new Size(196, 36);
+            WorkAtHomeRB.Size = new Size(216, 36);
             WorkAtHomeRB.TabIndex = 2;
             WorkAtHomeRB.TabStop = true;
-            WorkAtHomeRB.Text = "Work at home";
-            toolTip1.SetToolTip(WorkAtHomeRB, "If you want work at home");
+            WorkAtHomeRB.Text = "Работа на дому";
+            toolTip1.SetToolTip(WorkAtHomeRB, "Если хотите работать на дому");
             WorkAtHomeRB.UseVisualStyleBackColor = true;
             // 
             // PartTimeRB
             // 
             PartTimeRB.AutoSize = true;
-            helpProvider1.SetHelpString(PartTimeRB, "If you want parttime work");
+            helpProvider1.SetHelpString(PartTimeRB, "Если хотите частичную занятость");
             PartTimeRB.Location = new Point(362, 30);
             PartTimeRB.Margin = new Padding(5);
             PartTimeRB.Name = "PartTimeRB";
             helpProvider1.SetShowHelp(PartTimeRB, true);
-            PartTimeRB.Size = new Size(133, 36);
+            PartTimeRB.Size = new Size(273, 36);
             PartTimeRB.TabIndex = 1;
             PartTimeRB.TabStop = true;
-            PartTimeRB.Text = "Parttime";
-            toolTip1.SetToolTip(PartTimeRB, "If you want parttime work");
+            PartTimeRB.Text = "Частичная занятость";
+            toolTip1.SetToolTip(PartTimeRB, "Если хотите частичную занятость");
             PartTimeRB.UseVisualStyleBackColor = true;
             // 
             // FullTimeRB
             // 
             FullTimeRB.AutoSize = true;
-            helpProvider1.SetHelpString(FullTimeRB, "If you want fulltime work");
+            helpProvider1.SetHelpString(FullTimeRB, "Если хотите полную занятость");
             FullTimeRB.Location = new Point(23, 34);
             FullTimeRB.Margin = new Padding(5);
             FullTimeRB.Name = "FullTimeRB";
             helpProvider1.SetShowHelp(FullTimeRB, true);
-            FullTimeRB.Size = new Size(131, 36);
+            FullTimeRB.Size = new Size(247, 36);
             FullTimeRB.TabIndex = 0;
             FullTimeRB.TabStop = true;
-            FullTimeRB.Text = "Fulltime";
-            toolTip1.SetToolTip(FullTimeRB, "If you want fulltime work");
+            FullTimeRB.Text = "Полный занятость";
+            toolTip1.SetToolTip(FullTimeRB, "Если хотите полную занятость");
             FullTimeRB.UseVisualStyleBackColor = true;
             // 
             // CVtextBox
             // 
-            helpProvider1.SetHelpString(CVtextBox, "All your data");
+            helpProvider1.SetHelpString(CVtextBox, "Здесь будет находится вся информация о вас");
             CVtextBox.Location = new Point(37, 952);
             CVtextBox.Margin = new Padding(5);
             CVtextBox.Name = "CVtextBox";
@@ -676,7 +663,7 @@
             CVtextBox.Size = new Size(1216, 233);
             CVtextBox.TabIndex = 19;
             CVtextBox.Text = "";
-            toolTip1.SetToolTip(CVtextBox, "All your data");
+            toolTip1.SetToolTip(CVtextBox, "Здесь будет находится вся информация о вас");
             // 
             // CVLabel
             // 
@@ -685,49 +672,49 @@
             CVLabel.Margin = new Padding(5, 0, 5, 0);
             CVLabel.Name = "CVLabel";
             helpProvider1.SetShowHelp(CVLabel, true);
-            CVLabel.Size = new Size(102, 32);
+            CVLabel.Size = new Size(210, 32);
             CVLabel.TabIndex = 20;
-            CVLabel.Text = "All Data:";
+            CVLabel.Text = "Краткое резюме: ";
             // 
             // SaveButton
             // 
-            helpProvider1.SetHelpString(SaveButton, "Button for saving your info");
+            helpProvider1.SetHelpString(SaveButton, "Кнопка для сохранения вашей информации");
             SaveButton.Location = new Point(37, 1197);
             SaveButton.Margin = new Padding(5);
             SaveButton.Name = "SaveButton";
             helpProvider1.SetShowHelp(SaveButton, true);
             SaveButton.Size = new Size(250, 46);
             SaveButton.TabIndex = 21;
-            SaveButton.Text = "Save";
-            toolTip1.SetToolTip(SaveButton, "Button for saving your info");
+            SaveButton.Text = "Сохранить";
+            toolTip1.SetToolTip(SaveButton, "Кнопка для сохранения вашей информации");
             SaveButton.UseVisualStyleBackColor = true;
             SaveButton.Click += SaveButton_Click;
             // 
             // ClearButton
             // 
-            helpProvider1.SetHelpString(ClearButton, "Button for clearing form");
+            helpProvider1.SetHelpString(ClearButton, "Кнопка для очистки формы");
             ClearButton.Location = new Point(299, 1197);
             ClearButton.Margin = new Padding(5);
             ClearButton.Name = "ClearButton";
             helpProvider1.SetShowHelp(ClearButton, true);
             ClearButton.Size = new Size(250, 46);
             ClearButton.TabIndex = 22;
-            ClearButton.Text = "Clear";
-            toolTip1.SetToolTip(ClearButton, "Button for clearing form");
+            ClearButton.Text = "Очистить";
+            toolTip1.SetToolTip(ClearButton, "Кнопка для очистки формы");
             ClearButton.UseVisualStyleBackColor = true;
             ClearButton.Click += ClearButton_Click;
             // 
             // CancelButton
             // 
-            helpProvider1.SetHelpString(CancelButton, "Button for closing form");
+            helpProvider1.SetHelpString(CancelButton, "Кнопка для закрытия формы");
             CancelButton.Location = new Point(1006, 1197);
             CancelButton.Margin = new Padding(5);
             CancelButton.Name = "CancelButton";
             helpProvider1.SetShowHelp(CancelButton, true);
             CancelButton.Size = new Size(250, 46);
             CancelButton.TabIndex = 23;
-            CancelButton.Text = "Close";
-            toolTip1.SetToolTip(CancelButton, "Button for closing form");
+            CancelButton.Text = "Закрыть";
+            toolTip1.SetToolTip(CancelButton, "Кнопка для закрытия формы");
             CancelButton.UseVisualStyleBackColor = true;
             CancelButton.Click += CancelButton_Click;
             // 
@@ -737,15 +724,15 @@
             // 
             // button1
             // 
-            helpProvider1.SetHelpString(button1, "Button for help menu");
+            helpProvider1.SetHelpString(button1, "Кнопка для открытия справочного файла");
             button1.Location = new Point(559, 1197);
             button1.Margin = new Padding(5);
             button1.Name = "button1";
             helpProvider1.SetShowHelp(button1, true);
             button1.Size = new Size(250, 46);
             button1.TabIndex = 24;
-            button1.Text = "Help";
-            toolTip1.SetToolTip(button1, "Button for help menu");
+            button1.Text = "Помошь";
+            toolTip1.SetToolTip(button1, "Кнопка для открытия справочного файла");
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
@@ -840,7 +827,6 @@
         private CheckBox haveAuto;
         private GroupBox salaryGroupBox;
         private Label ToLabel;
-        private Label FromLabel;
         private NumericUpDown ToSalary;
         private NumericUpDown FromSalary;
         private GroupBox workTimeGroupBox;
