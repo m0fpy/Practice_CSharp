@@ -1,0 +1,15 @@
+﻿<Window x:Class="Task4.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Task4" Height="450" Width="800">
+    <Grid Name="MainGrid">
+        <Button Name="InitialButton" 
+                Content="Наведи мышкой на меня"
+                HorizontalAlignment="Center" 
+                VerticalAlignment="Center"
+                Width="200" 
+                Height="30"
+                MouseEnter="Button_MouseEnter" 
+                Click="Button_Click"/>
+    </Grid>
+</Window>
