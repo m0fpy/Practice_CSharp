@@ -1,0 +1,52 @@
+﻿<Window x:Class="Task1.AddFlowerWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="AddFlowerWindow" Height="200" Width="300">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="2*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="5*"/>
+            <ColumnDefinition Width="5*"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock x:Name="textBlockFlowerType"
+                   Grid.Row="0"
+                   Margin="10"
+                   Text="Тип цветка:"
+                   VerticalAlignment="Center"
+                   HorizontalAlignment="Center"
+                   FontSize="18"/>
+        <TextBox x:Name="textBoxFlowerType"
+                 Margin="10"
+                 Grid.Row="0"
+                 Grid.Column="1"
+                 Height="30"
+                 TextAlignment="Center"/>
+        <TextBlock x:Name="textBlockFlowerPrice"
+            Grid.Row="1"
+            Margin="10"
+            Text="Цена цветка:"
+            VerticalAlignment="Center"
+            HorizontalAlignment="Center"
+            FontSize="18"/>
+        <TextBox x:Name="textBoxFlowerPrice"
+          Margin="10"
+          Grid.Row="1"
+          Grid.Column="1"
+          Height="30"
+          TextAlignment="Center"/>
+        <Button x:Name="buttonAdd"
+                Content="Добавить"
+                Grid.Row="2"
+                FontSize="16"
+                Margin="10"
+                Grid.ColumnSpan="2"
+                Click="buttonAdd_Click"/>
+    </Grid>
+</Window>
