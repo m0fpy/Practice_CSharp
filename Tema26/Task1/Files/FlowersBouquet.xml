@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Bouquet>
+  <Flower Type="Lily">
+    <Price>3</Price>
+  </Flower>
+  <Flower Type="Daffodil">
+    <Price>1,5</Price>
+  </Flower>
+  <Flower Type="Sunflower">
+    <Price>2</Price>
+  </Flower>
+  <Flower Type="Orchid">
+    <Price>4</Price>
+  </Flower>
+  <Flower Type="Daisy">
+    <Price>1,25</Price>
+  </Flower>
+  <Flower Type="Peony">
+    <Price>3,5</Price>
+  </Flower>
+  <Flower Type="Chrysanthemum">
+    <Price>2,25</Price>
+  </Flower>
+  <Flower Type="Marigold">
+    <Price>1</Price>
+  </Flower>
+  <Flower Type="Rose">
+    <Price>2</Price>
+  </Flower>
+</Bouquet>
