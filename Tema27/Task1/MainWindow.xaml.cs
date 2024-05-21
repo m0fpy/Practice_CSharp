@@ -3,7 +3,6 @@ using Microsoft.Win32;
 using System.IO;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Documents;
 using Task1.Interfaces;
 using Task1.Models;
 using Task1.Share;
@@ -35,18 +34,7 @@ namespace Task1
                 {
                     var flower = _worker.FindBy(textBoxFlowerType.Text);
 
-                    if (radioButtonTextBox.IsChecked == true)
-                    {
-                        PrintFlower(flower);
-                    }
-                    else if (radioButtonTreeView.IsChecked == true)
-                    {
-                        PrintFlowerToTreeView(flower);
-                    }
-                    else if (radioButtonListBox.IsChecked == true)
-                    {
-                        PrintFlowerToListBox(flower);
-                    }
+                    PrintFlower(flower);
                     textBoxFlowerType.Text = string.Empty;
                 }
                 else
@@ -67,18 +55,7 @@ namespace Task1
                 if (!string.IsNullOrEmpty(textBoxDeleteFlowerType.Text) || !string.IsNullOrWhiteSpace(textBoxDeleteFlowerType.Text))
                 {
                     _worker.Delete(textBoxDeleteFlowerType.Text);
-                    if (radioButtonTextBox.IsChecked == true)
-                    {
-                        PrintFlowers(_worker.GetAll());
-                    }
-                    else if (radioButtonTreeView.IsChecked == true)
-                    {
-                        PrintFlowersToTreeView(_worker.GetAll());
-                    }
-                    else if (radioButtonListBox.IsChecked == true)
-                    {
-                        PrintFlowersToListBox(_worker.GetAll());
-                    }
+                    PrintFlowers(_worker.GetAll());
                 }
                 else
                 {
@@ -108,18 +85,7 @@ namespace Task1
 
                     _worker.Add(newFlower);
 
-                    if (radioButtonTextBox.IsChecked == true)
-                    {
-                        PrintFlowers(_worker.GetAll());
-                    }
-                    else if (radioButtonTreeView.IsChecked == true)
-                    {
-                        PrintFlowersToTreeView(_worker.GetAll());
-                    }
-                    else if (radioButtonListBox.IsChecked == true)
-                    {
-                        PrintFlowersToListBox(_worker.GetAll());
-                    }
+                    PrintFlowers(_worker.GetAll());
                 }
             }
             else
@@ -135,76 +101,77 @@ namespace Task1
 
         private void PrintFlower(Flower flower)
         {
-            textBlockXMLFileContent.Text = "======Flower======" + Environment.NewLine;
-            textBlockXMLFileContent.Text += flower?.ToString() ?? "Flower not found";
+            if (radioButtonTextBox.IsChecked == true)
+            {
+                textBlockXMLFileContent.Text = "======Flower======" + Environment.NewLine;
+                textBlockXMLFileContent.Text += flower?.ToString() ?? "Flower not found";
+            }
+            else if (radioButtonTreeView.IsChecked == true)
+            {
+                treeViewXMLFileContent.Items.Clear();
+
+                if (flower != null)
+                {
+                    TreeViewItem flowerNode = new TreeViewItem();
+                    flowerNode.Header = "Flower: " + flower.Type;
+
+                    TreeViewItem priceNode = new TreeViewItem();
+                    priceNode.Header = "Price: " + flower.Price;
+                    flowerNode.Items.Add(priceNode);
+
+                    treeViewXMLFileContent.Items.Add(flowerNode);
+                    flowerNode.IsExpanded = true;
+                }
+            }
+            else if (radioButtonListBox.IsChecked == true)
+            {
+                listBoxXMLFileContent.Items.Clear();
+
+                if (flower != null)
+                {
+                    listBoxXMLFileContent.Items.Add("Flower: " + flower.Type + ", Price: " + flower.Price);
+                }
+            }
         }
 
         private void PrintFlowers(List<Flower> flowers)
         {
-            textBlockXMLFileContent.Text = "======Flowers======" + Environment.NewLine;
-            foreach (var flower in flowers)
+            if (radioButtonTextBox.IsChecked == true)
             {
-                textBlockXMLFileContent.Text += flower.ToString();
+                textBlockXMLFileContent.Text = "======Flowers======" + Environment.NewLine;
+                foreach (var flower in flowers)
+                {
+                    textBlockXMLFileContent.Text += flower.ToString();
+                }
+            }
+            else if (radioButtonTreeView.IsChecked == true)
+            {
+                treeViewXMLFileContent.Items.Clear();
+
+                foreach (var flower in flowers)
+                {
+                    TreeViewItem flowerNode = new TreeViewItem();
+                    flowerNode.Header = "Flower: " + flower.Type;
+
+                    TreeViewItem priceNode = new TreeViewItem();
+                    priceNode.Header = "Price: " + flower.Price;
+                    flowerNode.Items.Add(priceNode);
+
+                    treeViewXMLFileContent.Items.Add(flowerNode);
+                    flowerNode.IsExpanded = true;
+
+                }
+            }
+            else if (radioButtonListBox.IsChecked == true)
+            {
+                listBoxXMLFileContent.Items.Clear();
+
+                foreach (var flower in flowers)
+                {
+                    listBoxXMLFileContent.Items.Add("Flower: " + flower.Type + ", Price: " + flower.Price);
+                }
             }
         }
-        private void PrintFlowerToTreeView(Flower flower)
-        {
-            treeViewXMLFileContent.Items.Clear();
-
-            if (flower != null)
-            {
-                TreeViewItem flowerNode = new TreeViewItem();
-                flowerNode.Header = "Flower: " + flower.Type;
-
-                TreeViewItem priceNode = new TreeViewItem();
-                priceNode.Header = "Price: " + flower.Price;
-                flowerNode.Items.Add(priceNode);
-
-                treeViewXMLFileContent.Items.Add(flowerNode);
-                flowerNode.IsExpanded = true;
-            }
-        }
-
-        private void PrintFlowersToTreeView(List<Flower> flowers)
-        {
-            treeViewXMLFileContent.Items.Clear();
-
-            foreach (var flower in flowers)
-            {
-                TreeViewItem flowerNode = new TreeViewItem();
-                flowerNode.Header = "Flower: " + flower.Type;
-
-                TreeViewItem priceNode = new TreeViewItem();
-                priceNode.Header = "Price: " + flower.Price;
-                flowerNode.Items.Add(priceNode);
-
-                treeViewXMLFileContent.Items.Add(flowerNode);
-                flowerNode.IsExpanded = true;
-
-            }
-        }
-
-        private void PrintFlowerToListBox(Flower flower)
-        {
-            listBoxXMLFileContent.Items.Clear();
-
-            if (flower != null)
-            {
-                listBoxXMLFileContent.Items.Add("Flower: " + flower.Type + ", Price: " + flower.Price);
-            }
-        }
-
-        private void PrintFlowersToListBox(List<Flower> flowers)
-        {
-            listBoxXMLFileContent.Items.Clear();
-
-            foreach (var flower in flowers)
-            {
-                listBoxXMLFileContent.Items.Add("Flower: " + flower.Type + ", Price: " + flower.Price);
-            }
-        }
-
-
 
         private void ButtonOpenFile_Click(object sender, RoutedEventArgs e)
         {
@@ -220,39 +187,12 @@ namespace Task1
                 textBlockXMLPathFile.Text = _xmlFilePath;
                 _worker.Load(_xmlFilePath);
                 IsFileOpened = true;
-                if (radioButtonTextBox.IsChecked == true)
-                {
-                    PrintFlowers(_worker.GetAll());
-                }
-                else if (radioButtonTreeView.IsChecked == true)
-                {
-                    PrintFlowersToTreeView(_worker.GetAll());
-                }
-                else if (radioButtonListBox.IsChecked == true)
-                {
-                    PrintFlowersToListBox(_worker.GetAll());
-                }
+                PrintFlowers(_worker.GetAll());
             }
         }
 
         private void RadioButtonChangeViewType(object sender, RoutedEventArgs e)
         {
-            if (IsFileOpened)
-            {
-                if (radioButtonTextBox.IsChecked == true)
-                {
-                    PrintFlowers(_worker.GetAll());
-                }
-                else if (radioButtonTreeView.IsChecked == true)
-                {
-                    PrintFlowersToTreeView(_worker.GetAll());
-                }
-                else if (radioButtonListBox.IsChecked == true)
-                {
-                    PrintFlowersToListBox(_worker.GetAll());
-                }
-            }
-
             if (radioButtonTextBox.IsChecked == true)
             {
                 textBlockXMLFileContent.Visibility = Visibility.Visible;
@@ -270,6 +210,11 @@ namespace Task1
                 textBlockXMLFileContent.Visibility = Visibility.Collapsed;
                 treeViewXMLFileContent.Visibility = Visibility.Collapsed;
                 listBoxXMLFileContent.Visibility = Visibility.Visible;
+            }
+
+            if (IsFileOpened)
+            {
+                PrintFlowers(_worker.GetAll());
             }
         }
     }
