@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+
+	<?define ProductName="Tema34SetupProject"?>
+	<?define ProductVersion="1.0.0.0"?>
+	<?define ProductCode="69e26e59-2adb-45d4-a0b0-693333305fa5"?>
+	<?define UpgradeCode="06a81104-7c9b-4b9f-9b3b-7c9b4b9f9b3b"?>
+	<?define Manufacturer="Eroshkevich"?>
+
+	<Product Id="$(var.ProductCode)" Name="$(var.ProductName)" Language="1049" Version="$(var.ProductVersion)" Manufacturer="$(var.Manufacturer)" UpgradeCode="$(var.UpgradeCode)">
+		<Package InstallerVersion="200" Compressed="yes" InstallScope="perMachine" />
+
+		<MajorUpgrade DowngradeErrorMessage="A newer version of [ProductName] is already installed." />
+		<MediaTemplate />
+
+		<Feature Id="ProductFeature" Title="Task1SetupProject" Level="1">
+			<ComponentRef Id="CalcApplication"/>
+			<ComponentRef Id="CalcApplicationShortCut"/>
+		</Feature>
+
+		<Property Id="WIXUI_INSTALLDIR" Value="INSTALLFOLDER"/>
+
+		<WixVariable Id="WixUILicenseRtf" Overridable="yes" Value='D:\Projects\C#\Practice_CSharp\Tema34\LIC.rtf'/>
+
+		<UIRef Id="WixUI_InstallDir"/>
+	</Product>
+
+	<Fragment>
+		<Directory Id="TARGETDIR" Name="SourceDir">
+			<Directory Id="ProgramFilesFolder">
+				<Directory Id="INSTALLFOLDER" Name="$(var.ProductName)" />
+			</Directory>
+
+			<Directory Id="ProgramMenuFolder">
+				<Directory Id="ApplicationProgramsFolder" Name="$(var.ProductName)">
+					<Component Id="CalcApplicationShortCut" Guid="b11552d1-6f4f-4d0d-9b6e-9b6e9b6e9b6e">
+						<Shortcut Id="ShortCutDBP" Name="DatabaseProgram" Description="$(var.ProductName)" Target="[INSTALLFOLDER]\Task1.exe" WorkingDirectory="INSTALLFOLDER"/>
+						<RemoveFolder Id="ApplicationProgramsFolder" On="uninstall"/>
+						<RegistryValue Root="HKCU" Key="Software\$(var.Manufacturer)\$(var.ProductName)" Name="installed" Type="integer" Value="1" KeyPath="yes"/>
+					</Component>
+				</Directory>
+			</Directory>
+		</Directory>
+	</Fragment>
+
+	<Fragment>
+		<ComponentGroup Id="ProductComponents" Directory="INSTALLFOLDER">
+			<Component Id="CalcApplication" Guid="b11556d1-6f4f-4d0d-9b6e-9b6e9b6e9b6e">
+				<File Id="CalcApplication" DiskId="1" Source='D:\Projects\C#\Practice_CSharp\Tema34\Calc.exe'/>
+			</Component>
+		</ComponentGroup>
+	</Fragment>
+
+</Wix>
